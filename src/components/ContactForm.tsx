@@ -1,0 +1,294 @@
+"use client";
+
+import React, { useState } from "react";
+import { PORTFOLIO_VERTICALS } from "@/data/verticals";
+import { Send, CheckCircle2, Shield, Compass, Sparkles, Clock, Lock } from "lucide-react";
+
+interface ContactFormProps {
+  defaultVertical?: string;
+}
+
+export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }) => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    vertical: defaultVertical || "matching",
+    timeframe: "6-12-months",
+    budgetRange: "50k-100k",
+    groupSize: "couple-family",
+    message: "",
+    ndaRequested: false,
+    consent: true,
+  });
+
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("submitting");
+
+    // Simulate luxury concierge routing
+    setTimeout(() => {
+      setStatus("success");
+    }, 1200);
+  };
+
+  const selectedVerticalObj = PORTFOLIO_VERTICALS.find((v) => v.slug === formData.vertical);
+
+  return (
+    <div className="bg-[#13253F] border border-[#C8A44D]/30 rounded-lg p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+      {/* Subtle gold accent light */}
+      <div className="absolute top-0 right-0 w-80 h-80 bg-[#C8A44D]/5 rounded-full blur-3xl pointer-events-none" />
+
+      {status === "success" ? (
+        <div className="text-center py-12 space-y-6 animate-fade-in">
+          <div className="w-16 h-16 rounded-full bg-[#C8A44D]/20 border border-[#C8A44D] flex items-center justify-center mx-auto">
+            <CheckCircle2 className="w-8 h-8 text-[#C8A44D]" />
+          </div>
+          <h3 className="font-serif text-3xl font-semibold text-[#F7F2E8]">
+            Inquiry Received & Allocated
+          </h3>
+          <p className="text-sm text-[#F7F2E8]/80 max-w-lg mx-auto leading-relaxed">
+            Thank you, <strong className="text-[#C8A44D]">{formData.fullName}</strong>. Your consultation dossier has been confidentially assigned to a Senior Portfolio Curator at Rare Passages.
+          </p>
+
+          <div className="bg-[#0A1628] p-6 rounded-md border border-[#C8A44D]/20 text-left max-w-md mx-auto space-y-2 text-xs text-[#F7F2E8]/80">
+            <div className="text-[#C8A44D] font-serif text-sm font-semibold border-b border-white/10 pb-2 flex items-center justify-between">
+              <span>Consultation Brief Summary</span>
+              <Sparkles className="w-3.5 h-3.5" />
+            </div>
+            <div>
+              <span className="text-[#7A8471] font-medium">Vertical: </span>
+              <span>{selectedVerticalObj ? selectedVerticalObj.name : "Curator Guided Matching"}</span>
+            </div>
+            <div>
+              <span className="text-[#7A8471] font-medium">Timeframe: </span>
+              <span className="capitalize">{formData.timeframe.replace(/-/g, " ")}</span>
+            </div>
+            <div>
+              <span className="text-[#7A8471] font-medium">Response Window: </span>
+              <span>Within 4 Business Hours (Discreet Communication)</span>
+            </div>
+          </div>
+
+          <button
+            onClick={() => {
+              setStatus("idle");
+              setFormData({
+                fullName: "",
+                email: "",
+                phone: "",
+                vertical: "matching",
+                timeframe: "6-12-months",
+                budgetRange: "50k-100k",
+                groupSize: "couple-family",
+                message: "",
+                ndaRequested: false,
+                consent: true,
+              });
+            }}
+            className="text-xs uppercase tracking-widest text-[#C8A44D] underline hover:text-[#E0C579] transition-colors"
+          >
+            Submit Another Inquiry
+          </button>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+          <div>
+            <h3 className="font-serif text-2xl sm:text-3xl font-semibold text-[#F7F2E8] mb-2">
+              Bespoke Portfolio Inquiry
+            </h3>
+            <p className="text-xs sm:text-sm text-[#F7F2E8]/70 leading-relaxed">
+              Rare Passages provides confidential matching and institutional portfolio access. Share your travel aspirations to connect with a Senior Curator.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {/* Full Name */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Full Name <span className="text-red-400">*</span>
+              </label>
+              <input
+                type="text"
+                required
+                value={formData.fullName}
+                onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                placeholder="e.g. Eleanor Vance"
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] focus:ring-1 focus:ring-[#C8A44D] rounded-sm px-4 py-3 text-sm text-[#F7F2E8] placeholder-[#7A8471]/60 outline-none transition-colors"
+              />
+            </div>
+
+            {/* Email */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Email Address <span className="text-red-400">*</span>
+              </label>
+              <input
+                type="email"
+                required
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                placeholder="eleanor@domain.com"
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] focus:ring-1 focus:ring-[#C8A44D] rounded-sm px-4 py-3 text-sm text-[#F7F2E8] placeholder-[#7A8471]/60 outline-none transition-colors"
+              />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {/* Phone */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Direct Phone / WhatsApp <span className="text-[#7A8471] text-[10px]">(Optional)</span>
+              </label>
+              <input
+                type="tel"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                placeholder="+1 (555) 019-2834"
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] focus:ring-1 focus:ring-[#C8A44D] rounded-sm px-4 py-3 text-sm text-[#F7F2E8] placeholder-[#7A8471]/60 outline-none transition-colors"
+              />
+            </div>
+
+            {/* Preferred Vertical */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Primary Vertical Interest
+              </label>
+              <select
+                value={formData.vertical}
+                onChange={(e) => setFormData({ ...formData, vertical: e.target.value })}
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] focus:ring-1 focus:ring-[#C8A44D] rounded-sm px-4 py-3 text-sm text-[#F7F2E8] outline-none transition-colors cursor-pointer"
+              >
+                <option value="matching">✨ Curator Match (Multiple / Undecided)</option>
+                {PORTFOLIO_VERTICALS.map((v) => (
+                  <option key={v.slug} value={v.slug}>
+                    {v.name} ({v.category})
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
+            {/* Timeframe */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Timeframe
+              </label>
+              <select
+                value={formData.timeframe}
+                onChange={(e) => setFormData({ ...formData, timeframe: e.target.value })}
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] rounded-sm px-3 py-3 text-xs text-[#F7F2E8] outline-none cursor-pointer"
+              >
+                <option value="3-6-months">Next 3 - 6 Months</option>
+                <option value="6-12-months">6 - 12 Months</option>
+                <option value="2027-horizon">2027 Horizon Planning</option>
+                <option value="flexible">Flexible / Open</option>
+              </select>
+            </div>
+
+            {/* Budget Range */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Budget Scope (USD)
+              </label>
+              <select
+                value={formData.budgetRange}
+                onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] rounded-sm px-3 py-3 text-xs text-[#F7F2E8] outline-none cursor-pointer"
+              >
+                <option value="25k-50k">$25,000 - $50,000</option>
+                <option value="50k-100k">$50,000 - $100,000</option>
+                <option value="100k-250k">$100,000 - $250,000</option>
+                <option value="charter-buyout">Private Charter / Island Buyout ($250k+)</option>
+              </select>
+            </div>
+
+            {/* Group Size */}
+            <div>
+              <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+                Travel Party
+              </label>
+              <select
+                value={formData.groupSize}
+                onChange={(e) => setFormData({ ...formData, groupSize: e.target.value })}
+                className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] rounded-sm px-3 py-3 text-xs text-[#F7F2E8] outline-none cursor-pointer"
+              >
+                <option value="couple">Solo or Couple (1-2)</option>
+                <option value="couple-family">Family Group (3-6)</option>
+                <option value="multi-gen">Multi-Generational (7-12)</option>
+                <option value="private-office">Private Office / Buyout (12+)</option>
+              </select>
+            </div>
+          </div>
+
+          {/* Message */}
+          <div>
+            <label className="block text-xs uppercase tracking-wider text-[#C8A44D] font-medium mb-1.5">
+              Specific Desires, Destinations, or Wildlife Encounters
+            </label>
+            <textarea
+              rows={4}
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              placeholder="e.g. Looking to combine a private Okavango Delta camp buyout with mountain gorilla trekking in Rwanda, requiring private charter transfers."
+              className="w-full bg-[#0A1628] border border-[#C8A44D]/30 focus:border-[#C8A44D] focus:ring-1 focus:ring-[#C8A44D] rounded-sm p-4 text-sm text-[#F7F2E8] placeholder-[#7A8471]/60 outline-none transition-colors resize-none"
+            />
+          </div>
+
+          {/* Options & Privacy */}
+          <div className="space-y-3 pt-2">
+            <label className="flex items-center gap-3 cursor-pointer text-xs text-[#F7F2E8]/80">
+              <input
+                type="checkbox"
+                checked={formData.ndaRequested}
+                onChange={(e) => setFormData({ ...formData, ndaRequested: e.target.checked })}
+                className="w-4 h-4 rounded border-[#C8A44D]/40 text-[#C8A44D] focus:ring-0 bg-[#0A1628]"
+              />
+              <span className="flex items-center gap-1.5">
+                <Lock className="w-3.5 h-3.5 text-[#C8A44D]" />
+                <span>Request mutual non-disclosure agreement (NDA) prior to detailed itinerary planning</span>
+              </span>
+            </label>
+
+            <label className="flex items-start gap-3 cursor-pointer text-[11px] text-[#7A8471]">
+              <input
+                type="checkbox"
+                required
+                checked={formData.consent}
+                onChange={(e) => setFormData({ ...formData, consent: e.target.checked })}
+                className="w-4 h-4 rounded border-[#C8A44D]/40 text-[#C8A44D] focus:ring-0 bg-[#0A1628] mt-0.5"
+              />
+              <span>
+                I agree to receive confidential communications from Rare Passages. Rare Passages strictly respects client privacy and never shares data with third-party marketers.
+              </span>
+            </label>
+          </div>
+
+          {/* Submit Button */}
+          <div>
+            <button
+              type="submit"
+              disabled={status === "submitting"}
+              className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-xs uppercase tracking-[0.22em] font-bold text-[#0A1628] bg-gradient-to-r from-[#C8A44D] via-[#E0C579] to-[#C8A44D] hover:shadow-[0_0_25px_rgba(200,164,77,0.4)] transition-all duration-300 rounded-sm cursor-pointer disabled:opacity-50"
+            >
+              {status === "submitting" ? (
+                <>
+                  <Clock className="w-4 h-4 animate-spin text-[#0A1628]" />
+                  <span>Connecting with Curator Desk...</span>
+                </>
+              ) : (
+                <>
+                  <span>Transmit Portfolio Brief</span>
+                  <Send className="w-4 h-4" />
+                </>
+              )}
+            </button>
+          </div>
+        </form>
+      )}
+    </div>
+  );
+};
