@@ -1,57 +1,52 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
-import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import "./globals.css";
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin"],
-  variable: "--font-cormorant",
-  weight: ["300", "400", "500", "600", "700"],
-  display: "swap",
-});
-
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
-  weight: ["300", "400", "500", "600", "700", "800"],
-  display: "swap",
-});
+const display = Cormorant_Garamond({ variable: "--font-display", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const sans = Manrope({ variable: "--font-sans", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Rare Passages | Global Portfolio Brand for Luxury Travel Curators",
-  description: "Rare Passages is the parent portfolio authority for world-class specialist travel brands, including Safari Awaits and Expedition Maritime. Uncompromising vetting, private concessions, and regenerative conservation.",
+  metadataBase: new URL("https://rarepassages.com"),
+  title: {
+    default: "Rare Passages, Portfolio of Specialist High-Ticket Travel Brands",
+    template: "%s | Rare Passages",
+  },
+  description:
+    "Five specialist travel brands under one standard. Safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys, each vetted, each matched, each built for the experience-driven traveler.",
   keywords: [
-    "Rare Passages",
-    "Luxury Travel Portfolio",
-    "Safari Awaits",
-    "Expedition Cruises",
-    "African Safaris",
-    "Polar Expeditions",
-    "Private Island Sanctuaries",
-    "Bespoke Travel Curator"
+    "luxury travel",
+    "safari",
+    "expedition cruise",
+    "private island",
+    "alpine retreat",
+    "luxury train",
+    "travel portfolio",
+    "bespoke travel",
   ],
-  authors: [{ name: "Rare Passages Portfolio Authority" }],
   openGraph: {
-    title: "Rare Passages | Parent Portfolio Brand for Luxury Travel",
-    description: "The trust anchor and quality curator behind Safari Awaits and Expedition Maritime.",
+    title: "Rare Passages, Portfolio of Specialist Travel Brands",
+    description: "Five specialist travel brands under one standard. Safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys.",
+    type: "website",
     url: "https://rarepassages.com",
     siteName: "Rare Passages",
-    locale: "en_US",
-    type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rare Passages, Specialist Travel Portfolio",
+    description: "Five brands. One standard. Safaris, expedition cruises, private islands, alpine retreats, grand rail journeys.",
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://rarepassages.com" },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${manrope.variable}`}>
-      <body className="bg-[#0A1628] text-[#F7F2E8] min-h-screen flex flex-col antialiased selection:bg-[#C8A44D] selection:text-[#0A1628]">
+    <html lang="en" className={`${display.variable} ${sans.variable}`}>
+      <body>
         <SiteHeader />
-        <main className="flex-grow pt-20">{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </body>
     </html>

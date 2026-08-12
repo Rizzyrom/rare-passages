@@ -21,7 +21,7 @@ const PILLARS = [
   {
     icon: Compass,
     title: "Deep-Field Expertise",
-    description: "Our curators are former field guides, expedition leaders, and conservation officers — not call-center agents. They have walked the trails, sailed the waters, and slept in the camps they recommend.",
+    description: "Our curators are former field guides, expedition leaders, and conservation officers, not call-center agents. They have walked the trails, sailed the waters, and slept in the camps they recommend.",
   },
 ];
 
@@ -29,7 +29,7 @@ const PROCESS = [
   {
     step: "01",
     title: "Discovery Consultation",
-    description: "A 45-minute private call to understand your travel vision, comfort preferences, group dynamics, and conservation interests. No forms, no bots — a real conversation with a specialist.",
+    description: "A 45-minute private call to understand your travel vision, comfort preferences, group dynamics, and conservation interests. No forms, no bots, a real conversation with a specialist.",
   },
   {
     step: "02",
@@ -39,7 +39,7 @@ const PROCESS = [
   {
     step: "03",
     title: "Refinement & Booking",
-    description: "We refine the selection based on your feedback, handle all logistics — flights, transfers, dietary needs, special occasions — and secure your booking with direct supplier contracts.",
+    description: "We refine the selection based on your feedback, handle all logistics, flights, transfers, dietary needs, special occasions, and secure your booking with direct supplier contracts.",
   },
   {
     step: "04",
@@ -125,7 +125,7 @@ export default function HowWeWorkPage() {
           Ready to begin?
         </h2>
         <p className="text-sm text-[#F7F2E8]/70 mb-8 max-w-xl mx-auto">
-          Book a private discovery consultation with one of our curators. No obligation, no pressure — just a conversation about where the world is calling you.
+          Book a private discovery consultation with one of our curators. No obligation, no pressure, just a conversation about where the world is calling you.
         </p>
         <Link href="/" className="inline-flex items-center gap-2 px-8 py-4 text-xs uppercase tracking-[0.2em] font-bold text-[#0A1628] bg-gradient-to-r from-[#C8A44D] via-[#E0C579] to-[#C8A44D] hover:shadow-[0_0_30px_rgba(200,164,77,0.4)] transition-all duration-300 rounded-sm">
           <span>Start Your Journey</span>

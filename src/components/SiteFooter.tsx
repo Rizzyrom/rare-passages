@@ -1,148 +1,100 @@
-import React from "react";
+"use client";
+
 import Link from "next/link";
-import { Compass, Shield, Award, Leaf, Mail, Globe, ArrowRight } from "lucide-react";
+import { useState, FormEvent } from "react";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
 
-export const SiteFooter: React.FC = () => {
+export function SiteFooter() {
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      setSubscribed(true);
+      setEmail("");
+    }
+  };
+
   return (
-    <footer className="bg-[#050B14] border-t border-[#C8A44D]/25 text-[#F7F2E8] pt-16 pb-12 relative overflow-hidden">
-      {/* Decorative ambient lighting */}
-      <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#C8A44D]/5 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-[#7A8471]/5 rounded-full blur-3xl pointer-events-none" />
+    <footer className="site-footer" role="contentinfo">
+      <div className="footer-top-grid">
+        <div className="footer-col brand-col">
+          <Link href="/" className="footer-brand-link" aria-label="Rare Passages home">
+            <p className="footer-brand">Rare Passages</p>
+          </Link>
+          <p className="footer-tagline">
+            A portfolio of specialist travel brands, safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys. Each vetted. Each matched. Each built for the experience-driven traveler.
+          </p>
+          <p className="parent-ref">
+            Operating under <strong className="parent-name">RM Ventures LLC</strong>
+          </p>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
-          
-          {/* Col 1 & 2: Brand Identity */}
-          <div className="lg:col-span-2 space-y-6">
-            <Link href="/" className="inline-flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-full border border-[#C8A44D] bg-[#13253F] flex items-center justify-center">
-                <Compass className="w-5 h-5 text-[#C8A44D]" />
-              </div>
-              <div>
-                <span className="block font-serif text-2xl font-bold tracking-wider text-[#F7F2E8] uppercase">
-                  Rare Passages
-                </span>
-                <span className="block text-[10px] tracking-[0.25em] text-[#7A8471] font-medium uppercase -mt-1">
-                  Global Portfolio Authority
-                </span>
-              </div>
-            </Link>
-
-            <p className="text-sm text-[#F7F2E8]/70 leading-relaxed max-w-md">
-              Rare Passages is the parent portfolio brand for extraordinary travel curators. We house specialist verticals across African safaris, polar maritime expeditions, private island sanctuaries, and grand overland journeys.
+          <div className="newsletter-block">
+            <p className="newsletter-title">Curated Dispatch</p>
+            <p className="newsletter-desc">
+              Seasonal travel intelligence, new vertical launches, and conservation updates.
             </p>
-
-            <div className="flex flex-col gap-2 pt-2">
-              <div className="flex items-center gap-3 text-xs text-[#C8A44D]">
-                <Shield className="w-4 h-4 shrink-0 text-[#C8A44D]" />
-                <span>100% Vetted Operators & Restricted Concessions</span>
-              </div>
-              <div className="flex items-center gap-3 text-xs text-[#7A8471]">
-                <Leaf className="w-4 h-4 shrink-0 text-[#7A8471]" />
-                <span>2.5% Revenue Direct Commitment to Wilderness Conservation</span>
-              </div>
-            </div>
+            {subscribed ? (
+              <div className="newsletter-success">You're subscribed.</div>
+            ) : (
+              <form onSubmit={handleSubmit} className="newsletter-form" aria-label="Newsletter signup">
+                <input
+                  type="email"
+                  required
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  aria-label="Newsletter email"
+                  className="newsletter-input"
+                />
+                <button type="submit" className="newsletter-btn">Subscribe</button>
+              </form>
+            )}
           </div>
-
-          {/* Col 3: Specialist Verticals */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold text-[#C8A44D] tracking-wide mb-4">
-              Portfolio Verticals
-            </h4>
-            <ul className="space-y-2.5 text-xs tracking-wider">
-              {PORTFOLIO_VERTICALS.map((vertical) => (
-                <li key={vertical.id}>
-                  <Link
-                    href={`/portfolio#${vertical.slug}`}
-                    className="text-[#F7F2E8]/80 hover:text-[#C8A44D] transition-colors flex items-center justify-between group"
-                  >
-                    <span>{vertical.name}</span>
-                    <span className="text-[10px] text-[#7A8471] group-hover:text-[#C8A44D]">
-                      {vertical.status === "active" ? "Active" : "Horizon"}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Col 4: Institutional Brand Pages */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold text-[#C8A44D] tracking-wide mb-4">
-              Brand Architecture
-            </h4>
-            <ul className="space-y-2.5 text-xs tracking-wider text-[#F7F2E8]/80">
-              <li>
-                <Link href="/about" className="hover:text-[#C8A44D] transition-colors">
-                  Brand Story & Vision
-                </Link>
-              </li>
-              <li>
-                <Link href="/portfolio" className="hover:text-[#C8A44D] transition-colors">
-                  Portfolio Showcase
-                </Link>
-              </li>
-              <li>
-                <Link href="/how-we-work" className="hover:text-[#C8A44D] transition-colors">
-                  Methodology & Vetting
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:text-[#C8A44D] transition-colors">
-                  Bespoke Matching Form
-                </Link>
-              </li>
-              <li>
-                <a href="https://safariawaits.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#C8A44D] transition-colors inline-flex items-center gap-1">
-                  <span>Safari Awaits Flagship</span>
-                  <ArrowRight className="w-3 h-3 text-[#C8A44D]" />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Col 5: Governance & Direct Contact */}
-          <div>
-            <h4 className="font-serif text-lg font-semibold text-[#C8A44D] tracking-wide mb-4">
-              Governance & Inquiry
-            </h4>
-            <p className="text-xs text-[#F7F2E8]/70 leading-relaxed mb-4">
-              For private office inquiries, media relations, or institutional partnership evaluations:
-            </p>
-            <div className="space-y-2 text-xs">
-              <a
-                href="mailto:curator@rarepassages.com"
-                className="inline-flex items-center gap-2 text-[#C8A44D] hover:underline"
-              >
-                <Mail className="w-3.5 h-3.5" />
-                <span>curator@rarepassages.com</span>
-              </a>
-              <div className="text-[#7A8471] text-[11px] pt-1">
-                Domain: rarepassages.com
-              </div>
-            </div>
-          </div>
-
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#7A8471]">
-          <div>
-            © {new Date().getFullYear()} Rare Passages Portfolio Authority. All rights reserved.
-          </div>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy" className="hover:text-[#C8A44D] transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms" className="hover:text-[#C8A44D] transition-colors">
-              Terms of Service
-            </Link>
-            <span className="text-white/20">|</span>
-            <span>Non-Direct Consumer Sales Notice: Portfolio Showcase & Advisory Authority</span>
-          </div>
+        <div className="footer-col">
+          <p className="footer-heading">Portfolio</p>
+          <nav className="footer-nav">
+            <Link href="/portfolio">All Verticals</Link>
+            {PORTFOLIO_VERTICALS.map((v) => (
+              v.externalUrl ? (
+                <a key={v.id} href={v.externalUrl} target="_blank" rel="noopener noreferrer">{v.name}</a>
+              ) : (
+                <Link key={v.id} href={`/portfolio/${v.slug}`}>{v.name}</Link>
+              )
+            ))}
+          </nav>
+        </div>
+
+        <div className="footer-col">
+          <p className="footer-heading">Company</p>
+          <nav className="footer-nav">
+            <Link href="/about">About</Link>
+            <Link href="/how-we-work">How We Work</Link>
+            <Link href="/portfolio">Portfolio</Link>
+          </nav>
+        </div>
+
+        <div className="footer-col">
+          <p className="footer-heading">Connect</p>
+          <nav className="footer-nav">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+          </nav>
+        </div>
+      </div>
+
+      <div className="footer-bottom-bar">
+        <p className="copyright">© {new Date().getFullYear()} Rare Passages. All rights reserved.</p>
+        <div className="social-links">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
       </div>
     </footer>
   );
-};
+}

@@ -24,7 +24,7 @@ export default function PortfolioPage() {
             Every Passage, <span className="gold-gradient-text italic font-normal">Curated</span>.
           </h1>
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#F7F2E8]/80 leading-relaxed">
-            Rare Passages houses a portfolio of specialist travel verticals — each an autonomous brand with its own domain expertise, vetted supplier network, and conservation mandate.
+            Rare Passages houses a portfolio of specialist travel verticals, each an autonomous brand with its own domain expertise, vetted supplier network, and conservation mandate.
           </p>
         </div>
       </section>

@@ -45,7 +45,7 @@ export default function AboutPage() {
                 In an industry increasingly dominated by mass booking engines and generic travel agency consortia, discerning travelers faced a dilemma: entrust complex wild journeys to generalists, or coordinate across disparate specialist operators with no unified quality control.
               </p>
               <p>
-                Rare Passages was built to eliminate this friction. As the parent portfolio brand, we conceive, launch, and govern dedicated specialist verticals—each focused intensely on its respective ecosystem:
+                Rare Passages was built to eliminate this friction. As the parent portfolio brand, we conceive, launch, and govern dedicated specialist verticals - each focused intensely on its respective ecosystem:
               </p>
               <ul className="space-y-2 pt-2 text-xs font-medium text-[#C8A44D]">
                 <li className="flex items-center gap-2">
@@ -160,7 +160,7 @@ export default function AboutPage() {
             <div className="space-y-2">
               <div className="font-serif text-lg font-semibold text-[#C8A44D]">Multi-Vertical Itinerary Synergy</div>
               <p className="text-[#F7F2E8]/70">
-                Orchestrate seamless combinations—such as a Botswana Okavango Delta safari followed immediately by a private island retreat in the Seychelles.
+                Orchestrate seamless combinations - such as a Botswana Okavango Delta safari followed immediately by a private island retreat in the Seychelles.
               </p>
             </div>
           </div>

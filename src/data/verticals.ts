@@ -37,7 +37,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     statusLabel: 'Flagship Vertical',
     category: 'Wilderness & Wildlife',
     heroImage: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1600&auto=format&fit=crop',
-    shortDescription: 'Unrivaled access to Africa’s most pristine private reserves, solar-powered luxury camps, and master-guided wildlife encounters.',
+    shortDescription: 'Real access to Africa’s most pristine private reserves, solar-powered luxury camps, and guide-led wildlife encounters.',
     fullDescription: 'Safari Awaits represents the pinnacle of African wilderness exploration. Working strictly with private concessions that restrict vehicle density and enforce rigorous habitat protection, Safari Awaits connects discerning travelers with intimate, low-impact luxury camps in Botswana, Tanzania, Kenya, Rwanda, and South Africa.',
     featuredDestinations: [
       'Okavango Delta & Linyanti, Botswana',
@@ -49,7 +49,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     keyHighlights: [
       'Strict limit of 4-6 guest suites per wilderness camp',
       'Private charter logistics between deep bush airstrips',
-      'Pairing with FGASA Level 3 Master Field Guides',
+      'Pairing with FGASA Level 3 expert field guides',
       'Direct contribution to rhino anti-poaching & community conservancies'
     ],
     guestCapacity: 'Private charters & exclusive lodge buyouts (1-16 guests)',
@@ -62,8 +62,8 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
         description: 'We avoid crowded public national park roads, opting for exclusive private land concessions where off-road tracking and night drives are privileged rights.'
       },
       {
-        title: 'Master Naturalist Pairing',
-        description: 'Every safari is accompanied by legendary trackers and field biologists whose deep ecological knowledge turns sightings into profound educational moments.'
+        title: 'Expert Naturalist Pairing',
+        description: 'Every safari is accompanied by the best trackers and field biologists whose deep ecological knowledge turns sightings into profound educational moments.'
       },
       {
         title: 'Conscious Conservation',
@@ -94,8 +94,8 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     statusLabel: 'Active Vertical',
     category: 'Polar & Island Maritime',
     heroImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop',
-    shortDescription: 'Purpose-built PC6 ice-class expedition vessels navigating Antarctica, Svalbard, the Galápagos, and Northwest Passage with world-class marine scientists.',
-    fullDescription: 'Expedition Maritime elevates ocean exploration into a deeply intellectual and luxurious voyage. Utilizing state-of-the-art polar expedition ships equipped with Dynamic Positioning (anchorless reef protection), private balconies, luxury spas, and Zodiac fleets, we grant guests safe, intimate entry to Earth’s most formidable environments.',
+    shortDescription: 'Purpose-built PC6 ice-class expedition vessels navigating Antarctica, Svalbard, the Galápagos, and Northwest Passage with working marine scientists.',
+    fullDescription: 'Expedition Maritime turns ocean exploration into a real expedition, not a cruise. Using purpose-built polar expedition ships equipped with Dynamic Positioning (anchorless reef protection), private balconies, luxury spas, and Zodiac fleets, we grant guests safe, intimate entry to Earth’s most formidable environments.',
     featuredDestinations: [
       'Antarctic Peninsula, South Georgia & Falkland Islands',
       'High Arctic, Svalbard Archipelago & Greenland Fjords',
@@ -107,7 +107,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
       'PC6 Polar Class hull design with zero-speed stabilizers',
       'Scientist-led field expeditions & daily Zodiac landings',
       'Onboard Citizen Science laboratories & submarine equipment',
-      '1:1 guest-to-expedition crew ratio for seamless safety'
+      '1:1 guest-to-expedition crew ratio for smooth safety'
     ],
     guestCapacity: 'Ultra-boutique vessels (76 to 142 guests maximum)',
     priceGuide: 'Voyages from $14,000 to $48,000 per guest per expedition',
@@ -147,10 +147,10 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     name: 'Coastal & Island Sanctuaries',
     tagline: 'Private Islands & Remote Atoll Estates',
     status: 'horizon',
-    statusLabel: 'Horizon Vertical — Launching 2027',
+    statusLabel: 'Horizon Vertical, Launching 2027',
     category: 'Private Islands & Sanctuaries',
     heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
-    shortDescription: 'Unrivaled private island takeovers and oceanfront architectural sanctuaries across the Indian Ocean, South Pacific, and Caribbean.',
+    shortDescription: 'Real private island takeovers and oceanfront architectural sanctuaries across the Indian Ocean, South Pacific, and Caribbean.',
     fullDescription: 'Designed for complete seclusion, our Coastal & Island Sanctuaries vertical pairs high-net-worth families with fully-staffed private island estates. From marine conservation atolls in the Seychelles to secluded archipelagos in French Polynesia, each sanctuary guarantees total privacy and custom superyacht tenders.',
     featuredDestinations: [
       'Outer Atolls, Seychelles',
@@ -188,7 +188,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     category: 'Mountain & High-Altitude',
     heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop',
     shortDescription: 'Ski-in/ski-out architectural chalets with private heli-pads, mountain guides, and high-altitude wellness sanctuaries.',
-    fullDescription: 'Connecting guests to untouched powder bowls and majestic mountain ridges in the Alps, British Columbia, Patagonia, and Bhutan. Curated for those who demand world-class skiing, mountain solitude, and ultra-luxury mountain chalets.',
+    fullDescription: 'Connecting guests to untouched powder bowls and majestic mountain ridges in the Alps, British Columbia, Patagonia, and Bhutan. Curated for those who demand the best skiing, mountain solitude, and private mountain chalets.',
     featuredDestinations: [
       'Verbier & Zermatt, Switzerland',
       'Courchevel 1850 & Val d’Isère, France',
@@ -220,7 +220,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     statusLabel: 'In Development',
     category: 'Overland & Grand Travel',
     heroImage: 'https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=1600&auto=format&fit=crop',
-    shortDescription: 'Chartered vintage rail carriages and ultra-luxury mobile safari encampments navigating historical trade routes and wilderness corridors.',
+    shortDescription: 'Chartered vintage rail carriages and private luxury mobile safari encampments navigating historical trade routes and wilderness corridors.',
     fullDescription: 'Restoring the golden age of romantic exploration through private train car charters across Southern Africa, Europe, and Asia, complemented by luxury mobile overland camps.',
     featuredDestinations: [
       'Pretoria to Victoria Falls (Rovos Rail Private Carriage)',
@@ -254,7 +254,7 @@ export const BRAND_PRINCIPLES = [
   {
     number: '02',
     title: 'Single-Point Portfolio Guidance',
-    description: 'High-net-worth families, private offices, and discerning travelers do not need multiple agencies. Rare Passages acts as your permanent global travel authority—maintaining your personal preferences across safaris, polar voyages, and island retreats.'
+    description: 'High-net-worth families, private offices, and discerning travelers do not need multiple agencies. Rare Passages acts as your permanent global travel authority - maintaining your personal preferences across safaris, polar voyages, and island retreats.'
   },
   {
     number: '03',
@@ -290,20 +290,20 @@ export const METHODOLOGY_STEPS = [
     step: '03',
     name: 'Seamless Bespoke Execution',
     subtitle: 'End-to-end charter flight, guide, and concierge coordination',
-    description: 'From private jet tarmac transfers to bespoke dietary provisioning and master naturalist assignments, every minute detail is managed by our 24/7 global operations desk.'
+    description: 'From private jet tarmac transfers to custom dietary provisioning and expert naturalist assignments, every minute detail is managed by our 24/7 global operations desk.'
   },
   {
     step: '04',
     name: 'Post-Passage Archiving & Lifetime Relationship',
     subtitle: 'Building your enduring global travel profile',
-    description: 'Following your journey, your advisor archives feedback, dietary nuances, and cabin preferences to ensure seamless continuity for your future passages across any vertical.'
+    description: 'Following your journey, your advisor archives feedback, dietary nuances, and cabin preferences to ensure smooth continuity for your future passages across any vertical.'
   }
 ];
 
 export const FAQS = [
   {
     question: 'Does Rare Passages sell travel directly or act as a booking engine?',
-    answer: 'Rare Passages is the parent holding brand and quality curator. We provide global portfolio strategy, traveler matching, and quality oversight. Bookings are executed seamlessly through our direct specialist verticals (such as Safari Awaits) or our private concierge desk with institutional guarantees.'
+    answer: 'Rare Passages is the parent holding brand and quality curator. We provide global portfolio strategy, traveler matching, and quality oversight. Bookings are handled through our direct specialist verticals (such as Safari Awaits) or our private concierge desk with real guarantees.'
   },
   {
     question: 'How do you vet partner lodges, cruise ships, and charter operators?',
@@ -311,7 +311,7 @@ export const FAQS = [
   },
   {
     question: 'Can Rare Passages manage journeys across multiple verticals in one trip?',
-    answer: 'Yes. One of our core advantages is orchestrating grand multi-vertical journeys—such as combining a luxury wildlife safari in East Africa with a private expedition cruise through the Seychelles or Madagascar.'
+    answer: 'Yes. One of our core advantages is orchestrating grand multi-vertical journeys - such as combining a luxury wildlife safari in East Africa with a private expedition cruise through the Seychelles or Madagascar.'
   },
   {
     question: 'What is the minimum lead time required for booking?',
