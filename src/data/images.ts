@@ -8,8 +8,8 @@ function img(raw: string, w: number, q = 82) {
 
 export const photos = {
   hero: {
-    desktop: img("https://images.unsplash.com/photo-1502790658-f2b9677d6997?w=1920&q=82&fm=jpg&auto=format", 1920),
-    mobile: img("https://images.unsplash.com/photo-1502790658-f2b9677d6997?w=800&q=82&fm=jpg&auto=format", 800),
+    desktop: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=82&fm=jpg&auto=format", 1920),
+    mobile: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=82&fm=jpg&auto=format", 800),
     alt: "Dramatic remote landscape",
     photographer: "Unsplash",
     license: "Unsplash",
@@ -23,8 +23,8 @@ export const photos = {
       source: "https://unsplash.com/photos/T-LfvX-7IVg",
     },
     "expedition-cruises": {
-      card: img("https://images.unsplash.com/photo-1539623235364-3b810e162475?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1539623235364-3b810e162475?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=800&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=1920&q=82&fm=jpg&auto=format", 1920),
       alt: "Glacier in polar waters",
       photographer: "Unsplash",
       source: "https://unsplash.com",
@@ -37,15 +37,15 @@ export const photos = {
       source: "https://unsplash.com",
     },
     "alpine-retreats": {
-      card: img("https://images.unsplash.com/photo-1551632811-156074d8c4ee?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1551632811-156074d8c4ee?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=800&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=1920&q=82&fm=jpg&auto=format", 1920),
       alt: "Alpine mountain landscape",
       photographer: "Unsplash",
       source: "https://unsplash.com",
     },
     "transcontinental-journeys": {
-      card: img("https://images.unsplash.com/photo-1474487548417-78e4a6711c25?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1474487548417-78e4a6711c25?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=800&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=1920&q=82&fm=jpg&auto=format", 1920),
       alt: "Luxury train journey through landscape",
       photographer: "Unsplash",
       source: "https://unsplash.com",
@@ -53,7 +53,7 @@ export const photos = {
   },
   editorial: {
     conservation: {
-      url: img("https://images.unsplash.com/photo-1557442936-7495a00f8a55?w=1600&q=82&fm=jpg&auto=format", 1600),
+      url: img("https://images.unsplash.com/photo-1577971132997-c10be9372519?w=1600&q=82&fm=jpg&auto=format", 1600),
       alt: "Elephant in the wild",
       photographer: "Unsplash",
       source: "https://unsplash.com",
@@ -66,6 +66,6 @@ export const photos = {
     },
   },
   sections: {
-    ctaBackground: img("https://images.unsplash.com/photo-1502790658-f2b9677d6997?w=1920&q=82&fm=jpg&auto=format", 1920),
+    ctaBackground: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=82&fm=jpg&auto=format", 1920),
   },
 } as const;
