@@ -24,8 +24,9 @@ export function SiteHeader() {
           <Link href="/portfolio" className="nav-link">Portfolio</Link>
           <Link href="/how-we-work" className="nav-link">How We Work</Link>
           <Link href="/about" className="nav-link">About</Link>
+          <Link href="/contact" className="nav-link">Contact</Link>
         </nav>
-        <a href="https://safariawaits.com" className="header-cta" target="_blank" rel="noopener noreferrer">
+        <a href="/contact" className="header-cta">
           Start planning
         </a>
         <button className="mobile-menu-toggle" onClick={() => setMobileOpen(true)} aria-label="Open navigation menu">
@@ -47,6 +48,7 @@ export function SiteHeader() {
               <Link href="/portfolio" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Portfolio</Link>
               <Link href="/how-we-work" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>How We Work</Link>
               <Link href="/about" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>About</Link>
+              <Link href="/contact" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Contact</Link>
               <a href="https://safariawaits.com" className="mobile-nav-link" target="_blank" rel="noopener noreferrer">Safari Awaits →</a>
             </nav>
           </div>

@@ -143,6 +143,60 @@ export default function Home() {
         </div>
       </section>
 
+      {/* GROWTH & VISION */}
+      <section className="growth-section">
+        <div className="growth-section__inner">
+          <div className="growth-section__header">
+            <span className="growth-section__eyebrow">Growth & Vision</span>
+            <h2 className="growth-section__title">Built to scale. Built to last. Built to be acquired.</h2>
+            <p className="growth-section__subtitle">
+              Rare Passages is structured as a portfolio company from day one. Each vertical launches with its own domain, brand identity, and revenue stream, then scales under the parent standard. The endgame is a valuable, acquirable travel portfolio.
+            </p>
+          </div>
+
+          <div className="growth-timeline">
+            <div className="growth-phase">
+              <span className="growth-phase__year">2026</span>
+              <h3 className="growth-phase__title">Foundation</h3>
+              <p className="growth-phase__desc">Safari Awaits launches as the flagship vertical. Host agency credentials secured. Expedition Maritime enters development. Portfolio infrastructure and 42-point vetting framework established.</p>
+            </div>
+            <div className="growth-phase">
+              <span className="growth-phase__year">2027</span>
+              <h3 className="growth-phase__title">Vertical Expansion</h3>
+              <p className="growth-phase__desc">Coastal & Island Sanctuaries and Expedition Maritime go live. Grand Rail partnerships signed. First multi-vertical family office engagements. Revenue target: $500K annualized.</p>
+            </div>
+            <div className="growth-phase">
+              <span className="growth-phase__year">2028-29</span>
+              <h3 className="growth-phase__title">Scale & Optimize</h3>
+              <p className="growth-phase__desc">All five verticals operational. International localization (German, Dutch). Recurring family office retainers. Conservation Trust funded at scale. Revenue target: $1.5M-2M annualized.</p>
+            </div>
+            <div className="growth-phase">
+              <span className="growth-phase__year">2030-31</span>
+              <h3 className="growth-phase__title">Position for Exit</h3>
+              <p className="growth-phase__desc">Portfolio maturity. Demonstrated revenue, repeat clientele, and conservation impact. Position for acquisition by a major travel group, private equity, or family office. Target valuation: $5M-10M+.</p>
+            </div>
+          </div>
+
+          <div className="revenue-model">
+            <div className="revenue-stream">
+              <span className="revenue-stream__label">Primary Revenue</span>
+              <p className="revenue-stream__value">10-20% Commission</p>
+              <p className="revenue-stream__desc">Direct operator commissions on high-ticket bookings through host agency credentials. The core revenue engine across all verticals.</p>
+            </div>
+            <div className="revenue-stream">
+              <span className="revenue-stream__label">Recurring Revenue</span>
+              <p className="revenue-stream__value">Family Office Retainers</p>
+              <p className="revenue-stream__desc">Annual portfolio management contracts with high-net-worth families for multi-vertical travel planning and coordination.</p>
+            </div>
+            <div className="revenue-stream">
+              <span className="revenue-stream__label">Ancillary Revenue</span>
+              <p className="revenue-stream__value">Affiliate & Lead Gen</p>
+              <p className="revenue-stream__desc">TourRadar RISE, Travelstride, and Viator affiliate commissions for self-serve bookings and add-on experiences.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="final-cta">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -153,7 +207,7 @@ export default function Home() {
           <p className="final-cta__subtitle">
             Five verticals. One standard. Tell us what you're looking for and we'll point you to the right specialist.
           </p>
-          <Link href="/portfolio" className="final-cta__btn">Explore the portfolio</Link>
+          <Link href="/contact" className="final-cta__btn">Start the conversation</Link>
         </div>
       </section>
     </>

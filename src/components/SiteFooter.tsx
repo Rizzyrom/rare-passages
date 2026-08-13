@@ -74,6 +74,7 @@ export function SiteFooter() {
             <Link href="/about">About</Link>
             <Link href="/how-we-work">How We Work</Link>
             <Link href="/portfolio">Portfolio</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </div>
 

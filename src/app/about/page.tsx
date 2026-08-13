@@ -176,6 +176,93 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Business Model */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+        <div className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs uppercase tracking-[0.25em] text-[#C8A44D] font-semibold">
+            How We Make Money
+          </span>
+          <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-[#F7F2E8]">
+            A Transparent Revenue Architecture
+          </h2>
+          <p className="text-xs sm:text-sm text-[#F7F2E8]/70">
+            No hidden markups. No commission bias. Every revenue stream is disclosed to clients and partners alike.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <div className="text-3xl font-serif font-bold text-[#C8A44D]">01</div>
+            <h3 className="font-serif text-xl font-semibold text-[#F7F2E8]">Operator Commissions</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              Through host agency credentials (Outside Agents, IATA/CLIA), we earn 10-20% commission on bookings with vetted operators. Clients pay the same rate they would booking direct. We split commissions with our host agency, retaining 80-95% depending on volume.
+            </p>
+          </div>
+
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <div className="text-3xl font-serif font-bold text-[#C8A44D]">02</div>
+            <h3 className="font-serif text-xl font-semibold text-[#F7F2E8]">Family Office Retainers</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              High-net-worth families and private offices can engage Rare Passages on an annual retainer basis for multi-vertical portfolio management. This provides predictable recurring revenue and deep client relationships.
+            </p>
+          </div>
+
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <div className="text-3xl font-serif font-bold text-[#C8A44D]">03</div>
+            <h3 className="font-serif text-xl font-semibold text-[#F7F2E8]">Affiliate & Lead Generation</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              Self-serve bookings through TourRadar RISE, Travelstride, and Viator affiliate programs generate ancillary revenue from travelers who prefer to book directly. Lower commission but higher volume and zero service overhead.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Value Architecture */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div className="text-center max-w-3xl mx-auto space-y-3">
+          <span className="text-xs uppercase tracking-[0.25em] text-[#C8A44D] font-semibold">
+            Why This Portfolio Has Value
+          </span>
+          <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-[#F7F2E8]">
+            Built As An Acquirable Asset
+          </h2>
+          <p className="text-xs sm:text-sm text-[#F7F2E8]/70">
+            Every decision from brand architecture to revenue model to conservation commitment is made with portfolio valuation in mind.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <h3 className="font-serif text-xl font-semibold text-[#C8A44D]">Brand Architecture</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              Each vertical operates as a standalone brand with its own domain, identity, and audience. This means verticals can be sold individually or as a portfolio. The parent brand (Rare Passages) provides the governance layer that makes the whole worth more than the sum of its parts.
+            </p>
+          </div>
+
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <h3 className="font-serif text-xl font-semibold text-[#C8A44D]">Low Overhead, High Margin</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              No physical offices, no inventory, no warehousing. The business is built on relationships, research, and digital infrastructure. Commission revenue on a single luxury safari booking can exceed $5,000. Overhead is a fraction of traditional travel agencies.
+            </p>
+          </div>
+
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <h3 className="font-serif text-xl font-semibold text-[#C8A44D]">Defensible Moats</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              The 42-point vetting audit, operator relationships, host agency credentials, and conservation trust create barriers to entry that take years to replicate. Each vertical deepens the moat with its own specialist network.
+            </p>
+          </div>
+
+          <div className="bg-[#13253F]/60 border border-[#C8A44D]/25 p-8 rounded-lg space-y-4">
+            <h3 className="font-serif text-xl font-semibold text-[#C8A44D]">Recurring Revenue Potential</h3>
+            <p className="text-xs text-[#F7F2E8]/80 leading-relaxed">
+              Family office retainers and repeat clientele create predictable revenue streams that command higher acquisition multiples. The portfolio model means one client can generate revenue across 2-3 verticals per year.
+            </p>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }
