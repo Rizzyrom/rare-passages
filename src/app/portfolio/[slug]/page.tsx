@@ -7,8 +7,9 @@ export function generateStaticParams() {
   return PORTFOLIO_VERTICALS.map((v) => ({ slug: v.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const vertical = PORTFOLIO_VERTICALS.find((v) => v.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const vertical = PORTFOLIO_VERTICALS.find((v) => v.slug === slug);
   if (!vertical) return {};
   return {
     title: `${vertical.name} — ${vertical.tagline}`,
@@ -16,8 +17,9 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   };
 }
 
-export default function VerticalDetailPage({ params }: { params: { slug: string } }) {
-  const vertical = PORTFOLIO_VERTICALS.find((v) => v.slug === params.slug);
+export default async function VerticalDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const vertical = PORTFOLIO_VERTICALS.find((v) => v.slug === slug);
   if (!vertical) notFound();
 
   const photo = photos.verticals[vertical.slug as keyof typeof photos.verticals];
