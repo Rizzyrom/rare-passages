@@ -22,52 +22,50 @@ export default function PortfolioPage() {
         </p>
       </section>
 
-      {/* ACTIVE VERTICALS */}
-      <section className="section">
-        <div className="section-header">
-          <span className="eyebrow">Active Verticals</span>
-          <h2 className="section-title">Live and booking now</h2>
-        </div>
-        <div className="destination-list" style={{ maxWidth: "var(--max-w)", margin: "0 auto" }}>
-          {active.map((v, i) => {
-            const photo = photos.verticals[v.slug as keyof typeof photos.verticals];
-            return (
-              <div key={v.id} className="dest-strip" style={{ marginBottom: "var(--space-lg)" }}>
-                <div className="dest-strip__image">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={photo?.card || photos.hero.mobile} alt={v.name} />
+      {/* SECTION LABEL */}
+      <div className="section-header" style={{ paddingTop: "var(--space-xl)" }}>
+        <span className="eyebrow">Active Verticals</span>
+        <h2 className="section-title">Live and booking now</h2>
+      </div>
+
+      {/* ACTIVE VERTICALS, full-bleed strips like home page */}
+      {active.map((v, i) => {
+        const photo = photos.verticals[v.slug as keyof typeof photos.verticals];
+        return (
+          <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
+            <div className="dest-strip__image">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={photo?.card || photos.hero.mobile} alt={v.name} />
+            </div>
+            <div className="dest-strip__content">
+              <span className="dest-strip__number">0{i + 1}</span>
+              <h3 className="dest-strip__name">{v.name}</h3>
+              <span className="dest-strip__tagline">{v.tagline}</span>
+              <p className="dest-strip__desc">{v.shortDescription}</p>
+              <div className="dest-strip__meta">
+                <div className="dest-strip__meta-item">
+                  <span className="dest-strip__meta-label">Price Range</span>
+                  <span className="dest-strip__meta-value">{v.priceGuide.split("from ")[1] || v.priceGuide}</span>
                 </div>
-                <div className="dest-strip__content">
-                  <span className="dest-strip__number">0{i + 1}</span>
-                  <h3 className="dest-strip__name">{v.name}</h3>
-                  <span className="dest-strip__tagline">{v.tagline}</span>
-                  <p className="dest-strip__desc">{v.shortDescription}</p>
-                  <div className="dest-strip__meta">
-                    <div className="dest-strip__meta-item">
-                      <span className="dest-strip__meta-label">Price Range</span>
-                      <span className="dest-strip__meta-value">{v.priceGuide.split("from ")[1] || v.priceGuide}</span>
-                    </div>
-                    <div className="dest-strip__meta-item">
-                      <span className="dest-strip__meta-label">Group Size</span>
-                      <span className="dest-strip__meta-value">{v.guestCapacity}</span>
-                    </div>
-                  </div>
-                  <div className="actions">
-                    <Link href={`/portfolio/${v.slug}`} className="text-link">
-                      Learn more →
-                    </Link>
-                    {v.externalUrl && (
-                      <a href={v.externalUrl} className="text-link" target="_blank" rel="noopener noreferrer" style={{ marginLeft: "24px" }}>
-                        Visit {v.name} →
-                      </a>
-                    )}
-                  </div>
+                <div className="dest-strip__meta-item">
+                  <span className="dest-strip__meta-label">Group Size</span>
+                  <span className="dest-strip__meta-value">{v.guestCapacity}</span>
                 </div>
               </div>
-            );
-          })}
-        </div>
-      </section>
+              <div className="actions">
+                <Link href={`/portfolio/${v.slug}`} className="text-link">
+                  Learn more →
+                </Link>
+                {v.externalUrl && (
+                  <a href={v.externalUrl} className="text-link" target="_blank" rel="noopener noreferrer" style={{ marginLeft: "24px" }}>
+                    Visit {v.name} →
+                  </a>
+                )}
+              </div>
+            </div>
+          </section>
+        );
+      })}
 
       {/* HORIZON VERTICALS */}
       <section className="section section--paper">
@@ -78,7 +76,7 @@ export default function PortfolioPage() {
         <div className="highlights-grid">
           {horizon.map((v) => (
             <Link key={v.id} href={`/portfolio/${v.slug}`} className="highlight-card" style={{ textDecoration: "none", display: "block" }}>
-              <span className="highlight-card__number" style={{ fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", display: "block", marginBottom: "12px" }}>{v.statusLabel}</span>
+              <span style={{ fontSize: "0.75rem", letterSpacing: "0.15em", textTransform: "uppercase", display: "block", marginBottom: "12px", color: "var(--clay)", fontWeight: 600 }}>{v.statusLabel}</span>
               <h3 className="pillar-card__title" style={{ marginBottom: "8px" }}>{v.name}</h3>
               <p className="highlight-card__text" style={{ marginBottom: "16px" }}>{v.shortDescription}</p>
               <span className="detail-meta-value" style={{ color: "var(--clay)" }}>{v.priceGuide}</span>

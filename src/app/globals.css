@@ -2926,6 +2926,18 @@ body:not(:has(.hero)) main { padding-top: 80px; }
    SECTION UTILITIES
    ============================================ */
 
+.section {
+  padding: var(--space-2xl) var(--space-lg);
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-xl) var(--space-md);
+  }
+}
+
 .section--narrow {
   padding-top: var(--space-xl);
   padding-bottom: var(--space-xl);
