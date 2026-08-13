@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Rare Passages, Specialist Travel Portfolio",
     description: "Five brands. One standard. Safaris, expedition cruises, private islands, alpine retreats, grand rail journeys.",
   },
-  robots: { index: true, follow: true },
+  robots: { index: false, follow: false },
   alternates: { canonical: "https://rarepassages.com" },
 };
 
