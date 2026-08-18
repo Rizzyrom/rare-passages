@@ -11,10 +11,10 @@ function img(raw: string, w: number, q = 82) {
 
 export const photos = {
   hero: {
-    desktop: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=82&fm=jpg&auto=format", 3840),
-    mobile: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=82&fm=jpg&auto=format", 3840),
-    alt: "Dramatic remote landscape",
-    photographer: "Unsplash",
+    desktop: img("https://images.unsplash.com/photo-1785957493897-28e405838f8a?w=2400&q=82&fm=jpg&auto=format", 3840),
+    mobile: img("https://images.unsplash.com/photo-1785957493897-28e405838f8a?w=2400&q=82&fm=jpg&auto=format", 3840),
+    alt: "Fjord walls rising through cloud at dusk",
+    photographer: "Marek Piwnicki",
     license: "Unsplash",
   },
   verticals: {
@@ -29,28 +29,28 @@ export const photos = {
       card: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=2400&q=82&fm=jpg&auto=format", 3840),
       hero: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=2400&q=82&fm=jpg&auto=format", 3840),
       alt: "Glacier in polar waters",
-      photographer: "Unsplash",
+      photographer: "Unsplash contributor",
       source: "https://unsplash.com",
     },
     "coastal-sanctuaries": {
       card: img("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2400&q=82&fm=jpg&auto=format", 3840),
       hero: img("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2400&q=82&fm=jpg&auto=format", 3840),
       alt: "Tropical island aerial",
-      photographer: "Unsplash",
+      photographer: "Unsplash contributor",
       source: "https://unsplash.com",
     },
     "alpine-retreats": {
       card: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=2400&q=82&fm=jpg&auto=format", 3840),
       hero: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=2400&q=82&fm=jpg&auto=format", 3840),
       alt: "Alpine mountain landscape",
-      photographer: "Unsplash",
+      photographer: "Unsplash contributor",
       source: "https://unsplash.com",
     },
     "transcontinental-journeys": {
       card: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=2400&q=82&fm=jpg&auto=format", 3840),
       hero: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=2400&q=82&fm=jpg&auto=format", 3840),
       alt: "Luxury train journey through landscape",
-      photographer: "Unsplash",
+      photographer: "Unsplash contributor",
       source: "https://unsplash.com",
     },
   },
@@ -58,17 +58,17 @@ export const photos = {
     conservation: {
       url: img("https://images.unsplash.com/photo-1577971132997-c10be9372519?w=2400&q=82&fm=jpg&auto=format", 3840),
       alt: "Elephant in the wild",
-      photographer: "Unsplash",
+      photographer: "Unsplash contributor",
       source: "https://unsplash.com",
     },
     arctic: {
-      url: img("https://images.unsplash.com/photo-1534088560297-1ecb8e03f6f4?w=2400&q=82&fm=jpg&auto=format", 3840),
-      alt: "Polar bear on ice",
-      photographer: "Unsplash",
+      url: img("https://images.unsplash.com/photo-1536164832230-6c238c58f740", 3840),
+      alt: "Polar bear swimming through Arctic sea ice",
+      photographer: "Annie Spratt",
       source: "https://unsplash.com",
     },
   },
   sections: {
-    ctaBackground: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=82&fm=jpg&auto=format", 3840),
+    ctaBackground: img("https://images.unsplash.com/photo-1785957493897-28e405838f8a?w=2400&q=82&fm=jpg&auto=format", 3840),
   },
 } as const;
