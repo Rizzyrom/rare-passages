@@ -144,7 +144,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
             {/* Phone */}
             <div>
               <label className="block text-xs uppercase tracking-wider text-[var(--gold)] font-medium mb-1.5">
-                Direct Phone / WhatsApp <span className="text-[var(--muted)] text-[10px]">(Optional)</span>
+                Direct Phone / WhatsApp <span className="text-[var(--muted)] text-[11px]">(Optional)</span>
               </label>
               <input
                 type="tel"

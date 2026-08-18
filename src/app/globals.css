@@ -2665,20 +2665,6 @@ body:not(:has(.hero)) main { padding-top: 80px; }
 
 
 
-.contact-form__field input:focus,
-.contact-form__field select:focus,
-
-
-
-.company-info {
-  max-width: var(--max-w);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: var(--space-md);
-  padding: var(--space-lg) 0;
-  border-top: 1px solid var(--line);
-}
 
 .company-info__item {
   display: flex;
