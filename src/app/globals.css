@@ -117,19 +117,6 @@ button { font-family: inherit; }
   margin-right: auto;
   transition: color var(--t-fast);
 }
-.brand-mark {
-  width: 30px;
-  height: 30px;
-  display: grid;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: border-color var(--t-fast);
-}
-.brand-wordmark { font-weight: 700; }
 
 .site-header nav {
   display: flex;
@@ -1274,11 +1261,6 @@ h1, h2, h3, h4 {
   grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 48px;
   padding-bottom: 56px;
-}
-.footer-brand {
-  font: 500 2rem/1 var(--font-display);
-  color: var(--white);
-  margin-bottom: 16px;
 }
 .footer-tagline {
   font-size: 0.88rem;
@@ -3052,7 +3034,6 @@ body:not(:has(.hero)) main { padding-top: 80px; }
 }
 
 
-:root { --paper-warm: #efe8d8; --white: #fdfbf7; --line: rgba(10, 22, 40, 0.12); --line-strong: rgba(10, 22, 40, 0.24); }
 /* ============================================
    BRAND GUIDELINES PAGE
    ============================================ */
@@ -3087,43 +3068,7 @@ body:not(:has(.hero)) main { padding-top: 80px; }
 .swatch__chip { height: 72px; border: 1px solid var(--line); }
 .swatch__chip--sunrise { background: linear-gradient(180deg, #e0c579, #c8a44d); }
 
-.type-specimen { border-left: 2px solid var(--gold); padding: 8px 0 8px 28px; margin: 28px 0; }
-.type-specimen__display {
-  font-family: var(--font-display);
-  font-size: clamp(2.2rem, 4vw, 3.4rem);
-  line-height: 1.05;
-  color: var(--ink);
-}
-.type-specimen__eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.68rem;
-  font-weight: 700;
-  color: var(--clay);
-  margin: 14px 0 10px;
-}
-.type-specimen__body { max-width: 34em; color: var(--muted); font-size: 0.95rem; line-height: 1.75; }
 
-.voice-table { margin: 28px 0; border-top: 1px solid var(--line); }
-.voice-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--line);
-}
-.voice-row span {
-  display: block;
-  font-size: 0.68rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.voice-do span { color: var(--moss); }
-.voice-dont span { color: var(--clay); }
-.voice-row p { font-size: 0.92rem; line-height: 1.6; }
-.voice-dont p { color: var(--muted); text-decoration: line-through; text-decoration-color: var(--sand); text-decoration-thickness: 1px; }
 
 .asset-grid {
   display: grid;
@@ -3145,8 +3090,7 @@ body:not(:has(.hero)) main { padding-top: 80px; }
 
 @media (max-width: 700px) {
   .brand-row { grid-template-columns: 1fr; }
-  .voice-row { grid-template-columns: 1fr; gap: 12px; }
-}
+  }
 
 
 

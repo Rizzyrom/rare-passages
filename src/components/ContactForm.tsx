@@ -274,7 +274,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
           {/* Submit Button */}
           <div>
           {status === "error" && (
-            <p className="text-sm text-[#E0C579] border-l-2 border-[#C8A44D] pl-4" role="alert">
+            <p className="text-sm pl-4" style={{ color: "var(--sand)", borderLeft: "2px solid var(--gold)" }} role="alert">
               Inquiry intake is not open yet. Please email us directly and we will respond personally.
             </p>
           )}
