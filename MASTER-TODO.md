@@ -1,8 +1,8 @@
 # Rare Passages Portfolio — Master To-Do
 
-_Source of truth for what is done, what Claude can still do alone, and what only Rom can unblock. Updated 2026-08-18 02:00 PDT._
+_Source of truth for what is done, what Claude can still do alone, and what only Rom can unblock. Updated 2026-08-18 02:40 PDT._
 
-Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`, both green: lint 0, build clean, Playwright passing).
+Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`). **Certified 02:36 PDT:** lint 0 · build clean · Playwright SA 12/12, RP 8/8 · mobile CLEAN · image CLEAN · axe WCAG 2.1 AA CLEAN — both sites. SA launch-check: every remaining BLOCK is a Rom item below.
 
 ---
 
@@ -19,7 +19,7 @@ Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`, both g
 |---|---|---|---|
 | 1.1 | Buy **safariawaits.com** + **rarepassages.com** (both parked at GoDaddy) | [ROM] | Privacy + auto-renew on. Then point DNS: `A @ → 76.76.21.21`, `CNAME www → cname.vercel-dns.com` |
 | 1.2 | Trademark screen: "Safari Awaits" + "Rare Passages" + both marks | [ROM] | Blocked list already flags this. Do before spending on print/social. |
-| 1.3 | Legal review: Terms, Privacy, Affiliate Disclosure, seller-of-travel position, planning-fee language, data handling | [ROM] | Privacy + Terms are still marked DRAFT in code — launch-check gate fails until un-drafted |
+| 1.3 | Legal review: Terms, Privacy, Affiliate Disclosure, seller-of-travel position, planning-fee language, data handling | [ROM] | Privacy + Terms now show a visible 'Draft — pending legal review' notice; remove it after review and the launch gate unblocks |
 | 1.4 | Outside Agents host-agency application (or document direct-partner authority) | [ROM] | Revenue model depends on this |
 | 1.5 | Approve indexing | [ROM] | Then [CLAUDE] flips noindex in 3 places per CLAUDE.md, in documented order |
 | 1.6 | Deploy both sites to Vercel (preview URLs first — noindex protects them) | [CLAUDE] | Needs Vercel project link — can do via MCP or CLI once you approve |
