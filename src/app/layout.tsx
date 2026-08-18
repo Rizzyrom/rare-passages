@@ -4,8 +4,8 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
-const display = Cormorant_Garamond({ variable: "--font-display", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
-const sans = Manrope({ variable: "--font-sans", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const display = Cormorant_Garamond({ variable: "--font-display-loaded", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
+const sans = Manrope({ variable: "--font-sans-loaded", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rarepassages.com"),

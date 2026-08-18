@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
 import { photos } from "@/data/images";
 
@@ -23,7 +24,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="hero__image" src={photos.hero.desktop} alt="Dramatic remote landscape" />
+        <Image className="hero__image" src={photos.hero.desktop} alt="Dramatic remote landscape" fill priority sizes="100vw" />
         <div className="hero__gradient" />
         <div className="hero__content">
           <span className="hero__eyebrow">A portfolio of travel worth doing</span>
@@ -50,7 +51,7 @@ export default function Home() {
           <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
             <div className="dest-strip__image">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={photo?.card || photos.hero.mobile} alt={v.name} />
+              <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
             <div className="dest-strip__content">
               <span className="dest-strip__number">0{i + 1}</span>
@@ -131,7 +132,7 @@ export default function Home() {
       <section className="featured-guide">
         <div className="featured-guide__image">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={photos.editorial.conservation?.url || photos.hero.mobile} alt="Wildlife conservation" />
+          <Image src={photos.editorial.conservation?.url || photos.hero.mobile} alt="Wildlife conservation" fill sizes="(max-width: 900px) 100vw, 50vw" />
         </div>
         <div className="featured-guide__content">
           <span className="featured-guide__category">Conservation Commitment</span>
@@ -200,7 +201,7 @@ export default function Home() {
       {/* FINAL CTA */}
       <section className="final-cta">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="final-cta__image" src={photos.sections.ctaBackground} alt="" aria-hidden="true" />
+        <Image className="final-cta__image" src={photos.sections.ctaBackground} alt="" aria-hidden fill sizes="100vw" />
         <div className="final-cta__overlay" />
         <div className="final-cta__content">
           <h2 className="final-cta__title">Which passage is yours?</h2>

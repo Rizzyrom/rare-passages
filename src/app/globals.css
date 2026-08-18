@@ -29,8 +29,8 @@
   --muted-light: #8a92a0;
 
   /* === TYPOGRAPHY === */
-  --font-display: var(--font-display), 'Cormorant Garamond', Georgia, serif;
-  --font-sans: var(--font-sans), 'Manrope', system-ui, sans-serif;
+  --font-display: var(--font-display-loaded), 'Cormorant Garamond', Georgia, serif;
+  --font-sans: var(--font-sans-loaded), 'Manrope', system-ui, sans-serif;
 
   /* === SPACING SCALE === */
   --space-xs: 8px;
@@ -3010,4 +3010,43 @@ body:not(:has(.hero)) main { padding-top: 80px; }
   .revenue-model {
     grid-template-columns: 1fr;
   }
+}
+
+/* ============================================
+   ROUTE LOADING — quiet wordmark, no spinner
+   ============================================ */
+.route-loading {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+}
+.route-loading__mark {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.3em;
+  padding-left: 0.3em;
+  color: var(--muted);
+  border: 1px solid var(--line, var(--sand));
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  animation: route-loading-fade 1.6s ease-in-out infinite;
+}
+@keyframes route-loading-fade {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .route-loading__mark { animation: none; }
+}
+
+/* Display scale for bare page/detail hero h1s */
+.page-hero h1,
+.detail-hero h1 {
+  font-size: clamp(2.4rem, 4.6vw, 4rem);
+  line-height: 1.04;
+  max-width: 16em;
 }

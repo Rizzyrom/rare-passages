@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
 import { photos } from "@/data/images";
 
@@ -35,7 +36,7 @@ export default function PortfolioPage() {
           <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
             <div className="dest-strip__image">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={photo?.card || photos.hero.mobile} alt={v.name} />
+              <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
             <div className="dest-strip__content">
               <span className="dest-strip__number">0{i + 1}</span>

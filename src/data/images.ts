@@ -8,44 +8,44 @@ function img(raw: string, w: number, q = 82) {
 
 export const photos = {
   hero: {
-    desktop: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=82&fm=jpg&auto=format", 1920),
-    mobile: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=82&fm=jpg&auto=format", 800),
+    desktop: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=82&fm=jpg&auto=format", 1920),
+    mobile: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=82&fm=jpg&auto=format", 800),
     alt: "Dramatic remote landscape",
     photographer: "Unsplash",
     license: "Unsplash",
   },
   verticals: {
     "safari-awaits": {
-      card: img("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=2400&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=2400&q=82&fm=jpg&auto=format", 1920),
       alt: "African savanna at golden hour",
       photographer: "Damian Patkowski",
       source: "https://unsplash.com/photos/T-LfvX-7IVg",
     },
     "expedition-cruises": {
-      card: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=2400&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1567618890770-5fba551e55fb?w=2400&q=82&fm=jpg&auto=format", 1920),
       alt: "Glacier in polar waters",
       photographer: "Unsplash",
       source: "https://unsplash.com",
     },
     "coastal-sanctuaries": {
-      card: img("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2400&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=2400&q=82&fm=jpg&auto=format", 1920),
       alt: "Tropical island aerial",
       photographer: "Unsplash",
       source: "https://unsplash.com",
     },
     "alpine-retreats": {
-      card: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=2400&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1554474642-2f39300c5433?w=2400&q=82&fm=jpg&auto=format", 1920),
       alt: "Alpine mountain landscape",
       photographer: "Unsplash",
       source: "https://unsplash.com",
     },
     "transcontinental-journeys": {
-      card: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=800&q=82&fm=jpg&auto=format", 800),
-      hero: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=1920&q=82&fm=jpg&auto=format", 1920),
+      card: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=2400&q=82&fm=jpg&auto=format", 800),
+      hero: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=2400&q=82&fm=jpg&auto=format", 1920),
       alt: "Luxury train journey through landscape",
       photographer: "Unsplash",
       source: "https://unsplash.com",
@@ -53,19 +53,19 @@ export const photos = {
   },
   editorial: {
     conservation: {
-      url: img("https://images.unsplash.com/photo-1577971132997-c10be9372519?w=1600&q=82&fm=jpg&auto=format", 1600),
+      url: img("https://images.unsplash.com/photo-1577971132997-c10be9372519?w=2400&q=82&fm=jpg&auto=format", 1600),
       alt: "Elephant in the wild",
       photographer: "Unsplash",
       source: "https://unsplash.com",
     },
     arctic: {
-      url: img("https://images.unsplash.com/photo-1534088560297-1ecb8e03f6f4?w=1600&q=82&fm=jpg&auto=format", 1600),
+      url: img("https://images.unsplash.com/photo-1534088560297-1ecb8e03f6f4?w=2400&q=82&fm=jpg&auto=format", 1600),
       alt: "Polar bear on ice",
       photographer: "Unsplash",
       source: "https://unsplash.com",
     },
   },
   sections: {
-    ctaBackground: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1920&q=82&fm=jpg&auto=format", 1920),
+    ctaBackground: img("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=2400&q=82&fm=jpg&auto=format", 1920),
   },
 } as const;

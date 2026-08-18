@@ -24,14 +24,21 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
 
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (status === "submitting") return;
     setStatus("submitting");
-
-    // Simulate luxury concierge routing
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/inquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) throw new Error(String(response.status));
       setStatus("success");
-    }, 1200);
+    } catch {
+      setStatus("error");
+    }
   };
 
   const selectedVerticalObj = PORTFOLIO_VERTICALS.find((v) => v.slug === formData.vertical);
@@ -47,10 +54,10 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
             <CheckCircle2 className="w-8 h-8 text-[#C8A44D]" />
           </div>
           <h3 className="font-serif text-3xl font-semibold text-[#F7F2E8]">
-            Inquiry Received & Allocated
+            Inquiry Received
           </h3>
           <p className="text-sm text-[#F7F2E8]/80 max-w-lg mx-auto leading-relaxed">
-            Thank you, <strong className="text-[#C8A44D]">{formData.fullName}</strong>. Your consultation dossier has been confidentially assigned to a Senior Portfolio Curator at Rare Passages.
+            Thank you, <strong className="text-[#C8A44D]">{formData.fullName}</strong>. Your inquiry is in. We review every brief personally and reply by email.
           </p>
 
           <div className="bg-[#0A1628] p-6 rounded-md border border-[#C8A44D]/20 text-left max-w-md mx-auto space-y-2 text-xs text-[#F7F2E8]/80">
@@ -66,10 +73,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
               <span className="text-[#7A8471] font-medium">Timeframe: </span>
               <span className="capitalize">{formData.timeframe.replace(/-/g, " ")}</span>
             </div>
-            <div>
-              <span className="text-[#7A8471] font-medium">Response Window: </span>
-              <span>Within 4 Business Hours (Discreet Communication)</span>
-            </div>
+
           </div>
 
           <button
@@ -269,6 +273,12 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
 
           {/* Submit Button */}
           <div>
+          {status === "error" && (
+            <p className="text-sm text-[#E0C579] border-l-2 border-[#C8A44D] pl-4" role="alert">
+              Inquiry intake is not open yet. Please email us directly and we will respond personally.
+            </p>
+          )}
+
             <button
               type="submit"
               disabled={status === "submitting"}
