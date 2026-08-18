@@ -1,6 +1,6 @@
 # Rare Passages Portfolio — Master To-Do
 
-_Source of truth for what is done, what Claude can still do alone, and what only Rom can unblock. Updated 2026-08-18 01:25 PDT._
+_Source of truth for what is done, what Claude can still do alone, and what only Rom can unblock. Updated 2026-08-18 02:00 PDT._
 
 Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`, both green: lint 0, build clean, Playwright passing).
 
@@ -41,7 +41,7 @@ Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per
 | # | Item | Owner |
 |---|---|---|
 | 3.1 | Create social handles for both brands (Instagram, LinkedIn, X, Pinterest, YouTube) — kits have avatars + banners sized and ready in `public/brand/` | [ROM] |
-| 3.2 | Re-add footer social links once accounts exist | [CLAUDE] |
+| 3.2 | Re-add footer social links once accounts exist (removed from **both** sites — RP also had placeholders) | [CLAUDE] |
 | 3.3 | Set up brand email addresses (hello@safariawaits.com etc.) — signature HTML is in each kit | [ROM] |
 | 3.4 | Google Business Profile / Search Console / Bing Webmaster for both domains (post-launch) | [BOTH] |
 | 3.5 | Vercel + GitHub org hygiene: safari-awaits repo is private, rare-passages is **public** — decide if that's intended | [ROM] |
@@ -51,7 +51,7 @@ Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per
 | # | Item | Owner | Effort |
 |---|---|---|---|
 | 4.1 | ~~Elevate 3 legacy Tailwind pages~~ **DONE** — dossier system, zero hex in src/app | [CLAUDE] | — |
-| 4.2 | SEO pass 2: apply keyword map to all 14 guide titles/metas/H1s + Article schema `datePublished` | [CLAUDE] | Medium |
+| 4.2 | ~~SEO pass 2~~ **DONE** — keyword-first seoTitles ≤59 chars incl. suffix, datePublished | [CLAUDE] | — |
 | 4.3 | Content roadmap: 88-page plan exists; write next 10 guides against DataForSEO gaps (Zambia/Namibia/Rwanda demand) | [CLAUDE] + [ROM] voice sign-off | Large |
 | 4.4 | Testimonials/social proof section — **needs real clients** first | [ROM] | — |
 | 4.5 | Booking-path affiliate links — need partner program IDs | [ROM] | — |
@@ -93,4 +93,4 @@ Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per
 
 **Rare Passages** — 9 commits: noindex; font-cycle fixed; contact form no longer fakes success (fail-closed `/api/inquiries`); next/image; loading state; star-over-water mark + kit + `/brand` + OG + signature; eslint fixed, smoke tests (8/8), mobile + image audits CLEAN; review pass fixes; vertical pages elevated (numerals, interlude, hero on next/image); dead photo replaced + hero upgraded; real API form mounted on /contact (was a mailto: form), consent opt-in, GA4.
 
-**Both**: `MASTER-TODO.md` (this file), reusable audit scripts, brand generators.
+**Both**: `MASTER-TODO.md` (this file), reusable audit scripts (mobile, image, **a11y**), brand generators. **Late session:** WCAG 2.1 AA clean on both sites (SA clay/muted darkened; RP gold/clay split — RP nav was rendering white-on-paper on every subpage, fixed); RP homepage recomposed + fabricated '42-point audit' / '2.5% conservation trust' claims rewritten honestly across 9 places; second review passes fixed dossier cascade bugs on SA.
