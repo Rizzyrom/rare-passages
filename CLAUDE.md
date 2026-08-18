@@ -22,7 +22,7 @@ src/
 │   ├── robots.ts               → robots.txt (allows crawl by design; noindex enforced via header + metadata)
 │   ├── sitemap.ts              → Static sitemap
 │   ├── about/page.tsx          → About page
-│   ├── contact/               → Contact page with form (NOT wired to backend)
+│   ├── contact/               → Contact page (fail-closed /api/inquiries intake)
 │   ├── how-we-work/           → Methodology page
 │   ├── portfolio/
 │   │   ├── page.tsx            → Portfolio index
@@ -30,7 +30,7 @@ src/
 ├── components/
 │   ├── SiteHeader.tsx         → Fixed nav header
 │   ├── SiteFooter.tsx         → Footer
-│   ├── ContactForm.tsx        → Contact form (client component, not wired to API)
+│   ├── ContactForm.tsx        → Contact form (wired to /api/inquiries, fail-closed)
 ├── data/
 │   ├── verticals.ts           → 5 portfolio vertical definitions
 │   └── images.ts              → Image URLs
@@ -83,8 +83,8 @@ interface Vertical {
 
 ## Key Differences from Safari Awaits
 
-- **No lead form** — uses a contact form instead (not wired to any API)
-- **No API routes** — purely static/content site
+- **Inquiry intake** — /api/inquiries, fail-closed (503 in production without INQUIRY_WEBHOOK_URL / optional INQUIRY_WEBHOOK_TOKEN)
+- **One API route** — /api/inquiries (guarded: rate limit, size cap, honeypot)
 - **Noindex** — intentionally not indexing
 - **Lucide icons** — uses lucide-react for icons
 - **Tailwind v4** — imported but most styling is custom CSS
@@ -110,6 +110,14 @@ CNAME record: www  → cname.vercel-dns.com
 ```
 
 Keep `robots: { index: false, follow: false }` until all verticals are launch-ready and the owner approves indexing.
+
+## Brand
+
+Star-over-water mark (north star + horizon + reflection) — geometry in
+src/components/logo-mark.json, wordmark outlined in logo-paths.ts
+(scripts/generate-logo.mjs). Kit in public/brand/ via
+scripts/generate-brand-kit.mjs; guidelines at /brand. Family system with
+Safari Awaits: shared horizon, different sky.
 
 ## Rules
 

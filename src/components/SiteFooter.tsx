@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SiteLogo } from "./site-logo";
 import { useState, FormEvent } from "react";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
 
@@ -21,7 +22,7 @@ export function SiteFooter() {
       <div className="footer-top-grid">
         <div className="footer-col brand-col">
           <Link href="/" className="footer-brand-link" aria-label="Rare Passages home">
-            <p className="footer-brand">Rare Passages</p>
+            <SiteLogo height={22} />
           </Link>
           <p className="footer-tagline">
             A portfolio of specialist travel brands, safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys. Each vetted. Each matched. Each built for the experience-driven traveler.

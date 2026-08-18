@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SiteLogo } from "./site-logo";
 import { useState, useEffect } from "react";
 
 export function SiteHeader() {
@@ -17,8 +18,7 @@ export function SiteHeader() {
     <>
       <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`} data-has-hero="true" role="banner">
         <Link href="/" className="brand" aria-label="Rare Passages home">
-          <span className="brand-mark">RP</span>
-          <span className="brand-wordmark">Rare Passages</span>
+          <SiteLogo height={24} />
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <Link href="/portfolio" className="nav-link">Portfolio</Link>
@@ -40,7 +40,7 @@ export function SiteHeader() {
           <div className="mobile-menu-panel open">
             <div className="mobile-menu-header">
               <Link href="/" onClick={() => setMobileOpen(false)}>
-                <span className="brand"><span className="brand-mark">RP</span><span className="brand-wordmark">Rare Passages</span></span>
+                <span className="brand"><SiteLogo height={22} /></span>
               </Link>
               <button className="mobile-close-btn" onClick={() => setMobileOpen(false)} aria-label="Close menu">×</button>
             </div>

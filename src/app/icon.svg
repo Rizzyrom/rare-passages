@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84">
+  <defs>
+    <linearGradient id="star" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0c579"/>
+      <stop offset="1" stop-color="#c8a44d"/>
+    </linearGradient>
+  </defs>
+  <rect width="84" height="84" fill="#0a1628"/>
+  <path d="M 42 13 L 45.6 26.4 L 56 30 L 45.6 33.6 L 42 47 L 38.4 33.6 L 28 30 L 38.4 26.4 Z" fill="url(#star)"/>
+  <g stroke="#d4af5e" stroke-width="1.6">
+    <line x1="20" y1="20" x2="23" y2="20"/>
+    <line x1="21.5" y1="18.5" x2="21.5" y2="21.5"/>
+    <line x1="61" y1="40" x2="64" y2="40"/>
+    <line x1="62.5" y1="38.5" x2="62.5" y2="41.5"/>
+  </g>
+  <g stroke="#d4af5e" stroke-width="2.2">
+    <line x1="34" y1="60.5" x2="50" y2="60.5" opacity="0.75"/>
+    <line x1="37" y1="64.5" x2="47" y2="64.5" opacity="0.45"/>
+    <line x1="39.5" y1="68.5" x2="44.5" y2="68.5" opacity="0.25"/>
+  </g>
+  <rect x="0" y="54" width="84" height="3.5" fill="#f7f2e8"/>
+</svg>
