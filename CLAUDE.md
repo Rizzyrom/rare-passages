@@ -42,8 +42,8 @@ Same architecture as Safari Awaits but different color palette (deeper, maritime
 
 ```css
 --ink: #0a1628; --forest: #1a3154; --moss: #3a5780;
---sand: #e8dec8; --paper: #f7f2e8; --clay: #c8a44d;
---gold: #c8a44d; --muted: #6b7588;
+--sand: #e8dec8; --paper: #f7f2e8; --clay: #7d6224;  /* text-safe antique gold for light surfaces */
+--gold: #c8a44d; --muted: #5b6672;   /* --gold is for the star + dark surfaces only */
 ```
 
 Fonts: Same — Cormorant Garamond (display), Manrope (body)
@@ -118,6 +118,12 @@ src/components/logo-mark.json, wordmark outlined in logo-paths.ts
 (scripts/generate-logo.mjs). Kit in public/brand/ via
 scripts/generate-brand-kit.mjs; guidelines at /brand. Family system with
 Safari Awaits: shared horizon, different sky.
+
+## Accessibility
+
+WCAG 2.1 AA clean via axe-core (scripts/a11y-audit.mjs). Two token rules keep it that way:
+--clay (text-safe) for eyebrows/labels on light ground; --gold only for the star mark and dark
+surfaces. Header is transparent only on "/" (hero); every other route renders solid.
 
 ## Rules
 

@@ -3,8 +3,12 @@
 import Link from "next/link";
 import { SiteLogo } from "./site-logo";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export function SiteHeader() {
+  const pathname = usePathname();
+  // Only routes with a full-bleed photo hero get the transparent header state.
+  const hasHero = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -16,7 +20,7 @@ export function SiteHeader() {
 
   return (
     <>
-      <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`} data-has-hero="true" role="banner">
+      <header className={`site-header ${scrolled ? "site-header--scrolled" : ""}`} data-has-hero={hasHero} role="banner">
         <Link href="/" className="brand" aria-label="Rare Passages home">
           <SiteLogo height={24} />
         </Link>

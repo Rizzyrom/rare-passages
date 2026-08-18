@@ -82,20 +82,14 @@ export function SiteFooter() {
         <div className="footer-col">
           <p className="footer-heading">Connect</p>
           <nav className="footer-nav">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <Link href="/contact">Start a conversation</Link>
+            <Link href="/brand">Brand guidelines</Link>
           </nav>
         </div>
       </div>
 
       <div className="footer-bottom-bar">
         <p className="copyright">© {new Date().getFullYear()} Rare Passages. All rights reserved.</p>
-        <div className="social-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a>
-        </div>
       </div>
     </footer>
   );

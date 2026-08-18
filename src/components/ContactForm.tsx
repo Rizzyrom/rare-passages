@@ -144,7 +144,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
             {/* Phone */}
             <div>
               <label className="block text-xs uppercase tracking-wider text-[var(--gold)] font-medium mb-1.5">
-                Direct Phone / WhatsApp <span className="text-[var(--muted)] text-[11px]">(Optional)</span>
+                Direct Phone / WhatsApp <span className="text-[var(--sand)] text-[11px]">(Optional)</span>
               </label>
               <input
                 type="tel"
@@ -160,7 +160,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
               <label className="block text-xs uppercase tracking-wider text-[var(--gold)] font-medium mb-1.5">
                 Primary Vertical Interest
               </label>
-              <select
+              <select aria-label="Primary Vertical Interest"
                 value={formData.vertical}
                 onChange={(e) => setFormData({ ...formData, vertical: e.target.value })}
                 className="w-full bg-[var(--ink)] border border-[var(--gold)]/30 focus:border-[var(--gold)] focus:ring-1 focus:ring-[var(--gold)] rounded-sm px-4 py-3 text-sm text-[var(--paper)] outline-none transition-colors cursor-pointer"
@@ -181,7 +181,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
               <label className="block text-xs uppercase tracking-wider text-[var(--gold)] font-medium mb-1.5">
                 Timeframe
               </label>
-              <select
+              <select aria-label="Timeframe"
                 value={formData.timeframe}
                 onChange={(e) => setFormData({ ...formData, timeframe: e.target.value })}
                 className="w-full bg-[var(--ink)] border border-[var(--gold)]/30 focus:border-[var(--gold)] rounded-sm px-3 py-3 text-xs text-[var(--paper)] outline-none cursor-pointer"
@@ -198,7 +198,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
               <label className="block text-xs uppercase tracking-wider text-[var(--gold)] font-medium mb-1.5">
                 Budget Scope (USD)
               </label>
-              <select
+              <select aria-label="Budget Scope (USD)"
                 value={formData.budgetRange}
                 onChange={(e) => setFormData({ ...formData, budgetRange: e.target.value })}
                 className="w-full bg-[var(--ink)] border border-[var(--gold)]/30 focus:border-[var(--gold)] rounded-sm px-3 py-3 text-xs text-[var(--paper)] outline-none cursor-pointer"
@@ -215,7 +215,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
               <label className="block text-xs uppercase tracking-wider text-[var(--gold)] font-medium mb-1.5">
                 Travel Party
               </label>
-              <select
+              <select aria-label="Travel Party"
                 value={formData.groupSize}
                 onChange={(e) => setFormData({ ...formData, groupSize: e.target.value })}
                 className="w-full bg-[var(--ink)] border border-[var(--gold)]/30 focus:border-[var(--gold)] rounded-sm px-3 py-3 text-xs text-[var(--paper)] outline-none cursor-pointer"
@@ -257,7 +257,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
               </span>
             </label>
 
-            <label className="flex items-start gap-3 cursor-pointer text-[11px] text-[var(--muted)]">
+            <label className="flex items-start gap-3 cursor-pointer text-[12px] text-[var(--sand)]">
               <input
                 type="checkbox"
                 required

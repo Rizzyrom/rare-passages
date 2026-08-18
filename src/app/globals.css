@@ -18,14 +18,14 @@
   --paper: #f7f2e8;
   --paper-warm: #f0ebe0;
   --paper-dark: #e8e0cf;
-  --clay: #c8a44d;
+  --clay: #7d6224; /* text-safe antique gold: 5.16:1 on paper, 4.85 on paper-warm */
   --clay-dark: #a8893f;
   --gold: #c8a44d;
   --gold-dark: #a8893f;
   --white: #ffffff;
   --line: rgba(10, 22, 40, 0.08);
   --line-strong: rgba(10, 22, 40, 0.14);
-  --muted: #6b7580;
+  --muted: #5b6672; /* AA: 5.24:1 on paper */
   --muted-light: #8a92a0;
 
   /* === TYPOGRAPHY === */
@@ -2830,7 +2830,7 @@ body:not(:has(.hero)) main { padding-top: 80px; }
 }
 
 .page-hero .eyebrow {
-  color: var(--clay);
+  color: var(--gold);
 }
 
 .page-hero h1 {
@@ -3121,3 +3121,22 @@ html.has-reveal [data-reveal].is-revealed { opacity: 1; transform: none; }
   pointer-events: none;
 }
 .contact-form-wrap { max-width: 880px; margin: 0 auto; }
+
+/* Contrast: text-role gold on light ground uses --clay; --gold stays for the star and dark surfaces */
+.eyebrow, .dest-strip__tagline, .dest-strip__meta-label, .detail-meta-label, .stat-item__label,
+.itinerary-card__number, .destination-list__number, .section-header .eyebrow { color: var(--clay); }
+.site-footer .eyebrow, .site-footer .footer-heading, .inline-cta .eyebrow, .final-cta .eyebrow, .vertical-cta .eyebrow,
+[class*="--paper"] .eyebrow { color: var(--clay); }
+.hero .eyebrow, .hero__eyebrow, .detail-hero .eyebrow, .detail-hero__eyebrow, .site-footer .eyebrow, .site-footer .footer-heading,
+.growth-section .eyebrow, .interlude .eyebrow { color: var(--gold); }
+.newsletter-btn { background: var(--clay); border-color: var(--clay); }
+.site-footer .footer-nav a, .site-footer .parent-ref, .site-footer .copyright, .site-footer .newsletter-desc { color: rgba(247,242,232,0.7); }
+
+/* Dark surfaces: eyebrow/label roles use --gold (clay fails on navy) */
+.growth-section .eyebrow, .growth-section__eyebrow, .growth-section [class*="__label"],
+.revenue-stream__label, .revenue-stream .eyebrow, .stats-bar .eyebrow,
+.site-footer .eyebrow, .site-footer .footer-heading, .inline-cta .eyebrow, .final-cta .eyebrow, .vertical-cta .eyebrow,
+.detail-hero .eyebrow, .detail-hero__eyebrow, .hero__eyebrow { color: var(--gold); }
+
+.page-hero .eyebrow, .page-hero > .eyebrow { color: var(--gold); }
+.vertical-cta .eyebrow { color: var(--clay); }
