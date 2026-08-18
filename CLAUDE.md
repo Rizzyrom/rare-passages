@@ -6,7 +6,10 @@
 
 Rare Passages (rarepassages.com) is the **parent portfolio brand** that houses 5+ specialist travel verticals. Safari Awaits is the first active vertical. This site showcases the portfolio, explains the business model, and drives investor/partner interest.
 
-**Currently NOT indexing** — `robots: { index: false, follow: false }` in layout.tsx. This is intentional until the site and all verticals are launch-ready.
+**Currently NOT indexing** — intentional until the site and all verticals are launch-ready. Enforced by
+`X-Robots-Tag: noindex, nofollow` in `next.config.ts` plus `robots: { index: false, follow: false }` in
+`layout.tsx`. `robots.ts` deliberately still allows crawling so those directives are actually read —
+a `Disallow` would hide them and risk URL-only indexing.
 
 ## Architecture
 
@@ -16,7 +19,7 @@ src/
 │   ├── layout.tsx              → Root layout (fonts, header, footer, metadata)
 │   ├── page.tsx                → Homepage (hero, portfolio verticals, business model, growth section, CTA)
 │   ├── globals.css             → Design system (CSS tokens + component styles)
-│   ├── robots.ts               → robots.txt (noindex — intentional)
+│   ├── robots.ts               → robots.txt (allows crawl by design; noindex enforced via header + metadata)
 │   ├── sitemap.ts              → Static sitemap
 │   ├── about/page.tsx          → About page
 │   ├── contact/               → Contact page with form (NOT wired to backend)
@@ -111,7 +114,7 @@ Keep `robots: { index: false, follow: false }` until all verticals are launch-re
 ## Rules
 
 1. Use CSS custom properties from globals.css — never hardcode colors
-2. Match existing component naming (PascalCase for components, unlike safari-registry which uses kebab-case)
+2. Match existing component naming (PascalCase for components, unlike safari-awaits which uses kebab-case)
 3. Don't index this site until owner approves
 4. No emojis in content
 5. Never commit secrets
