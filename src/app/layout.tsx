@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { RevealInit } from "@/components/RevealInit";
 import "./globals.css";
 
 const display = Cormorant_Garamond({ variable: "--font-display-loaded", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <RevealInit />
       </body>
     </html>
   );

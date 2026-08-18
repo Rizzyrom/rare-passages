@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
 import { photos } from "@/data/images";
 
@@ -32,7 +33,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
   return (
     <>
       {/* HERO */}
-      <section className="detail-hero" style={{ backgroundImage: `linear-gradient(180deg, rgba(10,22,40,.6), rgba(10,22,40,.3) 40%, rgba(10,22,40,.9)), url(${heroImg})` }} role="img" aria-label={vertical.name}>
+      <section className="detail-hero"><Image className="detail-hero__image" src={heroImg} alt={vertical.name} fill priority sizes="100vw" /><div className="detail-hero__scrim" />
         <div className="detail-hero__content">
           <span className="detail-hero__eyebrow">{vertical.category}</span>
           <h1 className="detail-hero__title">{vertical.name}</h1>
@@ -46,6 +47,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       </section>
 
       {/* OVERVIEW */}
+      <div className="detail-body">
       <section className="section section--narrow">
         <div className="detail-overview">
           <span className="eyebrow">Overview</span>
@@ -74,7 +76,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       {/* FEATURED DESTINATIONS */}
       {vertical.featuredDestinations.length > 0 && (
         <section className="section">
-          <div className="section-header">
+          <div className="section-header" data-reveal>
             <span className="eyebrow">Destinations</span>
             <h2 className="section-title">Where this vertical operates</h2>
           </div>
@@ -92,7 +94,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       {/* KEY HIGHLIGHTS */}
       {vertical.keyHighlights.length > 0 && (
         <section className="section section--paper">
-          <div className="section-header">
+          <div className="section-header" data-reveal>
             <span className="eyebrow">What Sets It Apart</span>
             <h2 className="section-title">Key differentiators</h2>
           </div>
@@ -110,7 +112,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       {/* VERTICAL PILLARS */}
       {vertical.verticalPillars.length > 0 && (
         <section className="section">
-          <div className="section-header">
+          <div className="section-header" data-reveal>
             <span className="eyebrow">The Approach</span>
             <h2 className="section-title">Operating principles</h2>
           </div>
@@ -128,7 +130,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       {/* SAMPLE ITINERARIES */}
       {vertical.sampleItineraries.length > 0 && (
         <section className="section section--paper">
-          <div className="section-header">
+          <div className="section-header" data-reveal>
             <span className="eyebrow">Sample Journeys</span>
             <h2 className="section-title">Representative itineraries</h2>
           </div>
@@ -148,6 +150,14 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
           </div>
         </section>
       )}
+
+      </div>
+
+      {/* INTERLUDE */}
+      <section className="interlude">
+        <Image src={photo?.hero || photos.hero.desktop} alt="" aria-hidden fill sizes="100vw" />
+        <p className="interlude__line" data-reveal>Rare is not a price. It is a place very few people have stood.</p>
+      </section>
 
       {/* EXTERNAL LINK or CONTACT CTA */}
       <section className="section">

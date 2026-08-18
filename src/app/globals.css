@@ -2476,17 +2476,18 @@ body:not(:has(.hero)) main { padding-top: 80px; }
   max-width: var(--max-w);
   margin: 0 auto;
   display: grid;
-  gap: var(--space-md);
+  gap: 0;
+  border-top: 1px solid var(--line-strong);
 }
 
 .itinerary-card {
-  padding: var(--space-lg);
-  border: 1px solid var(--line-strong);
-  transition: border-color 0.3s;
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--line-strong);
+  transition: background 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .itinerary-card:hover {
-  border-color: var(--clay);
+  background: var(--paper);
 }
 
 .itinerary-card__header {
@@ -3102,4 +3103,78 @@ body:not(:has(.hero)) main { padding-top: 80px; }
 .brand-cell--wide svg {
   max-width: 100%;
   height: auto;
+}
+
+
+/* ============================================
+   SCROLL REVEALS — slow, subtle
+   ============================================ */
+html.has-reveal [data-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1), transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+html.has-reveal [data-reveal].is-revealed { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html.has-reveal [data-reveal] { opacity: 1; transform: none; transition: none; }
+}
+
+/* ============================================
+   DETAIL HERO IMAGE + SCRIM (next/image fill)
+   ============================================ */
+.detail-hero { overflow: hidden; }
+.detail-hero > * { position: relative; z-index: 1; }
+.detail-hero__image { object-fit: cover; z-index: 0 !important; }
+.detail-hero__scrim {
+  position: absolute !important;
+  inset: 0;
+  z-index: 0 !important;
+  background: linear-gradient(180deg, rgba(10,22,40,.6), rgba(10,22,40,.3) 40%, rgba(10,22,40,.9));
+}
+
+/* ============================================
+   EDITORIAL INTERLUDE — full-bleed image + one line
+   ============================================ */
+.interlude {
+  position: relative;
+  height: 58vh;
+  min-height: 380px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+.interlude img { object-fit: cover; }
+.interlude::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10,22,40,0.05) 40%, rgba(10,22,40,0.6));
+}
+.interlude__line {
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.5rem, 3.2vw, 2.6rem);
+  color: var(--paper);
+  padding: 0 clamp(24px, 6vw, 80px) clamp(48px, 7vh, 88px);
+  max-width: 22em;
+  line-height: 1.25;
+}
+
+/* Section numerals on vertical detail pages */
+.detail-body { counter-reset: vsec; }
+.detail-body .section-header { position: relative; counter-increment: vsec; }
+.detail-body .section-header::before {
+  content: counter(vsec, decimal-leading-zero);
+  position: absolute;
+  top: -8px;
+  right: 0;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--sand);
+  pointer-events: none;
 }
