@@ -3178,3 +3178,4 @@ html.has-reveal [data-reveal].is-revealed { opacity: 1; transform: none; }
   -webkit-text-stroke: 1px var(--sand);
   pointer-events: none;
 }
+.contact-form-wrap { max-width: 880px; margin: 0 auto; }

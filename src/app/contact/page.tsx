@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/ContactForm";
 import { metadata } from "./metadata";
 export { metadata };
 
@@ -61,50 +62,9 @@ export default function ContactPage() {
           <span className="eyebrow">Inquiry Form</span>
           <h2 className="section-title">Send us a message</h2>
         </div>
-        <form className="contact-form" action="mailto:hello@rarepassages.com" method="POST" encType="text/plain">
-          <div className="contact-form__row">
-            <div className="contact-form__field">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Your full name" />
-            </div>
-            <div className="contact-form__field">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="you@example.com" />
-            </div>
-          </div>
-          <div className="contact-form__row">
-            <div className="contact-form__field">
-              <label htmlFor="interest">Area of Interest</label>
-              <select id="interest" name="interest">
-                <option value="">Select a vertical...</option>
-                <option value="safari">Safari Awaits — African Safaris</option>
-                <option value="expedition">Expedition Maritime — Polar & Oceanic</option>
-                <option value="coastal">Coastal & Island Sanctuaries</option>
-                <option value="alpine">Alpine & High-Altitude Retreats</option>
-                <option value="rail">Grand Rail & Overland</option>
-                <option value="multi">Multi-Vertical Portfolio</option>
-                <option value="partnership">Partnership / Operator</option>
-                <option value="press">Press / Media</option>
-              </select>
-            </div>
-            <div className="contact-form__field">
-              <label htmlFor="timeline">Timeline</label>
-              <select id="timeline" name="timeline">
-                <option value="">When are you looking to travel?</option>
-                <option value="0-3">Within 3 months</option>
-                <option value="3-6">3-6 months</option>
-                <option value="6-12">6-12 months</option>
-                <option value="12+">12+ months</option>
-                <option value="flexible">Flexible</option>
-              </select>
-            </div>
-          </div>
-          <div className="contact-form__field">
-            <label htmlFor="message">Tell us about your trip</label>
-            <textarea id="message" name="message" rows={5} placeholder="Group size, destinations of interest, budget range, any specific requirements..."></textarea>
-          </div>
-          <button type="submit" className="contact-form__submit">Send inquiry →</button>
-        </form>
+        <div className="contact-form-wrap">
+          <ContactForm />
+        </div>
       </section>
 
       {/* COMPANY INFO */}
