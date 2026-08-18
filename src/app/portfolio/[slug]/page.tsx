@@ -25,6 +25,12 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
 
   const photo = photos.verticals[vertical.slug as keyof typeof photos.verticals];
   const heroImg = photo?.card || photos.hero.desktop;
+  // Interlude uses a different photograph than the hero: conservation for
+  // land verticals, arctic for expedition, hero fjord as the fallback.
+  const interludePhoto =
+    vertical.slug === "expedition-cruises" || vertical.slug === "expedition-maritime"
+      ? { url: photos.editorial.arctic.url, alt: photos.editorial.arctic.alt }
+      : { url: photos.editorial.conservation?.url || photos.hero.desktop, alt: photos.editorial.conservation?.alt || "" };
   const isActive = vertical.status === "active";
   const verticalIndex = PORTFOLIO_VERTICALS.findIndex((v) => v.id === vertical.id);
   const prevVertical = verticalIndex > 0 ? PORTFOLIO_VERTICALS[verticalIndex - 1] : null;
@@ -155,7 +161,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
 
       {/* INTERLUDE */}
       <section className="interlude">
-        <Image src={photo?.hero || photos.hero.desktop} alt="" aria-hidden fill sizes="100vw" />
+        <Image src={interludePhoto.url} alt={interludePhoto.alt} fill sizes="100vw" />
         <p className="interlude__line" data-reveal>Rare is not a price. It is a place very few people have stood.</p>
       </section>
 

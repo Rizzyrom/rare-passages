@@ -282,7 +282,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-xs uppercase tracking-[0.22em] font-bold text-[var(--ink)] bg-gradient-to-r from-[var(--gold)] via-[var(--sand)] to-[var(--gold)] hover:shadow-[0_0_25px_rgba(200,164,77,0.4)] transition-all duration-300 rounded-sm cursor-pointer disabled:opacity-50"
+              className="w-full inline-flex items-center justify-center gap-2 px-8 py-4 text-xs uppercase tracking-[0.22em] font-bold text-[var(--ink)] bg-gradient-to-r from-[var(--gold)] via-[var(--sand)] to-[var(--gold)] hover:shadow-[0_0_25px_color-mix(in_srgb,var(--gold)_40%,transparent)] transition-all duration-300 rounded-sm cursor-pointer disabled:opacity-50"
             >
               {status === "submitting" ? (
                 <>
