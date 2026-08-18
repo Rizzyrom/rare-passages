@@ -35,7 +35,7 @@ export default function PortfolioPage() {
         return (
           <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
             <div className="dest-strip__image">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              { }
               <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
             <div className="dest-strip__content">
@@ -91,7 +91,7 @@ export default function PortfolioPage() {
         <div className="vertical-cta">
           <h2 className="vertical-cta__title">Ready to explore a passage?</h2>
           <p className="vertical-cta__desc">
-            Each vertical operates independently with its own concierge team. Tell us what you're looking for and we'll point you to the right specialist.
+            Each vertical operates independently with its own concierge team. Tell us what you’re looking for and we’ll point you to the right specialist.
           </p>
           <Link href="/contact" className="vertical-cta__btn">Start the conversation →</Link>
         </div>

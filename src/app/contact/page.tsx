@@ -1,7 +1,6 @@
 import { metadata } from "./metadata";
 export { metadata };
 
-import Link from "next/link";
 
 export default function ContactPage() {
   return (
@@ -11,7 +10,7 @@ export default function ContactPage() {
         <span className="eyebrow">Get in touch</span>
         <h1>Start the conversation.</h1>
         <p className="page-hero__text">
-          Whether you're planning a single passage or looking to engage Rare Passages as your permanent travel portfolio, we'd like to hear from you.
+          Whether you’re planning a single passage or looking to engage Rare Passages as your permanent travel portfolio, we’d like to hear from you.
         </p>
       </section>
 
@@ -22,7 +21,7 @@ export default function ContactPage() {
             <span className="contact-card__icon">✦</span>
             <h2 className="contact-card__title">Plan a Journey</h2>
             <p className="contact-card__desc">
-              Tell us about the trip you're envisioning. We'll match you with the right vertical and a specialist curator will respond within 72 hours.
+              Tell us about the trip you’re envisioning. We’ll match you with the right vertical and a specialist curator will respond within 72 hours.
             </p>
             <a href="mailto:hello@rarepassages.com" className="contact-card__link">hello@rarepassages.com →</a>
           </div>
@@ -40,7 +39,7 @@ export default function ContactPage() {
             <span className="contact-card__icon">◇</span>
             <h2 className="contact-card__title">Partnerships & Operators</h2>
             <p className="contact-card__desc">
-              Are you a lodge, expedition vessel, or specialist operator meeting our 42-point audit standard? We're interested in talking.
+              Are you a lodge, expedition vessel, or specialist operator meeting our 42-point audit standard? We’re interested in talking.
             </p>
             <a href="mailto:partners@rarepassages.com" className="contact-card__link">partners@rarepassages.com →</a>
           </div>

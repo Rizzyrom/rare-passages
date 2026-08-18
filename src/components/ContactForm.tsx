@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
-import { Send, CheckCircle2, Shield, Compass, Sparkles, Clock, Lock } from "lucide-react";
+import { Send, CheckCircle2, Sparkles, Clock, Lock } from "lucide-react";
 
 interface ContactFormProps {
   defaultVertical?: string;

@@ -36,7 +36,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     status: 'active',
     statusLabel: 'Flagship Vertical',
     category: 'Wilderness & Wildlife',
-    heroImage: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1600&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2400&auto=format&fit=crop',
     shortDescription: 'Real access to Africa’s most pristine private reserves, solar-powered luxury camps, and guide-led wildlife encounters.',
     fullDescription: 'Safari Awaits represents the pinnacle of African wilderness exploration. Working strictly with private concessions that restrict vehicle density and enforce rigorous habitat protection, Safari Awaits connects discerning travelers with intimate, low-impact luxury camps in Botswana, Tanzania, Kenya, Rwanda, and South Africa.',
     featuredDestinations: [
@@ -93,7 +93,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     status: 'active',
     statusLabel: 'Active Vertical',
     category: 'Polar & Island Maritime',
-    heroImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=1600&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2400&auto=format&fit=crop',
     shortDescription: 'Purpose-built PC6 ice-class expedition vessels navigating Antarctica, Svalbard, the Galápagos, and Northwest Passage with working marine scientists.',
     fullDescription: 'Expedition Maritime turns ocean exploration into a real expedition, not a cruise. Using purpose-built polar expedition ships equipped with Dynamic Positioning (anchorless reef protection), private balconies, luxury spas, and Zodiac fleets, we grant guests safe, intimate entry to Earth’s most formidable environments.',
     featuredDestinations: [
@@ -149,7 +149,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     status: 'horizon',
     statusLabel: 'Horizon Vertical, Launching 2027',
     category: 'Private Islands & Sanctuaries',
-    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2400&auto=format&fit=crop',
     shortDescription: 'Real private island takeovers and oceanfront architectural sanctuaries across the Indian Ocean, South Pacific, and Caribbean.',
     fullDescription: 'Designed for complete seclusion, our Coastal & Island Sanctuaries vertical pairs high-net-worth families with fully-staffed private island estates. From marine conservation atolls in the Seychelles to secluded archipelagos in French Polynesia, each sanctuary guarantees total privacy and custom superyacht tenders.',
     featuredDestinations: [
@@ -186,7 +186,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     status: 'horizon',
     statusLabel: 'In Development',
     category: 'Mountain & High-Altitude',
-    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2400&auto=format&fit=crop',
     shortDescription: 'Ski-in/ski-out architectural chalets with private heli-pads, mountain guides, and high-altitude wellness sanctuaries.',
     fullDescription: 'Connecting guests to untouched powder bowls and majestic mountain ridges in the Alps, British Columbia, Patagonia, and Bhutan. Curated for those who demand the best skiing, mountain solitude, and private mountain chalets.',
     featuredDestinations: [
@@ -219,7 +219,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     status: 'horizon',
     statusLabel: 'In Development',
     category: 'Overland & Grand Travel',
-    heroImage: 'https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=1600&auto=format&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=2400&auto=format&fit=crop',
     shortDescription: 'Chartered vintage rail carriages and private luxury mobile safari encampments navigating historical trade routes and wilderness corridors.',
     fullDescription: 'Restoring the golden age of romantic exploration through private train car charters across Southern Africa, Europe, and Asia, complemented by luxury mobile overland camps.',
     featuredDestinations: [

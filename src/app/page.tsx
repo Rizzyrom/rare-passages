@@ -23,7 +23,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        { }
         <Image className="hero__image" src={photos.hero.desktop} alt="Dramatic remote landscape" fill priority sizes="100vw" />
         <div className="hero__gradient" />
         <div className="hero__content">
@@ -39,7 +39,7 @@ export default function Home() {
       {/* OPENING STATEMENT */}
       <section className="opening">
         <p className="opening__text">
-          We don't aggregate mass tours. We don't sell what we own. <em>Each vertical in our portfolio operates as a specialist brand with its own research, its own operators, and its own expertise, governed by one shared standard:</em> the traveler's trip comes before the operator's inventory, the platform's margin, or the affiliate's payout.
+          We don’t aggregate mass tours. We don’t sell what we own. <em>Each vertical in our portfolio operates as a specialist brand with its own research, its own operators, and its own expertise, governed by one shared standard:</em> the traveler’s trip comes before the operator’s inventory, the platform’s margin, or the affiliate’s payout.
         </p>
       </section>
 
@@ -50,7 +50,7 @@ export default function Home() {
         return (
           <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
             <div className="dest-strip__image">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              { }
               <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
             <div className="dest-strip__content">
@@ -94,13 +94,13 @@ export default function Home() {
         </div>
         <div className="approach__right">
           <p>
-            Most travel groups are holding companies, they acquire brands, cut costs, and push cross-selling. We're not that.
+            Most travel groups are holding companies, they acquire brands, cut costs, and push cross-selling. We’re not that.
           </p>
           <p className="approach__pullquote">
-            "Every vertical shares the same DNA: independent research, transparent pricing, zero commission bias, and a 42-point operator vetting process."
+            “Every vertical shares the same DNA: independent research, transparent pricing, zero commission bias, and a 42-point operator vetting process.”
           </p>
           <p>
-            Whether you're tracking gorillas in Rwanda or ice-cruising through the Northwest Passage, the standard doesn't change. We vet every operator for safety, conservation ethics, guest density, and guiding excellence. We disclose every commercial relationship. We show you the full cost before you book.
+            Whether you’re tracking gorillas in Rwanda or ice-cruising through the Northwest Passage, the standard doesn’t change. We vet every operator for safety, conservation ethics, guest density, and guiding excellence. We disclose every commercial relationship. We show you the full cost before you book.
           </p>
           <div style={{ marginTop: "32px" }}>
             <Link href="/how-we-work" className="text-link">How we vet operators →</Link>
@@ -131,7 +131,7 @@ export default function Home() {
       {/* CONSERVATION COMMITMENT */}
       <section className="featured-guide">
         <div className="featured-guide__image">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
+          { }
           <Image src={photos.editorial.conservation?.url || photos.hero.mobile} alt="Wildlife conservation" fill sizes="(max-width: 900px) 100vw, 50vw" />
         </div>
         <div className="featured-guide__content">
@@ -200,13 +200,13 @@ export default function Home() {
 
       {/* FINAL CTA */}
       <section className="final-cta">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
+        { }
         <Image className="final-cta__image" src={photos.sections.ctaBackground} alt="" aria-hidden fill sizes="100vw" />
         <div className="final-cta__overlay" />
         <div className="final-cta__content">
           <h2 className="final-cta__title">Which passage is yours?</h2>
           <p className="final-cta__subtitle">
-            Five verticals. One standard. Tell us what you're looking for and we'll point you to the right specialist.
+            Five verticals. One standard. Tell us what you’re looking for and we’ll point you to the right specialist.
           </p>
           <Link href="/contact" className="final-cta__btn">Start the conversation</Link>
         </div>

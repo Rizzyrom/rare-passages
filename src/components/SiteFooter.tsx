@@ -37,7 +37,7 @@ export function SiteFooter() {
               Seasonal travel intelligence, new vertical launches, and conservation updates.
             </p>
             {subscribed ? (
-              <div className="newsletter-success">You're subscribed.</div>
+              <div className="newsletter-success">You’re subscribed.</div>
             ) : (
               <form onSubmit={handleSubmit} className="newsletter-form" aria-label="Newsletter signup">
                 <input
