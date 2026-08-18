@@ -7,8 +7,8 @@ export const metadata = {
 
 const PILLARS = [
   {
-    title: "42-Point Vetting Audit",
-    description: "Every operator, lodge, vessel, and ground handler undergoes a rigorous 42-point quality audit covering safety records, guide certifications, conservation impact, guest-to-staff ratios, emergency protocols, and supplier transparency.",
+    title: "Published Vetting Standard",
+    description: "Every operator, lodge, vessel, and ground handler is assessed against a published vetting standard covering safety records, guide certifications, conservation impact, guest-to-staff ratios, emergency protocols, and supplier transparency.",
   },
   {
     title: "Zero Commission Bias",

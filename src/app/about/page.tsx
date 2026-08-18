@@ -3,7 +3,7 @@ import { BRAND_PRINCIPLES } from "@/data/verticals";
 
 export const metadata = {
   title: "About Rare Passages",
-  description: "Discover the Rare Passages parent brand philosophy, 42-point operator audit standards, conservation trust, and the business model behind Safari Awaits and Expedition Maritime.",
+  description: "Discover the Rare Passages parent brand philosophy, operator vetting standards, conservation trust, and the business model behind Safari Awaits and Expedition Maritime.",
 };
 
 export default function AboutPage() {
@@ -108,7 +108,7 @@ export default function AboutPage() {
           <div className="pillar-card">
             <h3 className="pillar-card__title">Defensible Moats</h3>
             <p className="pillar-card__desc">
-              The 42-point vetting audit, operator relationships, host agency credentials, and conservation trust create barriers to entry that take years to replicate.
+              The published vetting standard, operator relationships, host agency credentials, and conservation trust create barriers to entry that take years to replicate.
             </p>
           </div>
           <div className="pillar-card">

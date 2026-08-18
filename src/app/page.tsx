@@ -28,7 +28,7 @@ export default function Home() {
         <div className="hero__gradient" />
         <div className="hero__content">
           <span className="hero__eyebrow">A portfolio of travel worth doing</span>
-          <h1 className="hero__title">Rare Passages.</h1>
+          <h1 className="hero__title">Rare <em>Passages.</em></h1>
           <p className="hero__subtitle">
             Five specialist travel brands under one standard. Safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys, each vetted, each matched, each built for travelers who want the real thing.
           </p>
@@ -38,8 +38,14 @@ export default function Home() {
 
       {/* OPENING STATEMENT */}
       <section className="opening">
-        <p className="opening__text">
-          We don’t aggregate mass tours. We don’t sell what we own. <em>Each vertical in our portfolio operates as a specialist brand with its own research, its own operators, and its own expertise, governed by one shared standard:</em> the traveler’s trip comes before the operator’s inventory, the platform’s margin, or the affiliate’s payout.
+        <div className="opening__marker" data-reveal>
+          <span className="eyebrow">The premise</span>
+        </div>
+        <p className="opening__text" data-reveal>
+          Five specialist brands, one shared rule: the traveler&rsquo;s trip comes before the operator&rsquo;s inventory, the platform&rsquo;s margin, or the affiliate&rsquo;s payout. <em>We do not aggregate mass tours. We do not sell what we own.</em>
+        </p>
+        <p className="opening__note" data-reveal="late">
+          Each vertical carries its own research, its own vetted operators, and its own expertise. What they share is the standard.
         </p>
       </section>
 
@@ -53,7 +59,7 @@ export default function Home() {
               { }
               <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
-            <div className="dest-strip__content">
+            <div className="dest-strip__content" data-reveal>
               <span className="dest-strip__number">0{i + 1}</span>
               <h2 className="dest-strip__name">{v.name}</h2>
               <span className="dest-strip__tagline">{v.tagline}</span>
@@ -97,7 +103,7 @@ export default function Home() {
             Most travel groups are holding companies, they acquire brands, cut costs, and push cross-selling. We’re not that.
           </p>
           <p className="approach__pullquote">
-            “Every vertical shares the same DNA: independent research, transparent pricing, zero commission bias, and a 42-point operator vetting process.”
+            “Every vertical shares the same DNA: independent research, transparent pricing, zero commission bias, and a published-standard operator vetting process.”
           </p>
           <p>
             Whether you’re tracking gorillas in Rwanda or ice-cruising through the Northwest Passage, the standard doesn’t change. We vet every operator for safety, conservation ethics, guest density, and guiding excellence. We disclose every commercial relationship. We show you the full cost before you book.
@@ -115,16 +121,16 @@ export default function Home() {
           <span className="stat-item__label">Specialist Verticals</span>
         </div>
         <div className="stat-item">
-          <span className="stat-item__value">42</span>
-          <span className="stat-item__label">Point Operator Audit</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-item__value">2.5%</span>
-          <span className="stat-item__label">Conservation Commitment</span>
+          <span className="stat-item__value">1</span>
+          <span className="stat-item__label">Live Today, Four in Development</span>
         </div>
         <div className="stat-item">
           <span className="stat-item__value">0</span>
-          <span className="stat-item__label">Direct Markup</span>
+          <span className="stat-item__label">Inventory Owned</span>
+        </div>
+        <div className="stat-item">
+          <span className="stat-item__value">0</span>
+          <span className="stat-item__label">Commission Bias</span>
         </div>
       </section>
 
@@ -136,9 +142,9 @@ export default function Home() {
         </div>
         <div className="featured-guide__content">
           <span className="featured-guide__category">Conservation Commitment</span>
-          <h3 className="featured-guide__title">2.5% of every booking goes to conservation.</h3>
+          <h3 className="featured-guide__title">Conservation is a line item, not a slogan.</h3>
           <p className="featured-guide__desc">
-            Not a marketing program. A non-negotiable commitment. Every booking across every vertical contributes 2.5% of platform revenue to our Conservation Trust, funding habitat corridors, marine protected areas, and indigenous guide academies. Travel that leaves more than footprints.
+            Every vertical will publish where its conservation contribution goes and how much it is, before it takes a booking. Habitat, marine protection, and local guide training are the priorities. We will state the number when there is a number to state.
           </p>
           <Link href="/about" className="text-link">Read the commitment →</Link>
         </div>
@@ -159,7 +165,7 @@ export default function Home() {
             <div className="growth-phase">
               <span className="growth-phase__year">2026</span>
               <h3 className="growth-phase__title">Foundation</h3>
-              <p className="growth-phase__desc">Safari Awaits launches as the flagship vertical. Host agency credentials secured. Expedition Maritime enters development. Portfolio infrastructure and 42-point vetting framework established.</p>
+              <p className="growth-phase__desc">Safari Awaits launches as the flagship vertical. Host agency credentials secured. Expedition Maritime enters development. Portfolio infrastructure and published-standard vetting framework established.</p>
             </div>
             <div className="growth-phase">
               <span className="growth-phase__year">2027</span>

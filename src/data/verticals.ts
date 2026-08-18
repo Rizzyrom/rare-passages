@@ -249,7 +249,7 @@ export const BRAND_PRINCIPLES = [
   {
     number: '01',
     title: 'Institutional Vetting & Operator Standards',
-    description: 'We do not aggregate mass itineraries. Every lodge, expedition ship, air charter partner, and field guide company in our portfolio undergoes a 42-point audit covering safety protocols, ecological integrity, guest density limits, and financial stability.'
+    description: 'We do not aggregate mass itineraries. Every lodge, expedition ship, air charter partner, and field guide company in our portfolio is assessed against a published vetting standard covering safety protocols, ecological integrity, guest density limits, and financial stability.'
   },
   {
     number: '02',
@@ -307,7 +307,7 @@ export const FAQS = [
   },
   {
     question: 'How do you vet partner lodges, cruise ships, and charter operators?',
-    answer: 'Every property and vessel in our portfolio undergoes an independent 42-point audit. Criteria include maximum guest density, solar/renewable energy usage, indigenous employment ratios, emergency medevac readiness, and field guide certifications.'
+    answer: 'Every property and vessel in our portfolio is assessed against a published vetting standard. Criteria include maximum guest density, solar/renewable energy usage, indigenous employment ratios, emergency medevac readiness, and field guide certifications.'
   },
   {
     question: 'Can Rare Passages manage journeys across multiple verticals in one trip?',

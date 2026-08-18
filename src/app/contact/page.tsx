@@ -40,7 +40,7 @@ export default function ContactPage() {
             <span className="contact-card__icon">◇</span>
             <h2 className="contact-card__title">Partnerships & Operators</h2>
             <p className="contact-card__desc">
-              Are you a lodge, expedition vessel, or specialist operator meeting our 42-point audit standard? We’re interested in talking.
+              Are you a lodge, expedition vessel, or specialist operator meeting our published vetting audit standard? We’re interested in talking.
             </p>
             <a href="mailto:partners@rarepassages.com" className="contact-card__link">partners@rarepassages.com →</a>
           </div>
