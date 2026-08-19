@@ -66,7 +66,7 @@ export default function AboutPage() {
             <span className="highlight-card__number">01</span>
             <h3 className="pillar-card__title" style={{ marginTop: "8px" }}>Operator Commissions</h3>
             <p className="pillar-card__desc">
-              Through host agency credentials, we earn 10-20% commission on bookings with vetted operators. Clients pay the same rate they would booking direct. We split commissions with our host agency, retaining 80-95% depending on volume.
+              We are compensated by the operators we place business with, on terms that never change what a traveler pays or which recommendation they receive. The full commercial disclosure sits with each consumer brand.
             </p>
           </div>
           <div className="pillar-card">
@@ -80,7 +80,7 @@ export default function AboutPage() {
             <span className="highlight-card__number">03</span>
             <h3 className="pillar-card__title" style={{ marginTop: "8px" }}>Affiliate & Lead Generation</h3>
             <p className="pillar-card__desc">
-              Self-serve bookings through TourRadar RISE, Travelstride, and Viator affiliate programs generate ancillary revenue from travelers who prefer to book directly. Lower commission but higher volume and zero service overhead.
+              Where a brand offers self-serve booking, the commercial relationship is disclosed on that brand’s own site, in plain language, at the point of decision.
             </p>
           </div>
         </div>

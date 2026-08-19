@@ -19,7 +19,7 @@ for (const route of routes) {
 }
 await browser.close();
 if (!seen.size) console.log("A11Y CLEAN across", routes.length, "routes");
-for (const [id, c] of [...seen].sort((a, b) => (a[1].impact === "critical" ? -1 : 1))) {
+for (const [id, c] of [...seen].sort((a) => (a[1].impact === "critical" ? -1 : 1))) {
   console.log(`\n[${c.impact}] ${id} — ${c.help}\n  routes: ${[...c.routes].join(", ")}\n  nodes: ${c.nodes}\n  e.g. ${c.sample}`);
 }
 if (bad) process.exitCode = 1;

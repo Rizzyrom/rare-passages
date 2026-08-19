@@ -30,7 +30,7 @@ export default function Home() {
           <span className="hero__eyebrow">A portfolio of travel worth doing</span>
           <h1 className="hero__title">Rare <em>Passages.</em></h1>
           <p className="hero__subtitle">
-            Five specialist travel brands under one standard. Safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys, each vetted, each matched, each built for travelers who want the real thing.
+            A group of specialist travel brands, each built around a single kind of journey and held to one operating standard. Safaris. Expedition voyages. Private islands. Alpine retreats. Grand rail.
           </p>
         </div>
         <div className="hero__scroll">Scroll</div>
@@ -42,10 +42,10 @@ export default function Home() {
           <span className="eyebrow">The premise</span>
         </div>
         <p className="opening__text" data-reveal>
-          Five specialist brands, one shared rule: the traveler&rsquo;s trip comes before the operator&rsquo;s inventory, the platform&rsquo;s margin, or the affiliate&rsquo;s payout. <em>We do not aggregate mass tours. We do not sell what we own.</em>
+          Most travel groups grow by adding inventory. We grow by adding expertise. <em>Each brand in the portfolio is run by people who know one kind of travel completely</em> — and is held to the same standard of research, disclosure and partner conduct.
         </p>
         <p className="opening__note" data-reveal="late">
-          Each vertical carries its own research, its own vetted operators, and its own expertise. What they share is the standard.
+          That is the whole thesis: depth cannot be centralised, but standards can.
         </p>
       </section>
 
@@ -103,7 +103,7 @@ export default function Home() {
             Most travel groups are holding companies, they acquire brands, cut costs, and push cross-selling. We’re not that.
           </p>
           <p className="approach__pullquote">
-            “Every vertical shares the same DNA: independent research, transparent pricing, zero commission bias, and a published-standard operator vetting process.”
+            “A brand earns its place in this portfolio by knowing its category better than anyone we could hire to replace it.”
           </p>
           <p>
             Whether you’re tracking gorillas in Rwanda or ice-cruising through the Northwest Passage, the standard doesn’t change. We vet every operator for safety, conservation ethics, guest density, and guiding excellence. We disclose every commercial relationship. We show you the full cost before you book.
@@ -111,26 +111,6 @@ export default function Home() {
           <div style={{ marginTop: "32px" }}>
             <Link href="/how-we-work" className="text-link">How we vet operators →</Link>
           </div>
-        </div>
-      </section>
-
-      {/* STATS BAR */}
-      <section className="stats-bar">
-        <div className="stat-item">
-          <span className="stat-item__value">5</span>
-          <span className="stat-item__label">Specialist Verticals</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-item__value">1</span>
-          <span className="stat-item__label">Live Today, Four in Development</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-item__value">0</span>
-          <span className="stat-item__label">Inventory Owned</span>
-        </div>
-        <div className="stat-item">
-          <span className="stat-item__value">0</span>
-          <span className="stat-item__label">Commission Bias</span>
         </div>
       </section>
 
@@ -150,57 +130,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GROWTH & VISION */}
-      <section className="growth-section">
-        <div className="growth-section__inner">
-          <div className="growth-section__header">
-            <span className="growth-section__eyebrow">Growth & Vision</span>
-            <h2 className="growth-section__title">Built to scale. Built to last. Built to be acquired.</h2>
-            <p className="growth-section__subtitle">
-              Rare Passages is structured as a portfolio company from day one. Each vertical launches with its own domain, brand identity, and revenue stream, then scales under the parent standard. The endgame is a valuable, acquirable travel portfolio.
-            </p>
-          </div>
-
-          <div className="growth-timeline">
-            <div className="growth-phase">
-              <span className="growth-phase__year">2026</span>
-              <h3 className="growth-phase__title">Foundation</h3>
-              <p className="growth-phase__desc">Safari Awaits launches as the flagship vertical. Host agency credentials secured. Expedition Maritime enters development. Portfolio infrastructure and published-standard vetting framework established.</p>
-            </div>
-            <div className="growth-phase">
-              <span className="growth-phase__year">2027</span>
-              <h3 className="growth-phase__title">Vertical Expansion</h3>
-              <p className="growth-phase__desc">Coastal & Island Sanctuaries and Expedition Maritime go live. Grand Rail partnerships signed. First multi-vertical family office engagements. Revenue target: $500K annualized.</p>
-            </div>
-            <div className="growth-phase">
-              <span className="growth-phase__year">2028-29</span>
-              <h3 className="growth-phase__title">Scale & Optimize</h3>
-              <p className="growth-phase__desc">All five verticals operational. International localization (German, Dutch). Recurring family office retainers. Conservation Trust funded at scale. Revenue target: $1.5M-2M annualized.</p>
-            </div>
-            <div className="growth-phase">
-              <span className="growth-phase__year">2030-31</span>
-              <h3 className="growth-phase__title">Position for Exit</h3>
-              <p className="growth-phase__desc">Portfolio maturity. Demonstrated revenue, repeat clientele, and conservation impact. Position for acquisition by a major travel group, private equity, or family office. Target valuation: $5M-10M+.</p>
-            </div>
-          </div>
-
-          <div className="revenue-model">
-            <div className="revenue-stream">
-              <span className="revenue-stream__label">Primary Revenue</span>
-              <p className="revenue-stream__value">10-20% Commission</p>
-              <p className="revenue-stream__desc">Direct operator commissions on high-ticket bookings through host agency credentials. The core revenue engine across all verticals.</p>
-            </div>
-            <div className="revenue-stream">
-              <span className="revenue-stream__label">Recurring Revenue</span>
-              <p className="revenue-stream__value">Family Office Retainers</p>
-              <p className="revenue-stream__desc">Annual portfolio management contracts with high-net-worth families for multi-vertical travel planning and coordination.</p>
-            </div>
-            <div className="revenue-stream">
-              <span className="revenue-stream__label">Ancillary Revenue</span>
-              <p className="revenue-stream__value">Affiliate & Lead Gen</p>
-              <p className="revenue-stream__desc">TourRadar RISE, Travelstride, and Viator affiliate commissions for self-serve bookings and add-on experiences.</p>
-            </div>
-          </div>
+      {/* PARTNER WITH US — the corporate CTA, replaces the growth/revenue pitch deck */}
+      <section className="partner">
+        <div className="partner__intro" data-reveal>
+          <span className="eyebrow">Partner with us</span>
+          <h2>We are looking for operators who are already doing it properly.</h2>
+          <p>
+            Rare Passages does not own lodges, ships or rolling stock. We build the brands that send discerning
+            travelers to the people who do — and we are selective about whose name we put in front of them.
+          </p>
+        </div>
+        <div className="partner__grid">
+          <article data-reveal>
+            <span className="eyebrow">Operators &amp; properties</span>
+            <h3>Join a vertical</h3>
+            <p>Camps, vessels, lodges and ground handlers who meet our vetting standard and want qualified, well-briefed travelers rather than volume.</p>
+          </article>
+          <article data-reveal>
+            <span className="eyebrow">Founders &amp; teams</span>
+            <h3>Build the next brand</h3>
+            <p>We back category specialists who know one kind of travel completely. If that is you, the portfolio is how you scale without losing the craft.</p>
+          </article>
+          <article data-reveal>
+            <span className="eyebrow">Press &amp; institutions</span>
+            <h3>Work with the group</h3>
+            <p>Editorial enquiries, standards documentation, and partnership conversations with conservation and industry bodies.</p>
+          </article>
         </div>
       </section>
 

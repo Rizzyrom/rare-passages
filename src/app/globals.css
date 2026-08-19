@@ -3140,3 +3140,43 @@ html.has-reveal [data-reveal].is-revealed { opacity: 1; transform: none; }
 
 .page-hero .eyebrow, .page-hero > .eyebrow { color: var(--gold); }
 .vertical-cta .eyebrow { color: var(--clay); }
+
+/* ============================================
+   PARTNER WITH US — corporate CTA band
+   ============================================ */
+.partner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+  border-top: 1px solid var(--line-strong);
+}
+.partner__intro { max-width: 34em; margin-bottom: 56px; }
+.partner__intro h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 10px 0 20px;
+}
+.partner__intro p { color: var(--muted); line-height: 1.8; }
+.partner__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+}
+.partner__grid article {
+  background: var(--paper);
+  padding: 40px clamp(24px, 2.5vw, 40px) 44px;
+}
+.partner__grid h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 12px 0 14px;
+}
+.partner__grid p { font-size: 0.93rem; line-height: 1.75; color: var(--muted); }
+@media (max-width: 860px) {
+  .partner__grid { grid-template-columns: 1fr; }
+  .partner__intro { margin-bottom: 36px; }
+}

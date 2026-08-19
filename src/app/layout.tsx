@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: "%s | Rare Passages",
   },
   description:
-    "Five specialist travel brands under one standard. Safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys, each vetted, each matched, each built for the experience-driven traveler.",
+    "A group of specialist travel brands — safaris, expedition voyages, private islands, alpine retreats and grand rail — each vetted, each matched, each built for the experience-driven traveler.",
   keywords: [
     "luxury travel",
     "safari",

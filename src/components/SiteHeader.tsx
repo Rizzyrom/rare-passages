@@ -31,7 +31,7 @@ export function SiteHeader() {
           <Link href="/contact" className="nav-link">Contact</Link>
         </nav>
         <a href="/contact" className="header-cta">
-          Start planning
+          Partner with us
         </a>
         <button className="mobile-menu-toggle" onClick={() => setMobileOpen(true)} aria-label="Open navigation menu">
           Menu

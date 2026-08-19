@@ -96,9 +96,9 @@ export default function BrandPage() {
             No invented concierge language, no fake urgency, no titles we have not earned. Every claim
             checkable. Every number real. No emojis, anywhere, ever.
           </p>
-          <p><strong>One line:</strong> High-ticket travel, intelligently matched. Five brands. One standard.</p>
+          <p><strong>One line:</strong> A group of specialist travel brands. One operating standard.</p>
           <p><strong>Short bio (social):</strong> A portfolio of specialist travel brands — safaris, expedition cruises, private islands, alpine retreats, grand rail journeys. Traveler-first matching, full cost transparency.</p>
-          <p><strong>Long boilerplate:</strong> Rare Passages is a portfolio of specialist high-ticket travel brands built on one principle: the traveler&rsquo;s trip comes before the operator&rsquo;s inventory. Each vertical — beginning with Safari Awaits — pairs deep destination research with independent matching and full cost transparency. We own no inventory and take no commission that would bias a recommendation.</p>
+          <p><strong>Long boilerplate:</strong> Rare Passages is a travel group built on a single conviction: expertise does not scale by dilution. Each brand in the portfolio is run by specialists in one category of travel and is held to a shared standard covering research, partner vetting, cost disclosure and conduct. The group does not own lodges, vessels or rolling stock; it builds the brands that connect discerning travelers to the operators who do.</p>
         </section>
 
         <section>
