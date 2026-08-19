@@ -4,7 +4,7 @@
 
 ## What This Is
 
-Rare Passages (rarepassages.com) is the **parent portfolio brand** that houses 5+ specialist travel verticals. Safari Awaits is the first active vertical. This site showcases the portfolio, explains the business model, and drives investor/partner interest.
+Rare Passages (rarepassages.com) is the **corporate site of a specialist travel group** (think Ennismore, Sircle). It presents the brands in tiers, the group operating standard, and routes for partners, press and talent. It does NOT talk to travelers, publish revenue/commission mechanics, or make claims the group cannot prove today. Safari Awaits is the first (and only active) brand.
 
 **Currently NOT indexing** — intentional until the site and all verticals are launch-ready. Enforced by
 `X-Robots-Tag: noindex, nofollow` in `next.config.ts` plus `robots: { index: false, follow: false }` in
@@ -17,13 +17,17 @@ a `Disallow` would hide them and risk URL-only indexing.
 src/
 ├── app/
 │   ├── layout.tsx              → Root layout (fonts, header, footer, metadata)
-│   ├── page.tsx                → Homepage (hero, portfolio verticals, business model, growth section, CTA)
+│   ├── page.tsx                → Homepage (hero, brands, partner-with-us CTA)
 │   ├── globals.css             → Design system (CSS tokens + component styles)
 │   ├── robots.ts               → robots.txt (allows crawl by design; noindex enforced via header + metadata)
 │   ├── sitemap.ts              → Static sitemap
 │   ├── about/page.tsx          → About page
 │   ├── contact/               → Contact page (fail-closed /api/inquiries intake)
-│   ├── how-we-work/           → Methodology page
+│   ├── how-we-work/           → Partner examination process
+│   ├── develop/               → Partner with us (primary CTA)
+│   ├── standards/             → The group operating standard (public document)
+│   ├── press/                 → Boilerplate, facts, assets
+│   ├── careers/               → Honest: no open roles yet
 │   ├── portfolio/
 │   │   ├── page.tsx            → Portfolio index
 │   │   └── [slug]/page.tsx    → Dynamic vertical detail page
@@ -76,19 +80,19 @@ interface Vertical {
 
 ### Current verticals:
 1. **Safari Awaits** (active) — links to safariawaits.com
-2. **Expedition Maritime** (active) — not yet deployed
+2. **Expedition Maritime** (development) — no site, vessel or partner yet; copy must say so
 3. **Private Islands** (horizon) — not yet built
 4. **Alpine Retreats** (horizon) — not yet built
 5. **Grand Rail Journeys** (horizon) — not yet built
 
 ## Key Differences from Safari Awaits
 
-- **Inquiry intake** — /api/inquiries, fail-closed (503 in production without INQUIRY_WEBHOOK_URL / optional INQUIRY_WEBHOOK_TOKEN)
+- **Inquiry intake** — /api/inquiries, corporate (organisation/role/audience/region), fail-closed (503 in production without INQUIRY_WEBHOOK_URL); tags brand:rare-passages + audience:*
 - **One API route** — /api/inquiries (guarded: rate limit, size cap, honeypot)
 - **Noindex** — intentionally not indexing
 - **Lucide icons** — uses lucide-react for icons
 - **Tailwind v4** — imported but most styling is custom CSS
-- **No tests** — no Playwright setup yet
+- **No Playwright tests yet** — a11y/mobile/image audits exist (scripts/*.mjs, server on :3102) and run in CI
 
 ## Build
 
@@ -124,6 +128,17 @@ Safari Awaits: shared horizon, different sky.
 WCAG 2.1 AA clean via axe-core (scripts/a11y-audit.mjs). Two token rules keep it that way:
 --clay (text-safe) for eyebrows/labels on light ground; --gold only for the star mark and dark
 surfaces. Header is transparent only on "/" (hero); every other route renders solid.
+
+
+## Register rules (owner-set, non-negotiable)
+- Corporate voice only. No consumer CTAs ("plan a journey", "start your journey"), no budget bands,
+  no "curators", no concierge fantasy ("private jet tarmac", "24/7").
+- No revenue, commission, valuation, "acquirable asset", "acquisition multiples", "how we make money".
+- No fabricated proof: no percentages to trusts, no "military-grade", no counts. Principles must
+  match /standards word for word in spirit — the site must not contradict its own standard.
+- Brand tiers: active / development / horizon — statusLabel is what renders; portfolio must show all three.
+- Quality method and adversarial critic loop: see safari-awaits/CLAUDE.md "The Quality Method";
+  the standard is QUALITY-STANDARD.md (section H is this site).
 
 ## Rules
 

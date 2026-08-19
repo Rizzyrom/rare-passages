@@ -1,8 +1,15 @@
 # Rare Passages Portfolio — Master To-Do
 
-_Source of truth for what is done, what Claude can still do alone, and what only Rom can unblock. Updated 2026-08-18 18:15 PDT._
+_Source of truth for what is done, what Claude can still do alone, and what only Rom can unblock. Updated 2026-08-18 evening._
 
-Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`). **Certified 02:36 PDT:** lint 0 · build clean · Playwright SA 12/12, RP 8/8 · mobile CLEAN · image CLEAN · axe WCAG 2.1 AA CLEAN — both sites. SA launch-check: every remaining BLOCK is a Rom item below.
+Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`, CI quality-gate on every push). **Certified this evening:** lint 0 · build clean · Playwright SA 12/12 · a11y CLEAN (SA 15 routes, RP 12) · mobile CLEAN (SA 16, RP 12) · image CLEAN (SA 19, RP 12). GA4 live on both. Both live on real domains, still noindex.
+
+**Where we are on the 6→10 scale (honest):** SA is a strong 8 with the tools, eight destinations, honest copy, two-round adversarial review, and a real lead pipeline shaped for GHL — the remaining distance is entirely owner-gated (founder identity, calendar, CRM URL, indexing) plus the depth work in §4. RP is a 7.5: register fixed, four corporate routes, standard published; it needs the same critic loop and photography pass SA got.
+
+## The three things that move the needle most, all yours, all under 15 minutes
+1. **Founder bio + photo** → the single trust item every critic flagged. 2–3 true sentences + one natural-light photo.
+2. **GHL inbound webhook URL** → leads land tagged in your CRM instead of a 503. Setup doc: `safari-awaits/docs/lead-webhook-contract.md`.
+3. **Booking calendar URL** (GHL calendar / Cal.com) → /planning-call opens a real calendar. Until then it honestly routes to the brief with a call request.
 
 ---
 
@@ -14,10 +21,6 @@ Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`). **Cer
 ---
 
 
-### NEW — from the adversarial homepage review (Aug 18)
-- [ ] **Founder bio + photograph** (10 min, highest-leverage trust item). All three critics: "not one human being is named, pictured, or credentialed." Send me: 2–3 true sentences (countries in our eight you have been to and roughly when; what you did before; why this), plus one photograph — natural light, no studio. Goes on /about, the byline, and the planning-call page. Until then the block on /about says plainly it is being written.
-- [ ] **GHL inbound webhook URL** (2 min) — Automation → Workflows → Inbound Webhook → copy URL → I set LEAD_WEBHOOK_URL. Full setup + custom fields + auto-ack copy in safari-awaits/docs/lead-webhook-contract.md. Leads are shaped and tagged; they just need somewhere to land.
-- [ ] **Booking calendar URL** for planning calls (5 min) — a GHL calendar link, Cal.com or SavvyCal. I set NEXT_PUBLIC_BOOKING_URL and the /planning-call page goes live with a real calendar. Until then it honestly routes to the brief.
 
 ## 1. LAUNCH BLOCKERS — nothing goes live until these clear
 
@@ -37,7 +40,8 @@ Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`). **Cer
 | `LEAD_WEBHOOK_URL` (+`_TOKEN`) | SA | [BOTH] | Where /get-matched leads land (CRM/GHL/Zapier). Site **fails closed** (503) without it — no fake success |
 | `NEWSLETTER_WEBHOOK_URL` (+`_TOKEN`) | SA | [BOTH] | Footer signup (Beehiiv/Mailchimp/GHL). Fails closed without it |
 | `INQUIRY_WEBHOOK_URL` (+`_TOKEN`) | RP | [BOTH] | Contact form intake. Fails closed without it |
-| `NEXT_PUBLIC_GA_MEASUREMENT_ID` | SA + RP | [BOTH] | GA4 property id — script loads only when set |
+| ~~`NEXT_PUBLIC_GA_MEASUREMENT_ID`~~ **DONE** | SA + RP | — | SA G-CVFR5YCEB6, RP G-7DYE16BP79 as code defaults; env overrides. Live and firing events. |
+| `NEXT_PUBLIC_BOOKING_URL` | SA | [BOTH] | Calendar for planning calls (GHL calendar / Cal.com). /planning-call opens it when set |
 | `NEXT_PUBLIC_TURNSTILE_SITE_KEY` + `TURNSTILE_SECRET_KEY` | SA | [BOTH] | Cloudflare Turnstile — **must be set together**; launch-check now enforces the pairing |
 
 Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per form is the fastest path — [CLAUDE] can write the payload mapping.
@@ -54,8 +58,16 @@ Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per
 
 ## 4. SAFARI AWAITS — remaining automatable work
 
+**Shipped this evening [CLAUDE]:** competitive audit (COMPETITIVE-AUDIT.md) · cost estimator · destination comparator · month matrix · four new destinations (Namibia, Zambia, Zimbabwe, Rwanda & Uganda) with photography · bylines on guides/destinations · homepage recomposed through two rounds of adversarial critics (tools at screen two, refusal-led standard, two honest paths, worked answers, named-human link, 'we never hold your money') · /planning-call · lead pipeline with names, UTM, GHL-shaped payload and call preference · superlative and British-spelling sweep · GA4 events · CI · IndexNow · LAUNCH-DAY.md · QUALITY-STANDARD.md.
+
 | # | Item | Owner | Effort |
 |---|---|---|---|
+| 4.A | Critic loop on the destination + guide templates (running now) → fixes across 24 pages | [CLAUDE] | in progress |
+| 4.B | Region sub-pages (Okavango, Serengeti, Mara, Sabi Sand, Sossusvlei, Volcanoes) — 'okavango delta safari' 3,600/mo | [CLAUDE] | 3h |
+| 4.C | Experiences layer: walking, photographic, family, honeymoon, primates, Victoria Falls | [CLAUDE] | 3h |
+| 4.D | Itinerary objects (8–10 named, costed, routed) with their own enquiry | [CLAUDE] | 3h |
+| 4.E | /safari-planner money page — 'african safari planner' \$46 CPC, 'safari travel agent' \$42 | [CLAUDE] | 1h |
+| 4.F | Photography brief per slot + a real-photography plan for the founder's first trips (stock is the ceiling we are at) | [BOTH] | 1h + travel |
 | 4.1 | ~~Elevate 3 legacy Tailwind pages~~ **DONE** — dossier system, zero hex in src/app | [CLAUDE] | — |
 | 4.2 | ~~SEO pass 2~~ **DONE** — keyword-first seoTitles ≤59 chars incl. suffix, datePublished | [CLAUDE] | — |
 | 4.3 | Content roadmap: 88-page plan exists; write next 10 guides against DataForSEO gaps (Zambia/Namibia/Rwanda demand) | [CLAUDE] + [ROM] voice sign-off | Large |
