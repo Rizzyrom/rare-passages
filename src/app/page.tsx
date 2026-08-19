@@ -72,8 +72,8 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="dest-strip__meta-item">
-                  <span className="dest-strip__meta-label">Status</span>
-                  <span className="dest-strip__meta-value">{v.statusLabel}</span>
+                  <span className="dest-strip__meta-label">Category</span>
+                  <span className="dest-strip__meta-value">{v.category}</span>
                 </div>
               </div>
               <div className="actions">
