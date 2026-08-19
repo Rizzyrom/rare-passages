@@ -38,7 +38,7 @@ export default function PortfolioPage() {
           <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
             <div className="dest-strip__image">
               { }
-              <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
+              <Image src={photo?.card || photos.hero.mobile} alt={photo?.alt || photos.hero.alt} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
             <div className="dest-strip__content">
               <span className="dest-strip__number">0{i + 1}</span>

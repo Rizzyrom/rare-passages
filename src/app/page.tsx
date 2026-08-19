@@ -24,7 +24,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         { }
-        <Image className="hero__image" src={photos.hero.desktop} alt="Dramatic remote landscape" fill priority sizes="100vw" />
+        <Image className="hero__image" src={photos.hero.desktop} alt={photos.hero.alt} fill priority sizes="100vw" />
         <div className="hero__gradient" />
         <div className="hero__content">
           <span className="hero__eyebrow">A portfolio of travel worth doing</span>
@@ -57,7 +57,7 @@ export default function Home() {
           <section key={v.id} className={`dest-strip ${i % 2 === 1 ? "dest-strip--reverse" : ""}`}>
             <div className="dest-strip__image">
               { }
-              <Image src={photo?.card || photos.hero.mobile} alt={v.name} fill sizes="(max-width: 900px) 100vw, 50vw" />
+              <Image src={photo?.card || photos.hero.mobile} alt={photo?.alt || photos.hero.alt} fill sizes="(max-width: 900px) 100vw, 50vw" />
             </div>
             <div className="dest-strip__content" data-reveal>
               <span className="dest-strip__number">0{i + 1}</span>
