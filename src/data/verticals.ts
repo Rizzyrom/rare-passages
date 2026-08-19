@@ -90,12 +90,12 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     slug: 'expedition-cruises',
     name: 'Expedition Maritime',
     tagline: 'Polar & Remote Oceanic Explorations',
-    status: 'active',
-    statusLabel: 'Active Vertical',
+    status: 'development',
+    statusLabel: 'In Development',
     category: 'Polar & Island Maritime',
     heroImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2400&auto=format&fit=crop',
-    shortDescription: 'Purpose-built PC6 ice-class expedition vessels navigating Antarctica, Svalbard, the Galápagos, and Northwest Passage with working marine scientists.',
-    fullDescription: 'Expedition Maritime turns ocean exploration into a real expedition, not a cruise. Using purpose-built polar expedition ships equipped with Dynamic Positioning (anchorless reef protection), private balconies, luxury spas, and Zodiac fleets, we grant guests safe, intimate entry to Earth’s most formidable environments.',
+    shortDescription: 'The polar and remote-ocean vertical, in development: expedition sailings to Antarctica, Svalbard, the Galápagos and the Northwest Passage, matched with the same rigour as Safari Awaits.',
+    fullDescription: 'Expedition Maritime will apply the Safari Awaits method to the sea: an operator framework for expedition vessels, honest cost transparency, and a small number of routes known properly rather than a catalogue. It is in development and does not yet take enquiries.',
     featuredDestinations: [
       'Antarctic Peninsula, South Georgia & Falkland Islands',
       'High Arctic, Svalbard Archipelago & Greenland Fjords',
@@ -248,55 +248,28 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
 export const BRAND_PRINCIPLES = [
   {
     number: '01',
-    title: 'Institutional Vetting & Operator Standards',
-    description: 'We do not aggregate mass itineraries. Every lodge, expedition ship, air charter partner, and field guide company in our portfolio is assessed against a published vetting standard covering safety protocols, ecological integrity, guest density limits, and financial stability.'
+    title: 'Research before recommendation',
+    description: 'Every destination, season and operator a brand recommends has been examined by a named person against primary sources. Historical guidance is labelled as guidance, and every guide carries a byline and a last-reviewed date.'
   },
   {
     number: '02',
-    title: 'Single-Point Portfolio Guidance',
-    description: 'High-net-worth families, private offices, and discerning travelers do not need multiple agencies. Rare Passages acts as your permanent global travel authority - maintaining your personal preferences across safaris, polar voyages, and island retreats.'
+    title: 'The whole cost, first',
+    description: 'A traveler sees the full price — transfers, park and concession fees, levies, supplements — before any commitment. Teaser rates and undisclosed markups are prohibited across the group.'
   },
   {
     number: '03',
-    title: 'Zero Direct Markup & Transparency',
-    description: 'As a parent portfolio authority, Rare Passages provides direct institutional pricing without hidden surcharges. Our value is rooted in curated access, priority lodge allocations, and end-to-end oversight.'
+    title: 'The willingness to say no',
+    description: 'A brand tells a traveler when the month, the country or the year is wrong. A recommendation that cannot lose the booking is not a recommendation.'
   },
   {
     number: '04',
-    title: 'Regenerative Conservation Commitment',
-    description: 'A non-negotiable 2.5% of Rare Passages’ platform booking revenue is committed to our Conservation Trust, funding critical habitat corridors, marine protected area enforcement, and indigenous guide academies.'
+    title: 'Partners examined, then re-examined',
+    description: 'Operators enter a brand’s recommendations only after assessment against guiding standard, safety practice, conservation and community position, and pricing transparency. Standing is reviewed every season. No operator can pay to be recommended.'
   },
   {
     number: '05',
-    title: 'Absolute Discretion & Anonymity',
-    description: 'We safeguard our guests’ security and privacy with military-grade data protection, strict non-disclosure agreements, and discreet airport transit protocols.'
-  }
-];
-
-export const METHODOLOGY_STEPS = [
-  {
-    step: '01',
-    name: 'Discovery & Personal Archetype Mapping',
-    subtitle: 'Understanding your appetite for wildness, luxury, and pace',
-    description: 'We begin with an in-depth consultation with a Senior Rare Passages Advisor. We map your family’s physical readiness, wildlife desires, privacy parameters, and accommodation preferences.'
-  },
-  {
-    step: '02',
-    name: 'Vertical Matching & Private Allocation',
-    subtitle: 'Selecting the exact vertical, concession, or vessel',
-    description: 'We leverage our proprietary relationship network to unlock restricted lodge suites, private concessions, or luxury ship staterooms that are never listed on public booking engines.'
-  },
-  {
-    step: '03',
-    name: 'Seamless Bespoke Execution',
-    subtitle: 'End-to-end charter flight, guide, and concierge coordination',
-    description: 'From private jet tarmac transfers to custom dietary provisioning and expert naturalist assignments, every minute detail is managed by our 24/7 global operations desk.'
-  },
-  {
-    step: '04',
-    name: 'Post-Passage Archiving & Lifetime Relationship',
-    subtitle: 'Building your enduring global travel profile',
-    description: 'Following your journey, your advisor archives feedback, dietary nuances, and cabin preferences to ensure smooth continuity for your future passages across any vertical.'
+    title: 'One design language, honestly applied',
+    description: 'Every brand shares a horizon, a type system and a photographic standard: natural light, real places, no stock tells. If it looks templated, it fails.'
   }
 ];
 

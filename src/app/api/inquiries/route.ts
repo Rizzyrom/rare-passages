@@ -2,16 +2,15 @@ import { NextResponse } from "next/server";
 import { guardJsonPost, postJsonWebhook, EMAIL_RE } from "@/server/http";
 
 type InquiryBody = {
-  website?: string;
+  website?: string; // honeypot
   fullName?: string;
   email?: string;
   phone?: string;
-  vertical?: string;
-  timeframe?: string;
-  budgetRange?: string;
-  groupSize?: string;
+  organisation?: string;
+  role?: string;
+  audience?: string;
+  region?: string;
   message?: string;
-  ndaRequested?: boolean;
   consent?: boolean;
 };
 
@@ -39,19 +38,20 @@ export async function POST(request: Request) {
 
   try {
     await postJsonWebhook(endpoint, process.env.INQUIRY_WEBHOOK_TOKEN, {
-      fullName: body.fullName.trim(),
+      fullName: body.fullName.trim().slice(0, 120),
       email: body.email.trim(),
-      ...(body.phone?.trim() ? { phone: body.phone.trim() } : {}),
-      vertical: body.vertical ?? "matching",
-      timeframe: body.timeframe ?? "",
-      budgetRange: body.budgetRange ?? "",
-      groupSize: body.groupSize ?? "",
+      ...(body.phone?.trim() ? { phone: body.phone.trim().slice(0, 40) } : {}),
+      organisation: (body.organisation ?? "").slice(0, 160),
+      role: (body.role ?? "").slice(0, 120),
+      audience: ["operator", "founder", "institution", "press", "other"].includes(body.audience ?? "") ? body.audience : "other",
+      region: (body.region ?? "").slice(0, 160),
       message: (body.message ?? "").slice(0, 4000),
-      ndaRequested: Boolean(body.ndaRequested),
-      consent: true,
+      consent: Boolean(body.consent),
+      source: "rarepassages.com",
+      tags: ["brand:rare-passages", "source:website", `audience:${body.audience ?? "other"}`],
       receivedAt: new Date().toISOString(),
-      source: "rarepassages.com/contact",
     });
+
     return NextResponse.json({ accepted: true }, { status: 201 });
   } catch {
     return NextResponse.json(

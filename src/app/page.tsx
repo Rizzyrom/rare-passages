@@ -9,7 +9,7 @@ export default function Home() {
     "@type": "Organization",
     name: "Rare Passages",
     url: "https://rarepassages.com",
-    description: "Parent portfolio of specialist high-ticket travel brands, safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys.",
+    description: "A specialist travel group building brands held to one published standard: safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys.",
     brand: PORTFOLIO_VERTICALS.map((v) => ({
       "@type": "Brand",
       name: v.name,

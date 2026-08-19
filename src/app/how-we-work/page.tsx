@@ -1,74 +1,41 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "How We Work",
-  description: "How Rare Passages vets operators, matches travelers, and manages every step of the journey from discovery to post-trip impact reporting.",
+  description: "How Rare Passages examines operators, builds brands and keeps them to one standard. The group's working method, for partners and press.",
+  alternates: { canonical: "/how-we-work" },
 };
 
 const PILLARS = [
-  {
-    title: "Published Vetting Standard",
-    description: "Every operator, lodge, vessel, and ground handler is assessed against a published vetting standard covering safety records, guide certifications, conservation impact, guest-to-staff ratios, emergency protocols, and supplier transparency.",
-  },
-  {
-    title: "Zero Commission Bias",
-    description: "We do not accept paid placements or commission-based rankings. Verticals are selected on merit, safety, and conservation track record alone. Our matching fee is flat and transparent.",
-  },
-  {
-    title: "Regenerative Conservation Mandate",
-    description: "2.5% of all platform revenue flows directly to registered conservation funds in each operating region. We audit impact annually and publish the results.",
-  },
-  {
-    title: "Deep-Field Expertise",
-    description: "Our curators are former field guides, expedition leaders, and conservation officers, not call-center agents. They have walked the trails, sailed the waters, and slept in the camps they recommend.",
-  },
+  { title: "A published standard", description: "Every brand is held to the same operating document, published at /standards so that travelers, partners and journalists can check us against it. When a brand falls short of it, the document wins." },
+  { title: "No paid placement", description: "No operator, property or destination can pay to be recommended, ranked or featured by any brand in the group. Commercial relationships are disclosed on the brand that carries them and never alter a recommendation." },
+  { title: "Depth over breadth", description: "Each brand covers a small number of places completely rather than many by name. Safari Awaits works in eight countries and knows them to the concession; the next brands will be built the same way." },
+  { title: "Editorial method", description: "Guides carry a byline and a last-reviewed date, cite primary sources, and are corrected in public when wrong. Photography is natural light, real places, no stock tells." },
 ];
 
 const PROCESS = [
-  {
-    step: "01",
-    title: "Discovery Consultation",
-    description: "A 45-minute private call to understand your travel vision, comfort preferences, group dynamics, and conservation interests. No forms, no bots, a real conversation with a specialist.",
-  },
-  {
-    step: "02",
-    title: "Bespoke Curation",
-    description: "Within 72 hours, you receive a curated shortlist of 3-5 operators or vessels that match your criteria, complete with transparent pricing, guide bios, and conservation impact data.",
-  },
-  {
-    step: "03",
-    title: "Refinement & Booking",
-    description: "We refine the selection based on your feedback, handle all logistics, flights, transfers, dietary needs, special occasions, and secure your booking with direct supplier contracts.",
-  },
-  {
-    step: "04",
-    title: "In-Field Concierge",
-    description: "From the moment you depart to the moment you return, our team monitors your journey. Need a last-minute itinerary change? A medical referral? We are one message away, 24/7.",
-  },
-  {
-    step: "05",
-    title: "Post-Trip Impact Report",
-    description: "After your journey, you receive a detailed impact report showing exactly how your booking contributed to local conservation, community employment, and carbon offset programs.",
-  },
+  { step: "01", title: "A conversation", description: "An operator, property or founder tells us what they run and how. We say honestly whether it fits a brand we operate or intend to. Some conversations end here." },
+  { step: "02", title: "Examination", description: "Assessment against the group standard: guiding qualification and practice, safety procedure, conservation and community position, pricing transparency, and how a problem at two in the morning is handled. Documentation is requested; claims are checked." },
+  { step: "03", title: "Representation", description: "If it fits, the property or product enters the relevant brand’s recommendations with the reasoning attached — why here, why this month, and what a traveler gives up by choosing it. Travelers arrive briefed and with the full cost already understood." },
+  { step: "04", title: "Seasonal review", description: "Standing is earned continuously. Every partner is re-examined each season against the same standard; recommendations change when the facts do." },
 ];
 
 export default function HowWeWorkPage() {
   return (
     <>
-      {/* HERO */}
       <section className="page-hero">
-        <span className="eyebrow">Our Vetting Standards</span>
-        <h1>How we work.</h1>
+        <span className="eyebrow">How we work</span>
+        <h1>Examine, represent, re-examine.</h1>
         <p className="page-hero__text">
-          Rare Passages does not aggregate tours or sell packaged deals. We curate, vet, and personally match travelers with operators who meet the most demanding standards in luxury adventure travel.
+          Rare Passages does not aggregate tours or sell packaged deals. Each brand in the group examines operators against a published standard, represents the ones that meet it with the reasoning attached, and re-examines them every season.
         </p>
       </section>
 
-      {/* FOUR PILLARS */}
       <section className="section">
         <div className="section-header">
-          <span className="eyebrow">The Foundation</span>
-          <h2 className="section-title">Four pillars of trust</h2>
+          <span className="eyebrow">Foundations</span>
+          <h2 className="section-title">Four things that do not change by brand.</h2>
         </div>
         <div className="pillars-grid">
           {PILLARS.map((p) => (
@@ -80,11 +47,10 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* PROCESS TIMELINE */}
       <section className="section section--paper">
         <div className="section-header">
-          <span className="eyebrow">Step by Step</span>
-          <h2 className="section-title">The curation process</h2>
+          <span className="eyebrow">For partners</span>
+          <h2 className="section-title">How an operator enters a brand.</h2>
         </div>
         <div className="itinerary-list" style={{ maxWidth: "800px" }}>
           {PROCESS.map((p) => (
@@ -99,14 +65,26 @@ export default function HowWeWorkPage() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="section">
+        <div className="section-header">
+          <span className="eyebrow">In practice</span>
+          <h2 className="section-title">Where to see it working.</h2>
+        </div>
+        <ul className="plain-list">
+          <li><a href="https://safariawaits.com/operators" target="_blank" rel="noopener noreferrer">The Safari Awaits operator framework</a> — the first brand’s examination method, published.</li>
+          <li><a href="https://safariawaits.com/editorial-standards" target="_blank" rel="noopener noreferrer">Safari Awaits editorial standards</a> — bylines, sourcing, corrections.</li>
+          <li><Link href="/standards">The group standard</Link> — the document every brand is held to.</li>
+        </ul>
+      </section>
+
+      <section className="section section--paper">
         <div className="vertical-cta">
-          <h2 className="vertical-cta__title">Ready to begin?</h2>
+          <span className="eyebrow">Operators, founders, institutions</span>
+          <h2 className="vertical-cta__title">Tell us what you run.</h2>
           <p className="vertical-cta__desc">
-            Book a private discovery consultation with one of our curators. No obligation, no pressure, just a conversation about where the world is calling you.
+            If it is done properly, we would like to hear about it. A named person replies.
           </p>
-          <Link href="/contact" className="vertical-cta__btn">Start your journey →</Link>
+          <Link href="/develop" className="vertical-cta__btn">Develop with us →</Link>
         </div>
       </section>
     </>

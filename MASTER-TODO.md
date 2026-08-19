@@ -13,6 +13,12 @@ Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`). **Cer
 
 ---
 
+
+### NEW — from the adversarial homepage review (Aug 18)
+- [ ] **Founder bio + photograph** (10 min, highest-leverage trust item). All three critics: "not one human being is named, pictured, or credentialed." Send me: 2–3 true sentences (countries in our eight you have been to and roughly when; what you did before; why this), plus one photograph — natural light, no studio. Goes on /about, the byline, and the planning-call page. Until then the block on /about says plainly it is being written.
+- [ ] **GHL inbound webhook URL** (2 min) — Automation → Workflows → Inbound Webhook → copy URL → I set LEAD_WEBHOOK_URL. Full setup + custom fields + auto-ack copy in safari-awaits/docs/lead-webhook-contract.md. Leads are shaped and tagged; they just need somewhere to land.
+- [ ] **Booking calendar URL** for planning calls (5 min) — a GHL calendar link, Cal.com or SavvyCal. I set NEXT_PUBLIC_BOOKING_URL and the /planning-call page goes live with a real calendar. Until then it honestly routes to the brief.
+
 ## 1. LAUNCH BLOCKERS — nothing goes live until these clear
 
 | # | Item | Owner | Notes |

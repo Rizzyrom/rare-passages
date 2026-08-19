@@ -1,22 +1,11 @@
-"use client";
-
 import Link from "next/link";
 import { SiteLogo } from "./site-logo";
-import { useState, FormEvent } from "react";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
 
+// Corporate footer. No consumer newsletter (that belongs to the brands), no
+// fake subscribe. Partner, press and standards routes are first-class here.
 export function SiteFooter() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    if (email.trim()) {
-      setSubscribed(true);
-      setEmail("");
-    }
-  };
-
+  const brands = PORTFOLIO_VERTICALS;
   return (
     <footer className="site-footer" role="contentinfo">
       <div className="footer-top-grid">
@@ -25,65 +14,44 @@ export function SiteFooter() {
             <SiteLogo height={22} />
           </Link>
           <p className="footer-tagline">
-            A portfolio of specialist travel brands, safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys. Each vetted. Each matched. Each built for the experience-driven traveler.
+            A specialist travel group. We build and operate the brands; the people who run the ground are examined, then represented with the reasoning attached.
           </p>
           <p className="parent-ref">
-            Operating under <strong className="parent-name">RM Ventures LLC</strong>
+            Rare Passages is a trading name of <strong className="parent-name">RM Ventures LLC</strong>
           </p>
-
-          <div className="newsletter-block">
-            <p className="newsletter-title">Curated Dispatch</p>
-            <p className="newsletter-desc">
-              Seasonal travel intelligence, new vertical launches, and conservation updates.
-            </p>
-            {subscribed ? (
-              <div className="newsletter-success">You’re subscribed.</div>
-            ) : (
-              <form onSubmit={handleSubmit} className="newsletter-form" aria-label="Newsletter signup">
-                <input
-                  type="email"
-                  required
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  aria-label="Newsletter email"
-                  className="newsletter-input"
-                />
-                <button type="submit" className="newsletter-btn">Subscribe</button>
-              </form>
-            )}
-          </div>
         </div>
 
         <div className="footer-col">
-          <p className="footer-heading">Portfolio</p>
-          <nav className="footer-nav">
-            <Link href="/portfolio">All Verticals</Link>
-            {PORTFOLIO_VERTICALS.map((v) => (
+          <p className="footer-heading">Brands</p>
+          <nav className="footer-nav" aria-label="Brands">
+            <Link href="/portfolio">All brands</Link>
+            {brands.map((v) =>
               v.externalUrl ? (
                 <a key={v.id} href={v.externalUrl} target="_blank" rel="noopener noreferrer">{v.name}</a>
               ) : (
                 <Link key={v.id} href={`/portfolio/${v.slug}`}>{v.name}</Link>
               )
-            ))}
+            )}
           </nav>
         </div>
 
         <div className="footer-col">
-          <p className="footer-heading">Company</p>
-          <nav className="footer-nav">
+          <p className="footer-heading">Group</p>
+          <nav className="footer-nav" aria-label="Group">
             <Link href="/about">About</Link>
-            <Link href="/how-we-work">How We Work</Link>
-            <Link href="/portfolio">Portfolio</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/standards">The group standard</Link>
+            <Link href="/how-we-work">How we work</Link>
+            <Link href="/careers">Careers</Link>
           </nav>
         </div>
 
         <div className="footer-col">
-          <p className="footer-heading">Connect</p>
-          <nav className="footer-nav">
-            <Link href="/contact">Start a conversation</Link>
+          <p className="footer-heading">Partners &amp; press</p>
+          <nav className="footer-nav" aria-label="Partners and press">
+            <Link href="/develop">Develop with us</Link>
+            <Link href="/press">Press</Link>
             <Link href="/brand">Brand guidelines</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </div>
       </div>

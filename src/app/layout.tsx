@@ -25,7 +25,6 @@ export const metadata: Metadata = {
     "alpine retreat",
     "luxury train",
     "travel portfolio",
-    "bespoke travel",
   ],
   openGraph: {
     title: "Rare Passages, Portfolio of Specialist Travel Brands",

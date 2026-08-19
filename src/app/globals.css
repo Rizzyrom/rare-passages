@@ -3180,3 +3180,53 @@ html.has-reveal [data-reveal].is-revealed { opacity: 1; transform: none; }
   .partner__grid { grid-template-columns: 1fr; }
   .partner__intro { margin-bottom: 36px; }
 }
+
+/* ============================================
+   CORPORATE ROUTES — develop / standards / press / careers
+   ============================================ */
+.develop-steps, .standards-list { list-style: none; margin: 0; padding: 0; max-width: 60em; }
+.develop-steps li { padding: 22px 0 22px 0; border-bottom: 1px solid var(--line); font-size: 1rem; line-height: 1.75; color: var(--ink); }
+.develop-steps li strong { font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; display: block; margin-bottom: 4px; }
+.standards-list li { display: grid; grid-template-columns: 72px 1fr; gap: 24px; padding: 32px 0; border-bottom: 1px solid var(--line); }
+.standards-list__num { font-family: var(--font-display); font-size: 2.2rem; line-height: 1; color: transparent; -webkit-text-stroke: 1px var(--sand); user-select: none; }
+.standards-list h2 { font-family: var(--font-display); font-size: 1.5rem; font-weight: 500; color: var(--ink); margin: 0 0 10px; }
+.standards-list p { font-size: 0.98rem; line-height: 1.75; color: var(--muted); max-width: 42em; margin: 0; }
+.standards-foot { margin-top: 28px; font-size: 0.85rem; color: var(--muted); font-style: italic; }
+.plain-list { list-style: none; margin: 0; padding: 0; max-width: 56em; }
+.plain-list li { position: relative; padding: 14px 0 14px 22px; border-bottom: 1px solid var(--line); font-size: 0.98rem; line-height: 1.7; color: var(--ink); }
+.plain-list li::before { content: "—"; position: absolute; left: 0; color: var(--sand); }
+.plain-list a { color: var(--clay); text-decoration: none; border-bottom: 1px solid var(--sand); }
+.press-boiler p { max-width: 60em; font-size: 1rem; line-height: 1.8; color: var(--ink); margin-bottom: 20px; }
+.press-boiler strong { color: var(--clay); font-weight: 700; margin-right: 6px; }
+.press-facts { max-width: 60em; margin: 0; border-top: 1px solid var(--line-strong); }
+.press-facts > div { display: grid; grid-template-columns: 180px 1fr; gap: 24px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.press-facts dt { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700; color: var(--clay); }
+.press-facts dd { margin: 0; font-size: 0.98rem; line-height: 1.6; color: var(--ink); }
+.cta-band { text-align: center; }
+.cta-band p { max-width: 40em; margin: 12px auto 28px; color: var(--muted); }
+@media (max-width: 640px) {
+  .standards-list li { grid-template-columns: 1fr; gap: 8px; }
+  .press-facts > div { grid-template-columns: 1fr; gap: 4px; }
+}
+
+/* ============================================
+   CORPORATE INTAKE FORM
+   ============================================ */
+.cform { max-width: 720px; display: grid; gap: 22px; }
+.cform__row--2 { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.cform__field { display: grid; gap: 8px; }
+.cform__field > span { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.16em; font-weight: 700; color: var(--clay); }
+.cform__field input, .cform__field select, .cform__field textarea {
+  width: 100%; padding: 12px 2px 10px; font-size: 1rem; font-family: var(--font-sans); color: var(--ink);
+  background: transparent; border: none; border-bottom: 1px solid var(--line-strong); border-radius: 0; transition: border-color 0.5s ease;
+}
+.cform__field textarea { resize: vertical; line-height: 1.6; }
+.cform__field input:focus, .cform__field select:focus, .cform__field textarea:focus { outline: none; border-bottom-color: var(--gold); }
+.cform__hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.cform__consent { display: flex; gap: 12px; align-items: flex-start; font-size: 0.88rem; line-height: 1.55; color: var(--muted); }
+.cform__consent input { margin-top: 4px; accent-color: var(--clay); }
+.cform__error { color: var(--error, #a83a2c); font-size: 0.9rem; border-left: 2px solid currentColor; padding-left: 12px; }
+.cform__foot { font-size: 0.8rem; color: var(--muted); font-style: italic; }
+.cform--done { padding: 32px; background: var(--paper); border-left: 2px solid var(--gold); }
+.cform--done h3 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 500; margin: 8px 0 10px; }
+@media (max-width: 640px) { .cform__row--2 { grid-template-columns: 1fr; } }

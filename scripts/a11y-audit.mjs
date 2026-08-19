@@ -2,7 +2,7 @@
 import { chromium } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 const BASE = process.env.AUDIT_BASE || "http://localhost:3102";
-const routes = (process.env.AUDIT_ROUTES || "/,/portfolio,/portfolio/safari-awaits,/portfolio/expedition-maritime,/about,/how-we-work,/contact,/brand").split(",");
+const routes = (process.env.AUDIT_ROUTES || "/,/portfolio,/portfolio/safari-awaits,/portfolio/expedition-maritime,/about,/careers,/press,/standards,/develop,/how-we-work,/contact,/brand").split(",");
 const browser = await chromium.launch(); const context = await browser.newContext({ viewport: { width: 1280, height: 900 } }); const page = await context.newPage();
 let bad = 0; const seen = new Map();
 for (const route of routes) {

@@ -5,12 +5,14 @@ import { photos } from "@/data/images";
 
 export const metadata = {
   title: "Full Portfolio Directory",
-  description: "Every specialist travel vertical in the Rare Passages portfolio: safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys.",
+  description: "The brands of the Rare Passages group: Safari Awaits, active; Expedition Maritime, Private Islands, Alpine Retreats and Grand Rail Journeys, in development.",
 };
 
 export default function PortfolioPage() {
   const active = PORTFOLIO_VERTICALS.filter((v) => v.status === "active");
-  const horizon = PORTFOLIO_VERTICALS.filter((v) => v.status === "horizon");
+  // Two non-active tiers, shown together but labelled by their own statusLabel:
+  // "development" (being built now) and "horizon" (planned).
+  const horizon = PORTFOLIO_VERTICALS.filter((v) => v.status === "development" || v.status === "horizon");
 
   return (
     <>
@@ -25,8 +27,8 @@ export default function PortfolioPage() {
 
       {/* SECTION LABEL */}
       <div className="section-header" style={{ paddingTop: "var(--space-xl)" }}>
-        <span className="eyebrow">Active Verticals</span>
-        <h2 className="section-title">Live and booking now</h2>
+        <span className="eyebrow">Active</span>
+        <h2 className="section-title">Operating today</h2>
       </div>
 
       {/* ACTIVE VERTICALS, full-bleed strips like home page */}
@@ -71,8 +73,8 @@ export default function PortfolioPage() {
       {/* HORIZON VERTICALS */}
       <section className="section section--paper">
         <div className="section-header">
-          <span className="eyebrow">Horizon Verticals — 2027 Pipeline</span>
-          <h2 className="section-title">In development</h2>
+          <span className="eyebrow">In development and horizon</span>
+          <h2 className="section-title">The next brands.</h2>
         </div>
         <div className="highlights-grid">
           {horizon.map((v) => (

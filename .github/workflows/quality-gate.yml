@@ -26,8 +26,8 @@ jobs:
         run: npm run lint && npm run build
       - name: Start production server
         run: |
-          (PORT=3000 npm run start > server.log 2>&1 &)
-          for i in $(seq 1 30); do curl -sf http://localhost:3000/ >/dev/null && break; sleep 2; done
+          (PORT=3102 npm run start > server.log 2>&1 &)
+          for i in $(seq 1 30); do curl -sf http://localhost:3102/ >/dev/null && break; sleep 2; done
       - name: Accessibility audit (WCAG 2.1 AA)
         run: node scripts/a11y-audit.mjs
       - name: Mobile audit (375px)

@@ -26,7 +26,8 @@ export function SiteHeader() {
         </Link>
         <nav className="desktop-nav" aria-label="Primary navigation">
           <Link href="/portfolio" className="nav-link">Portfolio</Link>
-          <Link href="/how-we-work" className="nav-link">How We Work</Link>
+          <Link href="/develop" className="nav-link">Develop</Link>
+          <Link href="/standards" className="nav-link">Standards</Link>
           <Link href="/about" className="nav-link">About</Link>
           <Link href="/contact" className="nav-link">Contact</Link>
         </nav>
@@ -50,7 +51,9 @@ export function SiteHeader() {
             </div>
             <nav className="mobile-nav-links">
               <Link href="/portfolio" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Portfolio</Link>
-              <Link href="/how-we-work" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>How We Work</Link>
+              <Link href="/develop" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Develop with us</Link>
+              <Link href="/standards" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Standards</Link>
+              <Link href="/press" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Press</Link>
               <Link href="/about" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>About</Link>
               <Link href="/contact" className="mobile-nav-link" onClick={() => setMobileOpen(false)}>Contact</Link>
               <a href="https://safariawaits.com" className="mobile-nav-link" target="_blank" rel="noopener noreferrer">Safari Awaits →</a>

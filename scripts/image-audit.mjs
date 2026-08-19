@@ -4,7 +4,7 @@
 import { chromium } from "@playwright/test";
 
 const BASE = process.env.AUDIT_BASE ?? "http://localhost:3102";
-const routes = ["/", "/portfolio", "/portfolio/safari-awaits", "/portfolio/expedition-maritime", "/about", "/how-we-work", "/contact", "/brand"];
+const routes = ["/", "/portfolio", "/portfolio/safari-awaits", "/portfolio/expedition-maritime", "/about", "/careers", "/press", "/standards", "/develop", "/how-we-work", "/contact", "/brand"];
 
 const browser = await chromium.launch();
 const page = await browser.newPage({ viewport: { width: 1728, height: 1080 }, deviceScaleFactor: 2 });
