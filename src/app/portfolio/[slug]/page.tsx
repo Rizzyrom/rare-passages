@@ -13,8 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const vertical = PORTFOLIO_VERTICALS.find((v) => v.slug === slug);
   if (!vertical) return {};
   return {
-    title: `${vertical.name} — ${vertical.tagline}`,
-    description: vertical.fullDescription,
+    title: `${vertical.name}`,
+    description: vertical.shortDescription.length > 160 ? vertical.shortDescription.slice(0, 157).replace(/\s+\S*$/, '') + '…' : vertical.shortDescription,
   };
 }
 

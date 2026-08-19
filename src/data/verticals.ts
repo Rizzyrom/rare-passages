@@ -32,58 +32,37 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     id: 'safari-awaits',
     slug: 'safari-awaits',
     name: 'Safari Awaits',
-    tagline: 'Curated African Safaris & Wilderness Sanctuaries',
+    tagline: 'African safari, planned independently',
     status: 'active',
-    statusLabel: 'Flagship Vertical',
-    category: 'Wilderness & Wildlife',
+    statusLabel: 'Active',
+    category: 'African Safari',
     heroImage: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2400&auto=format&fit=crop',
-    shortDescription: 'Real access to Africa’s most pristine private reserves, solar-powered luxury camps, and guide-led wildlife encounters.',
-    fullDescription: 'Safari Awaits is the group’s first brand: an independent African safari planner covering eight countries — Botswana, Tanzania, Kenya, South Africa, Namibia, Zambia, Zimbabwe, and Rwanda and Uganda — with published decision tools, bylined and sourced guides, an operator framework, and full cost transparency before any commitment. It is the working proof of the group standard.',
+    shortDescription: 'The group’s first brand: an independent safari planner covering eight African countries, with published decision tools, bylined guides and full cost transparency.',
+    fullDescription: 'Safari Awaits is the group’s first brand and the working proof of the standard. It covers eight countries — Botswana, Tanzania, Kenya, South Africa, Namibia, Zambia, Zimbabwe, and Rwanda and Uganda — with published decision tools (a cost estimator, a destination comparator, a month matrix), bylined and sourced guides, a published operator framework, and the full cost shown before any commitment. It owns no camps; it examines and represents operators.',
     featuredDestinations: [
-      'Okavango Delta & Linyanti, Botswana',
-      'Serengeti & Ngorongoro Crater, Tanzania',
-      'Volcanoes National Park, Rwanda (Gorilla Trekking)',
-      'Greater Kruger & Sabi Sands, South Africa',
-      'Masai Mara & Laikipia Plateau, Kenya'
+      'Okavango Delta and Chobe, Botswana',
+      'Serengeti and Ngorongoro, Tanzania',
+      'Maasai Mara and the conservancies, Kenya',
+      'Sabi Sand and the malaria-free reserves, South Africa',
+      'Volcanoes National Park, Rwanda'
     ],
     keyHighlights: [
-      'Eight countries known to the concession: Botswana, Tanzania, Kenya, South Africa, Namibia, Zambia, Zimbabwe, Rwanda & Uganda',
-      'Three published decision tools: a cost estimator, a destination comparator and a month-by-month matrix',
-      'Every guide bylined, sourced and dated; a published operator framework and editorial standard',
+      'Eight countries known to the concession',
+      'Three published decision tools no enquiry is needed to use',
+      'Every guide bylined, sourced and dated; operator framework and editorial standard published',
       'The willingness to say no: wrong month, wrong country, wrong year'
     ],
     guestCapacity: 'Couples, families and small groups; private-vehicle and exclusive-use options where operators offer them',
-    priceGuide: 'Cost transparency is a brand standard: safariawaits.com publishes an estimator, tiers per couple and a comparator',
+    priceGuide: 'Full cost transparency is a brand standard; pricing lives on safariawaits.com',
     sustainabilityRating: 'Operators assessed on conservation and community position under the group standard',
     externalUrl: 'https://safariawaits.com',
     verticalPillars: [
-      {
-        title: 'Private Concessions Only',
-        description: 'We avoid crowded public national park roads, opting for exclusive private land concessions where off-road tracking and night drives are privileged rights.'
-      },
-      {
-        title: 'Expert Naturalist Pairing',
-        description: 'Every safari is accompanied by the best trackers and field biologists whose deep ecological knowledge turns sightings into profound educational moments.'
-      },
-      {
-        title: 'Conscious Conservation',
-        description: 'Every bed-night booked directly sustains local indigenous community employment and funds wildlife ranger units in key migration corridors.'
-      }
+      { title: 'Research before recommendation', description: 'Destinations, seasons and operators examined against primary sources by a named person; historical guidance labeled as guidance.' },
+      { title: 'The whole cost, first', description: 'Transfers, park and concession fees, levies and supplements shown before any commitment. No teaser rates.' },
+      { title: 'Examined, then re-examined', description: 'Operators enter recommendations only after assessment against the framework, and are reviewed each season.' },
+      { title: 'The willingness to say no', description: 'Wrong month, wrong country, wrong year — the brand says so, and what it would do instead.' }
     ],
-    sampleItineraries: [
-      {
-        title: 'The Great Kalahari & Delta Waters',
-        duration: '10 Days / 9 Nights',
-        regions: 'Makgadikgadi Pans, Okavango Delta, Linyanti Concession',
-        description: 'Meander from desert meerkats and quad-biking across salt pans to luxury mokoro canoes through flooded lily channels.'
-      },
-      {
-        title: 'Kingdoms of the Migration & Primate Sanctuaries',
-        duration: '12 Days / 11 Nights',
-        regions: 'Serengeti Mara Ecosystem & Rwandan Cloud Forests',
-        description: 'Witness the iconic river crossings of the Great Migration before flying private to Rwanda for mountain gorilla habituation tracking.'
-      }
-    ]
+    sampleItineraries: []
   },
   {
     id: 'expedition-cruises',

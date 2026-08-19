@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "The Group Standard",
-  description: "The operating standard every Rare Passages brand is held to: research, transparency, refusal, partner examination and editorial independence. Published so it can be checked.",
+  description: "The operating standard every Rare Passages brand is held to: research, cost transparency, the willingness to say no, partner examination and editorial independence.",
   alternates: { canonical: "/standards" },
 };
 

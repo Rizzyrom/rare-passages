@@ -21,7 +21,7 @@ export default function PortfolioPage() {
         <span className="eyebrow">Full Portfolio Directory</span>
         <h1>Every passage, examined.</h1>
         <p className="page-hero__text">
-          Rare Passages houses a portfolio of specialist travel verticals, each an autonomous brand with its own domain expertise, vetted supplier network, and conservation mandate.
+          Rare Passages houses a portfolio of specialist travel verticals, each an autonomous brand with its own domain expertise, examined against one operating standard.
         </p>
       </section>
 
@@ -57,7 +57,7 @@ export default function PortfolioPage() {
               </div>
               <div className="actions">
                 <Link href={`/portfolio/${v.slug}`} className="text-link">
-                  Learn more →
+                  Read the {v.name} brief →
                 </Link>
                 {v.externalUrl && (
                   <a href={v.externalUrl} className="text-link" target="_blank" rel="noopener noreferrer" style={{ marginLeft: "24px" }}>
@@ -91,11 +91,11 @@ export default function PortfolioPage() {
       {/* CTA */}
       <section className="section">
         <div className="vertical-cta">
-          <h2 className="vertical-cta__title">Ready to explore a passage?</h2>
+          <h2 className="vertical-cta__title">Operators, founders, institutions.</h2>
           <p className="vertical-cta__desc">
-            Each vertical operates independently under one shared standard. Tell us what you’re looking for and we’ll point you to the right specialist.
+            Each vertical operates independently under one shared standard. If you run something properly and want it represented properly, see how a partnership works.
           </p>
-          <Link href="/contact" className="vertical-cta__btn">Start the conversation →</Link>
+          <Link href="/develop" className="vertical-cta__btn">Develop with us →</Link>
         </div>
       </section>
     </>

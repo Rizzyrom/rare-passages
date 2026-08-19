@@ -3,7 +3,7 @@ import Link from "next/link";
 import { BRAND_PRINCIPLES } from "@/data/verticals";
 
 export const metadata: Metadata = {
-  title: "About Rare Passages",
+  title: "About",
   description: "Rare Passages is a specialist travel group. It builds and operates consumer travel brands held to one published standard, starting with Safari Awaits.",
   alternates: { canonical: "/about" },
 };

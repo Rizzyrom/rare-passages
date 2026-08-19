@@ -12,22 +12,19 @@ const sans = Manrope({ variable: "--font-sans-loaded", subsets: ["latin"], weigh
 export const metadata: Metadata = {
   metadataBase: new URL("https://rarepassages.com"),
   title: {
-    default: "Rare Passages, Portfolio of Specialist High-Ticket Travel Brands",
+    default: "Rare Passages — A Group of Specialist Travel Brands",
     template: "%s | Rare Passages",
   },
-  description:
-    "A group of specialist travel brands — safaris, expedition voyages, private islands, alpine retreats and grand rail — each vetted, each matched, each built for the experience-driven traveler.",
+  description: "A group of specialist travel brands — safari, expedition voyages, private islands, alpine retreats and grand rail — built and held to one published operating standard.",
   keywords: [
-    "luxury travel",
     "safari",
     "expedition cruise",
     "private island",
     "alpine retreat",
-    "luxury train",
     "travel portfolio",
   ],
   openGraph: {
-    title: "Rare Passages, Portfolio of Specialist Travel Brands",
+    title: "Rare Passages — A Group of Specialist Travel Brands",
     description: "Five specialist travel brands under one standard. Safaris, expedition cruises, private islands, alpine retreats, and grand rail journeys.",
     type: "website",
     url: "https://rarepassages.com",
@@ -35,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rare Passages, Specialist Travel Portfolio",
+    title: "Rare Passages — A Group of Specialist Travel Brands",
     description: "Five brands. One standard. Safaris, expedition cruises, private islands, alpine retreats, grand rail journeys.",
   },
   robots: { index: false, follow: false },

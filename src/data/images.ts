@@ -49,7 +49,7 @@ export const photos = {
     "transcontinental-journeys": {
       card: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=2400&q=82&fm=jpg&auto=format", 3840),
       hero: img("https://images.unsplash.com/photo-1762446093114-13c46bfeb26f?w=2400&q=82&fm=jpg&auto=format", 3840),
-      alt: "Luxury train journey through landscape",
+      alt: "A train crossing a mountain landscape",
       photographer: "Unsplash contributor",
       source: "https://unsplash.com",
     },
@@ -69,6 +69,6 @@ export const photos = {
     },
   },
   sections: {
-    ctaBackground: img("https://images.unsplash.com/photo-1785957493897-28e405838f8a?w=2400&q=82&fm=jpg&auto=format", 3840),
+    ctaBackground: img("https://images.unsplash.com/photo-1769630762285-019641465514", 3840), // Konstantin Artyushkevich, Unsplash — snowy mountains over a misty ocean at sunrise
   },
 } as const;

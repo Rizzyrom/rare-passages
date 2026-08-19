@@ -45,7 +45,7 @@ export default function Home() {
           Most travel groups grow by adding inventory. We grow by adding expertise. <em>Each brand in the portfolio is run by people who know one kind of travel completely</em> — and is held to the same standard of research, disclosure and partner conduct.
         </p>
         <p className="opening__note" data-reveal="late">
-          That is the whole thesis: depth cannot be centralised, but standards can.
+          That is the whole thesis: depth cannot be centralized, but standards can.
         </p>
       </section>
 

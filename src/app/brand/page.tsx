@@ -98,7 +98,7 @@ export default function BrandPage() {
           </p>
           <p><strong>One line:</strong> A group of specialist travel brands. One operating standard.</p>
           <p><strong>Short bio (social):</strong> A specialist travel group. Safari Awaits is active; polar, islands, alpine and rail brands follow. One published standard, full cost transparency.</p>
-          <p><strong>Long boilerplate:</strong> Rare Passages is a travel group built on a single conviction: expertise does not scale by dilution. Each brand in the portfolio is run by specialists in one category of travel and is held to a shared standard covering research, partner vetting, cost disclosure and conduct. The group does not own lodges, vessels or rolling stock; it builds the brands that connect discerning travelers to the operators who do.</p>
+          <p><strong>Long boilerplate:</strong> Rare Passages is a travel group built on a single conviction: expertise does not scale by dilution. Each brand in the portfolio is run by specialists in one category of travel and is held to a shared standard covering research, partner vetting, cost disclosure and conduct. The group does not own lodges, vessels or rolling stock; it builds the brands that connect travelers to the operators who do.</p>
         </section>
 
         <section>
