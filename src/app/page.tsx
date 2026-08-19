@@ -68,12 +68,12 @@ export default function Home() {
                 <div className="dest-strip__meta-item">
                   <span className="dest-strip__meta-label">Status</span>
                   <span className="dest-strip__meta-value">
-                    {isActive ? "Active" : "In Development"}
+                    {v.statusLabel}
                   </span>
                 </div>
                 <div className="dest-strip__meta-item">
-                  <span className="dest-strip__meta-label">Price Range</span>
-                  <span className="dest-strip__meta-value">{v.priceGuide.split("from ")[1] || v.priceGuide}</span>
+                  <span className="dest-strip__meta-label">Status</span>
+                  <span className="dest-strip__meta-value">{v.statusLabel}</span>
                 </div>
               </div>
               <div className="actions">
@@ -83,7 +83,7 @@ export default function Home() {
                   </a>
                 ) : (
                   <Link href={`/portfolio/${v.slug}`} className="text-link">
-                    Learn more →
+                    Read the {v.name} brief →
                   </Link>
                 )}
               </div>
@@ -100,13 +100,13 @@ export default function Home() {
         </div>
         <div className="approach__right">
           <p>
-            Most travel groups are holding companies, they acquire brands, cut costs, and push cross-selling. We’re not that.
+            Every brand in the portfolio answers to the same standard, reviewed every season.
           </p>
           <p className="approach__pullquote">
             “A brand earns its place in this portfolio by knowing its category better than anyone we could hire to replace it.”
           </p>
           <p>
-            Whether you’re tracking gorillas in Rwanda or ice-cruising through the Northwest Passage, the standard doesn’t change. We vet every operator for safety, conservation ethics, guest density, and guiding excellence. We disclose every commercial relationship. We show you the full cost before you book.
+            Whether a brand is tracking gorillas in Rwanda or running ice cruises through the Northwest Passage, the standard does not change. We vet every operator for safety, conservation ethics, guest density, and guiding excellence. We disclose every commercial relationship. We show you the full cost before you book.
           </p>
           <div style={{ marginTop: "32px" }}>
             <Link href="/how-we-work" className="text-link">How we vet operators →</Link>
@@ -136,7 +136,7 @@ export default function Home() {
           <span className="eyebrow">Partner with us</span>
           <h2>We are looking for operators who are already doing it properly.</h2>
           <p>
-            Rare Passages does not own lodges, ships or rolling stock. We build the brands that send discerning
+            Rare Passages does not own lodges, ships or rolling stock. We build the brands that send briefed
             travelers to the people who do — and we are selective about whose name we put in front of them.
           </p>
         </div>
@@ -165,11 +165,11 @@ export default function Home() {
         <Image className="final-cta__image" src={photos.sections.ctaBackground} alt="" aria-hidden fill sizes="100vw" />
         <div className="final-cta__overlay" />
         <div className="final-cta__content">
-          <h2 className="final-cta__title">Which passage is yours?</h2>
+          <h2 className="final-cta__title">Build the next passage.</h2>
           <p className="final-cta__subtitle">
-            Five verticals. One standard. Tell us what you’re looking for and we’ll point you to the right specialist.
+            We work with operators, founders and institutions who are ready to be examined against one standard.
           </p>
-          <Link href="/contact" className="final-cta__btn">Start the conversation</Link>
+          <Link href="/develop" className="final-cta__btn">Partner with us</Link>
         </div>
       </section>
     </>

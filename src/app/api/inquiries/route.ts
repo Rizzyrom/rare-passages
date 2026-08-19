@@ -6,7 +6,7 @@ type InquiryBody = {
   fullName?: string;
   email?: string;
   phone?: string;
-  organisation?: string;
+  organization?: string;
   role?: string;
   audience?: string;
   region?: string;
@@ -41,7 +41,7 @@ export async function POST(request: Request) {
       fullName: body.fullName.trim().slice(0, 120),
       email: body.email.trim(),
       ...(body.phone?.trim() ? { phone: body.phone.trim().slice(0, 40) } : {}),
-      organisation: (body.organisation ?? "").slice(0, 160),
+      organization: (body.organization ?? "").slice(0, 160),
       role: (body.role ?? "").slice(0, 120),
       audience: ["operator", "founder", "institution", "press", "other"].includes(body.audience ?? "") ? body.audience : "other",
       region: (body.region ?? "").slice(0, 160),

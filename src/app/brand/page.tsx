@@ -92,12 +92,12 @@ export default function BrandPage() {
           <span className="eyebrow">Voice</span>
           <h2>Institutional calm. Zero theater.</h2>
           <p>
-            The parent speaks to partners, operators, and serious travelers: measured, specific, unhurried.
+            The parent speaks to partners, operators, press and talent — never to travelers: measured, specific, unhurried.
             No invented concierge language, no fake urgency, no titles we have not earned. Every claim
             checkable. Every number real. No emojis, anywhere, ever.
           </p>
           <p><strong>One line:</strong> A group of specialist travel brands. One operating standard.</p>
-          <p><strong>Short bio (social):</strong> A portfolio of specialist travel brands — safaris, expedition cruises, private islands, alpine retreats, grand rail journeys. Traveler-first matching, full cost transparency.</p>
+          <p><strong>Short bio (social):</strong> A specialist travel group. Safari Awaits is active; polar, islands, alpine and rail brands follow. One published standard, full cost transparency.</p>
           <p><strong>Long boilerplate:</strong> Rare Passages is a travel group built on a single conviction: expertise does not scale by dilution. Each brand in the portfolio is run by specialists in one category of travel and is held to a shared standard covering research, partner vetting, cost disclosure and conduct. The group does not own lodges, vessels or rolling stock; it builds the brands that connect discerning travelers to the operators who do.</p>
         </section>
 

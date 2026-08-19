@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 const standards = [
-  { n: "01", title: "Research before recommendation", body: "Every destination, season and operator a brand recommends has been examined by a named person against primary sources — park authorities, operator documentation, direct enquiry. Historical guidance is labelled as guidance." },
+  { n: "01", title: "Research before recommendation", body: "Every destination, season and operator a brand recommends has been examined by a named person against primary sources — park authorities, operator documentation, direct enquiry. Historical guidance is labeled as guidance." },
   { n: "02", title: "The whole cost, first", body: "A traveler sees the full price — transfers, park and concession fees, levies, single supplements — before any commitment. Teaser rates and undisclosed markups are prohibited across the group." },
   { n: "03", title: "The willingness to say no", body: "A brand tells a traveler when the month is wrong, the country is wrong, or the year is wrong to go at all. A recommendation that cannot lose the booking is not a recommendation." },
   { n: "04", title: "Partners are examined, then re-examined", body: "Operators enter a brand's recommendations only after assessment against guiding standard, safety practice, conservation and community position, and pricing transparency. Standing is reviewed every season." },

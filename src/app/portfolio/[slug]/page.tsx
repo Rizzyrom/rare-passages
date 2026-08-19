@@ -46,7 +46,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
           <p className="detail-hero__tagline">{vertical.tagline}</p>
           <div className="detail-hero__status">
             <span className={`status-badge ${isActive ? "status-badge--active" : "status-badge--horizon"}`}>
-              {isActive ? "Active" : "In Development"}
+              {vertical.statusLabel}
             </span>
           </div>
         </div>
@@ -101,8 +101,8 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       {vertical.keyHighlights.length > 0 && (
         <section className="section section--paper">
           <div className="section-header" data-reveal>
-            <span className="eyebrow">What Sets It Apart</span>
-            <h2 className="section-title">Key differentiators</h2>
+            <span className="eyebrow">In practice</span>
+            <h2 className="section-title">What the brand does</h2>
           </div>
           <div className="highlights-grid">
             {vertical.keyHighlights.map((highlight, i) => (
@@ -162,7 +162,7 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
       {/* INTERLUDE */}
       <section className="interlude">
         <Image src={interludePhoto.url} alt={interludePhoto.alt} fill sizes="100vw" />
-        <p className="interlude__line" data-reveal>Rare is not a price. It is a place very few people have stood.</p>
+        <p className="interlude__line" data-reveal>{vertical.status === "active" ? "Known to the concession, represented with the reasoning attached." : "In development. Represented once it meets the group standard."}</p>
       </section>
 
       {/* EXTERNAL LINK or CONTACT CTA */}
@@ -171,17 +171,17 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
           {vertical.externalUrl ? (
             <>
               <h2 className="vertical-cta__title">Ready to explore {vertical.name}?</h2>
-              <p className="vertical-cta__desc">Visit the dedicated brand site to browse destinations, guides, and start planning.</p>
+              <p className="vertical-cta__desc">The brand site carries the destinations, guides, decision tools and published standards.</p>
               <a href={vertical.externalUrl} className="vertical-cta__btn" target="_blank" rel="noopener noreferrer">
                 Visit {vertical.name} →
               </a>
             </>
           ) : (
             <>
-              <h2 className="vertical-cta__title">{vertical.name} is coming soon.</h2>
-              <p className="vertical-cta__desc">This vertical is in development. Be the first to know when it launches.</p>
-              <Link href="/contact" className="vertical-cta__btn">
-                Get early access →
+              <h2 className="vertical-cta__title">{vertical.name} is {vertical.status === "development" ? "in development" : "a horizon brand"}.</h2>
+              <p className="vertical-cta__desc">Operators and founders who run this properly and want it represented properly: see how a partnership works.</p>
+              <Link href="/develop" className="vertical-cta__btn">
+                Develop this brand →
               </Link>
             </>
           )}

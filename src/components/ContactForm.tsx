@@ -16,7 +16,7 @@ const AUDIENCES = [
 export const ContactForm: React.FC<{ defaultAudience?: string }> = ({ defaultAudience = "operator" }) => {
   const [form, setForm] = useState({
     fullName: "",
-    organisation: "",
+    organization: "",
     role: "",
     email: "",
     phone: "",
@@ -75,8 +75,8 @@ export const ContactForm: React.FC<{ defaultAudience?: string }> = ({ defaultAud
       </div>
       <div className="cform__row cform__row--2">
         <label className="cform__field">
-          <span>Organisation</span>
-          <input name="organisation" type="text" autoComplete="organization" value={form.organisation} onChange={set("organisation")} placeholder="Camp, company, publication, institution" />
+          <span>Organization</span>
+          <input name="organization" type="text" autoComplete="organization" value={form.organization} onChange={set("organization")} placeholder="Camp, company, publication, institution" />
         </label>
         <label className="cform__field">
           <span>Role</span>

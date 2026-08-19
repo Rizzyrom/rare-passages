@@ -54,7 +54,7 @@ export default function AboutPage() {
       <section className="section">
         <div className="section-header">
           <span className="eyebrow">Structure</span>
-          <h2 className="section-title">How the group is organised.</h2>
+          <h2 className="section-title">How the group is organized.</h2>
         </div>
         <div className="pillars-grid">
           <div className="pillar-card">
@@ -64,6 +64,10 @@ export default function AboutPage() {
           <div className="pillar-card">
             <h3 className="pillar-card__title">The group</h3>
             <p className="pillar-card__desc">Supplies what the brands share: the operating standard, the operator examination framework, the shared design language and photography standard, the technology, and the editorial method.</p>
+          </div>
+          <div className="pillar-card">
+            <h3 className="pillar-card__title">One family of marks</h3>
+            <p className="pillar-card__desc">Every brand shares a horizon line and a sky. The group’s mark is a north star over water; Safari Awaits is a sunrise over grassland; each future brand takes the same horizon and its own sky. The rule, the lockups and the kit are public at <Link href="/brand">/brand</Link>.</p>
           </div>
           <div className="pillar-card">
             <h3 className="pillar-card__title">Partners</h3>

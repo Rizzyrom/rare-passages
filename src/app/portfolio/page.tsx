@@ -19,7 +19,7 @@ export default function PortfolioPage() {
       {/* HERO */}
       <section className="page-hero">
         <span className="eyebrow">Full Portfolio Directory</span>
-        <h1>Every passage, curated.</h1>
+        <h1>Every passage, examined.</h1>
         <p className="page-hero__text">
           Rare Passages houses a portfolio of specialist travel verticals, each an autonomous brand with its own domain expertise, vetted supplier network, and conservation mandate.
         </p>
@@ -47,8 +47,8 @@ export default function PortfolioPage() {
               <p className="dest-strip__desc">{v.shortDescription}</p>
               <div className="dest-strip__meta">
                 <div className="dest-strip__meta-item">
-                  <span className="dest-strip__meta-label">Price Range</span>
-                  <span className="dest-strip__meta-value">{v.priceGuide.split("from ")[1] || v.priceGuide}</span>
+                  <span className="dest-strip__meta-label">Status</span>
+                  <span className="dest-strip__meta-value">{v.statusLabel}</span>
                 </div>
                 <div className="dest-strip__meta-item">
                   <span className="dest-strip__meta-label">Group Size</span>
@@ -93,7 +93,7 @@ export default function PortfolioPage() {
         <div className="vertical-cta">
           <h2 className="vertical-cta__title">Ready to explore a passage?</h2>
           <p className="vertical-cta__desc">
-            Each vertical operates independently with its own concierge team. Tell us what you’re looking for and we’ll point you to the right specialist.
+            Each vertical operates independently under one shared standard. Tell us what you’re looking for and we’ll point you to the right specialist.
           </p>
           <Link href="/contact" className="vertical-cta__btn">Start the conversation →</Link>
         </div>

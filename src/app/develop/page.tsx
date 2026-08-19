@@ -14,7 +14,7 @@ export default function DevelopPage() {
         <span className="eyebrow">Develop with us</span>
         <h1>We build the brand. You run the ground.</h1>
         <p className="page-hero__text">
-          Rare Passages does not own lodges, ships or rolling stock. We build the specialist consumer brands that send discerning travelers to the people who do — and we are selective about whose name we put in front of them.
+          Rare Passages does not own lodges, ships or rolling stock. We build the specialist consumer brands that send briefed travelers to the people who do — and we are selective about whose name we put in front of them.
         </p>
       </section>
 
@@ -59,7 +59,7 @@ export default function DevelopPage() {
         </div>
         <ul className="plain-list">
           <li>We do not sell placement. No property can pay to be recommended, and no property that pays us more is recommended more.</li>
-          <li>We do not aggregate. We would rather represent twelve operators properly than four hundred by name.</li>
+          <li>We do not aggregate. We represent twelve operators properly rather than four hundred by name.</li>
           <li>We do not publish what we cannot stand behind. If a claim about your property cannot be verified, it does not appear.</li>
         </ul>
       </section>

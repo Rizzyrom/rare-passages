@@ -38,7 +38,7 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     category: 'Wilderness & Wildlife',
     heroImage: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=2400&auto=format&fit=crop',
     shortDescription: 'Real access to Africa’s most pristine private reserves, solar-powered luxury camps, and guide-led wildlife encounters.',
-    fullDescription: 'Safari Awaits represents the pinnacle of African wilderness exploration. Working strictly with private concessions that restrict vehicle density and enforce rigorous habitat protection, Safari Awaits connects discerning travelers with intimate, low-impact luxury camps in Botswana, Tanzania, Kenya, Rwanda, and South Africa.',
+    fullDescription: 'Safari Awaits is the group’s first brand: an independent African safari planner covering eight countries — Botswana, Tanzania, Kenya, South Africa, Namibia, Zambia, Zimbabwe, and Rwanda and Uganda — with published decision tools, bylined and sourced guides, an operator framework, and full cost transparency before any commitment. It is the working proof of the group standard.',
     featuredDestinations: [
       'Okavango Delta & Linyanti, Botswana',
       'Serengeti & Ngorongoro Crater, Tanzania',
@@ -47,14 +47,14 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
       'Masai Mara & Laikipia Plateau, Kenya'
     ],
     keyHighlights: [
-      'Strict limit of 4-6 guest suites per wilderness camp',
-      'Private charter logistics between deep bush airstrips',
-      'Pairing with FGASA Level 3 expert field guides',
-      'Direct contribution to rhino anti-poaching & community conservancies'
+      'Eight countries known to the concession: Botswana, Tanzania, Kenya, South Africa, Namibia, Zambia, Zimbabwe, Rwanda & Uganda',
+      'Three published decision tools: a cost estimator, a destination comparator and a month-by-month matrix',
+      'Every guide bylined, sourced and dated; a published operator framework and editorial standard',
+      'The willingness to say no: wrong month, wrong country, wrong year'
     ],
-    guestCapacity: 'Private charters & exclusive lodge buyouts (1-16 guests)',
-    priceGuide: 'Bespoke journeys from $1,800 to $4,500 per person/day',
-    sustainabilityRating: '100% Solar-Powered / Zero Single-Use Plastics',
+    guestCapacity: 'Couples, families and small groups; private-vehicle and exclusive-use options where operators offer them',
+    priceGuide: 'Cost transparency is a brand standard: safariawaits.com publishes an estimator, tiers per couple and a comparator',
+    sustainabilityRating: 'Operators assessed on conservation and community position under the group standard',
     externalUrl: 'https://safariawaits.com',
     verticalPillars: [
       {
@@ -89,158 +89,76 @@ export const PORTFOLIO_VERTICALS: Vertical[] = [
     id: 'expedition-cruises',
     slug: 'expedition-cruises',
     name: 'Expedition Maritime',
-    tagline: 'Polar & Remote Oceanic Explorations',
+    tagline: 'Polar and remote-ocean expeditions',
     status: 'development',
     statusLabel: 'In Development',
     category: 'Polar & Island Maritime',
     heroImage: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2400&auto=format&fit=crop',
-    shortDescription: 'The polar and remote-ocean vertical, in development: expedition sailings to Antarctica, Svalbard, the Galápagos and the Northwest Passage, matched with the same rigour as Safari Awaits.',
-    fullDescription: 'Expedition Maritime will apply the Safari Awaits method to the sea: an operator framework for expedition vessels, honest cost transparency, and a small number of routes known properly rather than a catalogue. It is in development and does not yet take enquiries.',
-    featuredDestinations: [
-      'Antarctic Peninsula, South Georgia & Falkland Islands',
-      'High Arctic, Svalbard Archipelago & Greenland Fjords',
-      'Galápagos Volcanic Archipelago',
-      'Northwest Passage & Canadian High Arctic',
-      'Chilean Fjords & Cape Horn'
-    ],
-    keyHighlights: [
-      'PC6 Polar Class hull design with zero-speed stabilizers',
-      'Scientist-led field expeditions & daily Zodiac landings',
-      'Onboard Citizen Science laboratories & submarine equipment',
-      '1:1 guest-to-expedition crew ratio for smooth safety'
-    ],
-    guestCapacity: 'Ultra-boutique vessels (76 to 142 guests maximum)',
-    priceGuide: 'Voyages from $14,000 to $48,000 per guest per expedition',
-    sustainabilityRating: 'Hybrid Electric / Clean Fuel / Zero Anchoring',
-    verticalPillars: [
-      {
-        title: 'Pristine Marine Access',
-        description: 'Our small-vessel footprint permits entry to narrow fjords and shallow coves that large cruise liners can never reach.'
-      },
-      {
-        title: 'Intellectual Rigor',
-        description: 'Lectures and field guidance by glaciologists, ornithologists, marine mammal researchers, and polar historians.'
-      },
-      {
-        title: 'Extreme Comfort in Extreme Realms',
-        description: 'Nordic saunas, heated outdoor plunge pools, fine dining, and floor-to-ceiling glass observation lounges.'
-      }
-    ],
-    sampleItineraries: [
-      {
-        title: 'Antarctica, South Georgia & the South Sandwich Islands',
-        duration: '19 Days / 18 Nights',
-        regions: 'Ushuaia, Drake Passage, South Georgia, Antarctic Peninsula',
-        description: 'Stand amidst 200,000 king penguins on Salisbury Plain before ice-cruising through towering tabular bergs in the Weddell Sea.'
-      },
-      {
-        title: 'Realm of the Polar Bear: High Svalbard',
-        duration: '10 Days / 9 Nights',
-        regions: 'Longyearbyen, Spitsbergen, Hinlopen Strait, Ice Edge',
-        description: 'Track polar bears on pack ice, navigate glaciated fjords, and witness walrus haul-outs under the midnight sun.'
-      }
-    ]
+    shortDescription: 'The polar and remote-ocean brand, in development. It will apply the Safari Awaits method to expedition sailings: an operator framework for vessels, honest cost transparency, and a small number of routes known properly.',
+    fullDescription: 'Expedition Maritime is in development and does not yet take enquiries. The group is defining the operator framework for expedition vessels — ice class, guest numbers, guiding and safety standard, conservation position — before any route is represented. Operators and founders who run this properly can start the conversation on the Develop page.',
+    featuredDestinations: [],
+    keyHighlights: [],
+    guestCapacity: 'To be defined with the founding operator',
+    priceGuide: 'Published when the first partner is confirmed',
+    sustainabilityRating: 'Assessed against the group standard before launch',
+    verticalPillars: [],
+    sampleItineraries: []
   },
   {
     id: 'coastal-sanctuaries',
     slug: 'coastal-sanctuaries',
     name: 'Coastal & Island Sanctuaries',
-    tagline: 'Private Islands & Remote Atoll Estates',
+    tagline: 'Private islands and coastal sanctuaries',
     status: 'horizon',
-    statusLabel: 'Horizon Vertical, Launching 2027',
-    category: 'Private Islands & Sanctuaries',
+    statusLabel: 'Horizon',
+    category: 'Coastal & Island Sanctuaries',
     heroImage: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2400&auto=format&fit=crop',
-    shortDescription: 'Real private island takeovers and oceanfront architectural sanctuaries across the Indian Ocean, South Pacific, and Caribbean.',
-    fullDescription: 'Designed for complete seclusion, our Coastal & Island Sanctuaries vertical pairs high-net-worth families with fully-staffed private island estates. From marine conservation atolls in the Seychelles to secluded archipelagos in French Polynesia, each sanctuary guarantees total privacy and custom superyacht tenders.',
-    featuredDestinations: [
-      'Outer Atolls, Seychelles',
-      'Laucala & Mamanuca Islands, Fiji',
-      'Tuamotu Archipelago, French Polynesia',
-      'Private Cays, Exumas & Grenadines'
-    ],
-    keyHighlights: [
-      'Complete private island buyouts',
-      'Private chef, butler, and dive master included',
-      'Helipad and deep-water superyacht berth capabilities'
-    ],
-    guestCapacity: 'Exclusive private estates (2 to 24 guests)',
-    priceGuide: 'Island buyouts from $25,000 to $90,000 per night',
-    sustainabilityRating: 'Coral Nursery Regeneration & Solar Microgrid',
-    verticalPillars: [
-      {
-        title: 'Absolute Privacy Protocols',
-        description: 'No external guests, private airspace monitoring, and strict security compliance.'
-      },
-      {
-        title: 'Oceanic Conservation',
-        description: 'Direct support of local marine protected areas and sea turtle nesting sanctuaries.'
-      }
-    ],
+    shortDescription: 'A horizon brand for private islands and coastal sanctuaries. Not yet in development; no properties are represented.',
+    fullDescription: 'This is a horizon brand. It is not in development and represents no properties. It will be built the way Safari Awaits was — a small number of places examined completely — with a founding partner who runs an island properly and wants it represented properly.',
+    featuredDestinations: [],
+    keyHighlights: [],
+    guestCapacity: 'To be defined with the founding operator',
+    priceGuide: 'Published when the first partner is confirmed',
+    sustainabilityRating: 'Assessed against the group standard before launch',
+    verticalPillars: [],
     sampleItineraries: []
   },
   {
     id: 'alpine-retreats',
     slug: 'alpine-retreats',
-    name: 'Alpine & High-Altitude Retreats',
-    tagline: 'Heli-Ski Chalets & Himalayan Sanctuaries',
+    name: 'Alpine Retreats',
+    tagline: 'Mountain lodges and chalets',
     status: 'horizon',
-    statusLabel: 'In Development',
-    category: 'Mountain & High-Altitude',
+    statusLabel: 'Horizon',
+    category: 'Alpine & Mountain',
     heroImage: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2400&auto=format&fit=crop',
-    shortDescription: 'Ski-in/ski-out architectural chalets with private heli-pads, mountain guides, and high-altitude wellness sanctuaries.',
-    fullDescription: 'Connecting guests to untouched powder bowls and majestic mountain ridges in the Alps, British Columbia, Patagonia, and Bhutan. Curated for those who demand the best skiing, mountain solitude, and private mountain chalets.',
-    featuredDestinations: [
-      'Verbier & Zermatt, Switzerland',
-      'Courchevel 1850 & Val d’Isère, France',
-      'Revelstoke & Monashee Range, Canada (Private Heli-Skiing)',
-      'Paro & Punakha Valleys, Bhutan'
-    ],
-    keyHighlights: [
-      'Private helicopter access and IFMGA mountain guides',
-      'In-chalet Michelin-trained chefs & spa wellness teams',
-      'Secluded mountain refuges accessible only by private transfer'
-    ],
-    guestCapacity: 'Private chalet groups (4 to 20 guests)',
-    priceGuide: 'Chalets from $40,000 to $180,000 per week',
-    sustainabilityRating: 'Geothermal Heating & Zero Alpine Impact',
-    verticalPillars: [
-      {
-        title: 'First-Tracks Privilege',
-        description: 'Exclusive backcountry permits and private heli-ski terrain concessions.'
-      }
-    ],
+    shortDescription: 'A horizon brand for mountain lodges and private chalets. Not yet in development; no properties are represented.',
+    fullDescription: 'Alpine Retreats is a horizon brand. It is not in development and represents no properties. The category will be examined and built once a founding partner is identified.',
+    featuredDestinations: [],
+    keyHighlights: [],
+    guestCapacity: 'To be defined with the founding operator',
+    priceGuide: 'Published when the first partner is confirmed',
+    sustainabilityRating: 'Assessed against the group standard before launch',
+    verticalPillars: [],
     sampleItineraries: []
   },
   {
     id: 'transcontinental-journeys',
     slug: 'transcontinental-journeys',
-    name: 'Grand Rail & Overland Expeditions',
-    tagline: 'Private Luxury Trains & Overland Convoys',
+    name: 'Grand Rail Journeys',
+    tagline: 'Long-distance rail',
     status: 'horizon',
-    statusLabel: 'In Development',
-    category: 'Overland & Grand Travel',
+    statusLabel: 'Horizon',
+    category: 'Rail',
     heroImage: 'https://images.unsplash.com/photo-1532105956626-9569c03602f6?q=80&w=2400&auto=format&fit=crop',
-    shortDescription: 'Chartered vintage rail carriages and private luxury mobile safari encampments navigating historical trade routes and wilderness corridors.',
-    fullDescription: 'Restoring the golden age of romantic exploration through private train car charters across Southern Africa, Europe, and Asia, complemented by luxury mobile overland camps.',
-    featuredDestinations: [
-      'Pretoria to Victoria Falls (Rovos Rail Private Carriage)',
-      'Paris to Istanbul (Venice Simplon-Orient-Express)',
-      'Silk Road Trans-Continental Corridor'
-    ],
-    keyHighlights: [
-      'Private vintage train carriages attached to historic engines',
-      'Bespoke mobile glamping encampments moved by land teams',
-      'Private historian & sommelier on board'
-    ],
-    guestCapacity: 'Carriage charters (2 to 12 guests)',
-    priceGuide: 'Custom rail journeys from $18,000 to $65,000 per cabin',
-    sustainabilityRating: 'Carbon-Neutral Rail Offsets',
-    verticalPillars: [
-      {
-        title: 'Timeless Elegance',
-        description: 'Restored 1920s Art Deco interiors, mahogany finishes, and private en-suite staterooms.'
-      }
-    ],
+    shortDescription: 'A horizon brand for long-distance rail. Not yet in development; no operators or routes are represented.',
+    fullDescription: 'Grand Rail Journeys is a horizon brand. It is not in development and represents no operators or routes. It will name no third-party services as its own; if built, it will examine and represent rail operators under the group standard.',
+    featuredDestinations: [],
+    keyHighlights: [],
+    guestCapacity: 'To be defined with the founding operator',
+    priceGuide: 'Published when the first partner is confirmed',
+    sustainabilityRating: 'Assessed against the group standard before launch',
+    verticalPillars: [],
     sampleItineraries: []
   }
 ];
@@ -249,7 +167,7 @@ export const BRAND_PRINCIPLES = [
   {
     number: '01',
     title: 'Research before recommendation',
-    description: 'Every destination, season and operator a brand recommends has been examined by a named person against primary sources. Historical guidance is labelled as guidance, and every guide carries a byline and a last-reviewed date.'
+    description: 'Every destination, season and operator a brand recommends has been examined by a named person against primary sources. Historical guidance is labeled as guidance, and every guide carries a byline and a last-reviewed date.'
   },
   {
     number: '02',
@@ -273,21 +191,3 @@ export const BRAND_PRINCIPLES = [
   }
 ];
 
-export const FAQS = [
-  {
-    question: 'Does Rare Passages sell travel directly or act as a booking engine?',
-    answer: 'Rare Passages is the parent holding brand and quality curator. We provide global portfolio strategy, traveler matching, and quality oversight. Bookings are handled through our direct specialist verticals (such as Safari Awaits) or our private concierge desk with real guarantees.'
-  },
-  {
-    question: 'How do you vet partner lodges, cruise ships, and charter operators?',
-    answer: 'Every property and vessel in our portfolio is assessed against a published vetting standard. Criteria include maximum guest density, solar/renewable energy usage, indigenous employment ratios, emergency medevac readiness, and field guide certifications.'
-  },
-  {
-    question: 'Can Rare Passages manage journeys across multiple verticals in one trip?',
-    answer: 'Yes. One of our core advantages is orchestrating grand multi-vertical journeys - such as combining a luxury wildlife safari in East Africa with a private expedition cruise through the Seychelles or Madagascar.'
-  },
-  {
-    question: 'What is the minimum lead time required for booking?',
-    answer: 'Due to strict conservation guest caps at flagship lodges and limited cabin capacity on polar expedition ships, we recommend planning 6 to 14 months in advance. However, our direct relationships allow us to secure short-notice cancellations for private clients.'
-  }
-];
