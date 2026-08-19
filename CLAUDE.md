@@ -105,7 +105,7 @@ Target: Vercel. Domain: rarepassages.com (currently parked at GoDaddy).
 
 DNS when ready:
 ```
-A record:     @    → 76.76.21.21
+A record:     @    → 216.198.79.1   (current Vercel IP; 76.76.21.21 is legacy but still works)
 CNAME record: www  → cname.vercel-dns.com
 ```
 
