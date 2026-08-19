@@ -4,7 +4,7 @@ _Source of truth for what is done, what Claude can still do alone, and what only
 
 Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`, CI quality-gate on every push). **Certified this evening:** lint 0 · build clean · Playwright SA 12/12 · a11y CLEAN (SA 15 routes, RP 12) · mobile CLEAN (SA 16, RP 12) · image CLEAN (SA 19, RP 12). GA4 live on both. Both live on real domains, still noindex.
 
-**Where we are on the 6→10 scale (honest):** SA is a strong 8 with the tools, eight destinations, honest copy, two-round adversarial review, and a real lead pipeline shaped for GHL — the remaining distance is entirely owner-gated (founder identity, calendar, CRM URL, indexing) plus the depth work in §4. RP is a 7.5: register fixed, four corporate routes, standard published; it needs the same critic loop and photography pass SA got.
+**Where we are on the 6→10 scale (honest):** SA is an 8.5 — 90 static pages (from ~46), eight destinations with every authored section actually rendered, 32 regions, nine experiences, three decision tools, a planner page, honest copy through three critic rounds, a real GHL-shaped lead pipeline with names/UTM/call preference. What separates 8.5 from 10 is owner-gated (a named founder with a photo, a live calendar, the CRM URL, indexing) plus real photography instead of stock. RP is an 8 — corporate register enforced, four corporate routes, standard published, one critic round done and every fabrication it found removed. Both sites: lint 0, all audits clean, CI on every push.
 
 ## The three things that move the needle most, all yours, all under 15 minutes
 1. **Founder bio + photo** → the single trust item every critic flagged. 2–3 true sentences + one natural-light photo.
@@ -62,11 +62,13 @@ Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per
 
 | # | Item | Owner | Effort |
 |---|---|---|---|
-| 4.A | Critic loop on the destination + guide templates (running now) → fixes across 24 pages | [CLAUDE] | in progress |
-| 4.B | Region sub-pages (Okavango, Serengeti, Mara, Sabi Sand, Sossusvlei, Volcanoes) — 'okavango delta safari' 3,600/mo | [CLAUDE] | 3h |
-| 4.C | Experiences layer: walking, photographic, family, honeymoon, primates, Victoria Falls | [CLAUDE] | 3h |
-| 4.D | Itinerary objects (8–10 named, costed, routed) with their own enquiry | [CLAUDE] | 3h |
-| 4.E | /safari-planner money page — 'african safari planner' \$46 CPC, 'safari travel agent' \$42 | [CLAUDE] | 1h |
+| ~~4.A~~ | ~~Critic loop on destination + guide templates~~ **DONE** — dead pricing/wildlife/tripStyles content rendered on all 8; grid bug; numerals; og:image on 24 pages; form budget-label data bug; consent scope | [CLAUDE] | — |
+| ~~4.B~~ | ~~Region sub-pages~~ **DONE** — 32 routes, six deep (Mara 8,100/mo, Serengeti, Okavango, Sossusvlei, Volcanoes, Ngorongoro) | [CLAUDE] | — |
+| ~~4.C~~ | ~~Experiences layer~~ **DONE** — nine at /experiences; safari-types retired (308) | [CLAUDE] | — |
+| 4.D | Itinerary objects (8–10 named, costed, routed) with their own enquiry — the destination itineraries exist as data; promote to routes | [CLAUDE] | 3h |
+| ~~4.E~~ | ~~/safari-planner~~ **DONE** | [CLAUDE] | — |
+| 4.G | Round-two critic loops on: /get-matched form, /compare, /when-to-go, /costs-and-timing, /about (homepage and templates have had theirs) | [CLAUDE] | 2h |
+| 4.H | RP round two (first round done: fabricated inventory removed, honest tiers, corporate CTAs) + RP photography brief | [CLAUDE] | 2h |
 | 4.F | Photography brief per slot + a real-photography plan for the founder's first trips (stock is the ceiling we are at) | [BOTH] | 1h + travel |
 | 4.1 | ~~Elevate 3 legacy Tailwind pages~~ **DONE** — dossier system, zero hex in src/app | [CLAUDE] | — |
 | 4.2 | ~~SEO pass 2~~ **DONE** — keyword-first seoTitles ≤59 chars incl. suffix, datePublished | [CLAUDE] | — |
