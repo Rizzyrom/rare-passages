@@ -5,7 +5,7 @@ _Pass/fail per criterion. A surface ships only when every criterion passes and t
 ## A. Universal (every page, both sites)
 - [ ] A1 No sentence a Condé Nast Traveler editor would cut. No filler, no hedging, no "discover/embark/unforgettable/world-class/seamless".
 - [ ] A2 No claim we cannot prove today. No counts of our own output presented as credentials.
-- [ ] A3 Every image is high-resolution (3840 masters), warm natural light, no stock tells, no on-image credit; alt text describes what is shown.
+- [ ] A3 Every image is high-resolution (3840 masters), no on-image credit; alt text describes what is shown. **Photographic register (owner-set, Aug 19): atmosphere over subject.** Muted palette; overcast, mist, pre-dawn or flat light; negative space; texture; scale with people or animals small in the frame. BANNED: golden-hour orange, sunset silhouettes, animal portraits filling the frame, tourists-in-vehicles-grinning, the lone acacia. The library is assembled from contact sheets, never one-off searches; every slot has a written brief.
 - [ ] A4 Typography carries the page: Cormorant display at scale, Manrope body ≤ 38em, uppercase labels tracked. Zero hardcoded hex; tokens only.
 - [ ] A5 Composition is editorial: asymmetry, whitespace, one full-bleed moment per long page. Nothing reads as a template or a card grid of equal boxes.
 - [ ] A6 Motion is rare and slow (≤ 0.8s ease, reduced-motion safe). No bounce.
