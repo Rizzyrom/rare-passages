@@ -1,0 +1,36 @@
+name: Quality gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      - name: Lint, build, tests
+        run: npm run lint && npm run build
+      - name: Start production server
+        run: |
+          (PORT=3000 npm run start > server.log 2>&1 &)
+          for i in $(seq 1 30); do curl -sf http://localhost:3000/ >/dev/null && break; sleep 2; done
+      - name: Accessibility audit (WCAG 2.1 AA)
+        run: node scripts/a11y-audit.mjs
+      - name: Mobile audit (375px)
+        run: node scripts/mobile-audit.mjs
+      - name: Image resolution audit
+        run: node scripts/image-audit.mjs

@@ -1,4 +1,5 @@
 "use client";
+import { track } from "@/lib/analytics";
 
 import React, { useState } from "react";
 import { PORTFOLIO_VERTICALS } from "@/data/verticals";
@@ -28,6 +29,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
     e.preventDefault();
     if (status === "submitting") return;
     setStatus("submitting");
+    track("inquiry_form_submit");
     try {
       const response = await fetch("/api/inquiries", {
         method: "POST",
@@ -36,8 +38,11 @@ export const ContactForm: React.FC<ContactFormProps> = ({ defaultVertical = "" }
       });
       if (!response.ok) throw new Error(String(response.status));
       setStatus("success");
+      track("inquiry_form_success");
     } catch {
       setStatus("error");
+      track("inquiry_form_error");
+      track("inquiry_form_error");
     }
   };
 

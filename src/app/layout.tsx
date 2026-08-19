@@ -43,7 +43,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://rarepassages.com" },
 };
 
-const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+// GA4 Measurement IDs are public by nature (they ship in page HTML); the env var
+// overrides for previews/staging. Property: Rare Passages, stream 15461572891.
+const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-7DYE16BP79";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
