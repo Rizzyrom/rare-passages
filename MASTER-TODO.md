@@ -4,7 +4,7 @@ _Source of truth for what is done, what Claude can still do alone, and what only
 
 Repos: `Rizzyrom/safari-awaits` · `Rizzyrom/rare-passages` (both `main`, CI quality-gate on every push). **Certified this evening:** lint 0 · build clean · Playwright SA 12/12 · a11y CLEAN (SA 15 routes, RP 12) · mobile CLEAN (SA 16, RP 12) · image CLEAN (SA 19, RP 12). GA4 live on both. Both live on real domains, still noindex.
 
-**Where we are on the 6→10 scale (honest):** SA is an 8.5 — 90 static pages (from ~46), eight destinations with every authored section actually rendered, 32 regions, nine experiences, three decision tools, a planner page, honest copy through three critic rounds, a real GHL-shaped lead pipeline with names/UTM/call preference. What separates 8.5 from 10 is owner-gated (a named founder with a photo, a live calendar, the CRM URL, indexing) plus real photography instead of stock. RP is an 8 — corporate register enforced, four corporate routes, standard published, one critic round done and every fabrication it found removed. Both sites: lint 0, all audits clean, CI on every push.
+**Where we are on the 6→10 scale (honest):** Everything I control is at the bar. SA: 115 static pages (46 at the start), every surface through at least one adversarial critic round and the homepage through two, every confirmed finding fixed, a hero no competitor could also be running, real three-step intake, all three decision tools covering all eight countries with visible review dates, 24 itineraries and nine experiences as first-class routes with activity-specific photography, 32 regions, a real CRM-shaped lead pipeline. RP: corporate register enforced twice through source-level review; every fabrication gone; honest tiers; bounded metadata. Both: lint 0, all audits clean, CI on every push, live and verified. What remains between here and 10 is not buildable by me — it is the three items below, plus real photography over stock, plus indexing.
 
 ## The three things that move the needle most, all yours, all under 15 minutes
 1. **Founder bio + photo** → the single trust item every critic flagged. 2–3 true sentences + one natural-light photo.
@@ -67,8 +67,11 @@ Suggestion: GHL is already in your stack (Zen Maid). One GHL inbound webhook per
 | ~~4.C~~ | ~~Experiences layer~~ **DONE** — nine at /experiences; safari-types retired (308) | [CLAUDE] | — |
 | 4.D | Itinerary objects (8–10 named, costed, routed) with their own enquiry — the destination itineraries exist as data; promote to routes | [CLAUDE] | 3h |
 | ~~4.E~~ | ~~/safari-planner~~ **DONE** | [CLAUDE] | — |
-| 4.G | Round-two critic loops on: /get-matched form, /compare, /when-to-go, /costs-and-timing, /about (homepage and templates have had theirs) | [CLAUDE] | 2h |
-| 4.H | RP round two (first round done: fabricated inventory removed, honest tiers, corporate CTAs) + RP photography brief | [CLAUDE] | 2h |
+| ~~4.G~~ | ~~Critic loops on form, tools, about, experiences, indexes~~ **DONE** — fake 3-step form made real; matrix 4→8 countries; experience photos depict the activity; indexes recomposed; grid-safety rule sitewide | [CLAUDE] | — |
+| ~~4.H~~ | ~~RP round two~~ **DONE** — SA record on RP de-brochured; metadata bounded; doubled tile; regressions | [CLAUDE] | — |
+| ~~4.D~~ | ~~Itinerary routes~~ **DONE** — 24 at /itineraries with own enquiry | [CLAUDE] | — |
+| 4.I | Next critic round after owner items land (founder block with real bio/photo changes the trust composition on /about and the byline) | [CLAUDE] | 1h |
+| 4.J | Real photography: a shot list per slot for the founder's first trips (stock is now at its ceiling) | [CLAUDE] | 1h |
 | 4.F | Photography brief per slot + a real-photography plan for the founder's first trips (stock is the ceiling we are at) | [BOTH] | 1h + travel |
 | 4.1 | ~~Elevate 3 legacy Tailwind pages~~ **DONE** — dossier system, zero hex in src/app | [CLAUDE] | — |
 | 4.2 | ~~SEO pass 2~~ **DONE** — keyword-first seoTitles ≤59 chars incl. suffix, datePublished | [CLAUDE] | — |
