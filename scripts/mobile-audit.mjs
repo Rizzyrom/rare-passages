@@ -4,7 +4,7 @@ import { chromium } from "@playwright/test";
 import { mkdirSync } from "node:fs";
 
 const BASE = process.env.AUDIT_BASE ?? "http://localhost:3102";
-const OUT = process.env.AUDIT_OUT || "/private/tmp/claude-501/-Users-rom/206f7fe2-5cae-4f39-8997-e337084080b9/scratchpad/mobile";
+const OUT = process.env.AUDIT_OUT || new URL("../.audit/mobile", import.meta.url).pathname;
 const routes = ["/", "/portfolio", "/portfolio/safari-awaits", "/portfolio/expedition-maritime", "/about", "/careers", "/press", "/standards", "/develop", "/how-we-work", "/contact", "/brand"];
 mkdirSync(OUT, { recursive: true });
 
