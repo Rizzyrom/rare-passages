@@ -58,6 +58,11 @@ export default async function VerticalDetailPage({ params }: { params: Promise<{
         <div className="detail-overview">
           <span className="eyebrow">Overview</span>
           <p className="detail-overview__text">{vertical.fullDescription}</p>
+          {vertical.id === 'safari-awaits' && (
+            <p className="detail-overview__text">
+              Travelers planning a trip can start with <a href="https://safariawaits.com">Safari Awaits private African safari planning</a>, which matches each trip to vetted camps and operators.
+            </p>
+          )}
           <div className="detail-overview__meta-grid">
             <div className="detail-meta-item">
               <span className="detail-meta-label">Category</span>
