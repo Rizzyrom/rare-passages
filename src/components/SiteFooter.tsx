@@ -16,6 +16,9 @@ export function SiteFooter() {
           <p className="footer-tagline">
             A specialist travel group. We build and operate the brands; the people who run the ground are examined, then represented with the reasoning attached.
           </p>
+          <p className="footer-tagline">
+            Planning a safari? See <a href="https://safariawaits.com">Safari Awaits private African safari planning</a>.
+          </p>
           <p className="parent-ref">
             Rare Passages is a trading name of <strong className="parent-name">RM Ventures LLC</strong>
           </p>
